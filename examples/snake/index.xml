@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snake Game on Python programming</title>
+    <link>/examples/snake/</link>
+    <description>Recent content in Snake Game on Python programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/examples/snake/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set up the screen</title>
+      <link>/examples/snake/class01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/examples/snake/class01/</guid>
+      <description>In this session, we&amp;rsquo;re going to learn how to set up snake game playground.
+ Step 1: import required modules Turtle is a python feature like a drawing board, which lets you command a turtle to draw all over it! You can use functions like turtle.forward(...) and turtle.left(...) which can move the turtle around.
+import turtle  Random module implements pseudo-random number generators for various distributions.
+import random  Time module provides various time-related functions.</description>
+    </item>
+    
+    <item>
+      <title>Connect all elements</title>
+      <link>/examples/snake/class02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/examples/snake/class02/</guid>
+      <description>In this session, we&amp;rsquo;re going to connect all elements togther. Implement turtle&amp;rsquo;s move, eating eggs and grow long.
+ Step 1: Move the turtle moves is another Function to move the turtle Up, Down, Right and Left.
+def moves(): if head.direction == &amp;quot;up&amp;quot;: y = head.ycor() head.sety(y + 20) if head.direction == &amp;quot;down&amp;quot;: y = head.ycor() head.sety(y - 20) if head.direction == &amp;quot;left&amp;quot;: x = head.xcor() head.setx(x - 20) if head.</description>
+    </item>
+    
+  </channel>
+</rss>

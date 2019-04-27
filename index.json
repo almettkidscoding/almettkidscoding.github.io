@@ -1,0 +1,92 @@
+[
+{
+	"uri": "/basics/",
+	"title": "Basics",
+	"tags": [],
+	"description": "",
+	"content": " Basics \u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;Python basics are crutial to the following lessons. In this secsion, we\u0026rsquo;re going to learn:\n Python Interpreter Basic Python data structures Control flow tools Modules input \u0026amp; Output Errors \u0026amp; Exceptions Classes  "
+},
+{
+	"uri": "/examples/snake-game/class01/",
+	"title": "Set up the screen",
+	"tags": [],
+	"description": "",
+	"content": "  In this session, we\u0026rsquo;re going to learn how to set up snake game playground.\n Step 1: import required modules Turtle is a python feature like a drawing board, which lets you command a turtle to draw all over it! You can use functions like turtle.forward(...) and turtle.left(...) which can move the turtle around.\nimport turtle  Random module implements pseudo-random number generators for various distributions.\nimport random  Time module provides various time-related functions. For related functionality,\nimport time  Step 2: Set up the screen Screen is where we play the game. In this step, we\u0026rsquo;re going to define title, background color, size of the playground\nscreen = turtle.Screen() screen.title(\u0026quot;snake game\u0026quot;) screen.bgcolor(\u0026quot;black\u0026quot;) screen.setup(width=700, height=700)  Step 3: Set up the elements Turtle moves and extend itself by eating eggs that appears randomly on the screen. Let\u0026rsquo;s define the Turtle object as head in the following code.\nhead = turtle.Turtle() head.speed(0) head.shape(\u0026quot;square\u0026quot;) head.color(\u0026quot;green\u0026quot;, 'yellow') head.penup() head.goto(0, 0) head.direction = \u0026quot;stop\u0026quot;  Define the egg:\negg = turtle.Turtle() egg.speed(0) egg.shape(\u0026quot;circle\u0026quot;) egg.color(\u0026quot;lightgreen\u0026quot;) egg.penup() egg.goto(0, 120)  Step 4: Define moving directions We have four moving directions Up, Down, Right and Left. Each moving action is defined as a Function. A Function is a block of code which only runs when it is called.\ndef up(): head.direction = \u0026quot;up\u0026quot; def down(): head.direction = \u0026quot;down\u0026quot; def right(): head.direction = \u0026quot;right\u0026quot; def left(): head.direction = \u0026quot;left\u0026quot;  Keys are elemnts to control the direction os the moving Turtle. Mapping of the key and direction is below:\n Up -\u0026gt; Up Down -\u0026gt; Down Right -\u0026gt; Right Left -\u0026gt; Left  See the code details below:\ndef keys(): screen.listen() screen.onkeypress(up, 'Left') screen.onkeypress(down, \u0026quot;Down\u0026quot;) screen.onkeypress(right, \u0026quot;Right\u0026quot;) screen.onkeypress(left, \u0026quot;Left\u0026quot;) keys()  Step 5: Put them all together # Import the modules import turtle import random import time # Game screen screen = turtle.Screen() screen.title(\u0026quot;snake game\u0026quot;) screen.bgcolor(\u0026quot;black\u0026quot;) screen.setup(width=700, height=700) # Define the turtle head = turtle.Turtle() head.speed(0) head.shape(\u0026quot;square\u0026quot;) head.color(\u0026quot;green\u0026quot;, 'yellow') head.penup() head.goto(0, 0) head.direction = \u0026quot;stop\u0026quot; # Define the egg egg = turtle.Turtle() egg.speed(0) egg.shape(\u0026quot;circle\u0026quot;) egg.color(\u0026quot;lightgreen\u0026quot;) egg.penup() egg.goto(0, 120) # Direction moving functions def up(): head.direction = \u0026quot;up\u0026quot; def down(): head.direction = \u0026quot;down\u0026quot; def right(): head.direction = \u0026quot;right\u0026quot; def left(): head.direction = \u0026quot;left\u0026quot; # Define the direction keys def keys(): screen.listen() screen.onkeypress(up, 'Left') screen.onkeypress(down, \u0026quot;Down\u0026quot;) screen.onkeypress(right, \u0026quot;Right\u0026quot;) screen.onkeypress(left, \u0026quot;Left\u0026quot;) keys()  "
+},
+{
+	"uri": "/examples/snake-game/",
+	"title": "Snake Game",
+	"tags": [],
+	"description": "",
+	"content": " Snake Game  \nSnake game is a great example of practicing the principles and usage of:  Variables Strings Numbers For loops While loops If\u0026hellip;else conditionals Functions \u0026ndash; Method calls Basic modules such as Turtle, Random and Time  "
+},
+{
+	"uri": "/basics/strings/",
+	"title": "Strings",
+	"tags": [],
+	"description": "",
+	"content": " Strings \u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes (\u0026lsquo;\u0026hellip;\u0026rsquo;) or double quotes (\u0026ldquo;\u0026hellip;\u0026rdquo;) with the same result [2]. \\ can be used to escape quotes:\n"
+},
+{
+	"uri": "/examples/snake-game/class02/",
+	"title": "Connect all elements",
+	"tags": [],
+	"description": "",
+	"content": "  In this session, we\u0026rsquo;re going to connect all elements togther. Implement turtle\u0026rsquo;s move, eating eggs and grow long.\n Step 1: Move the turtle moves is another Function to move the turtle Up, Down, Right and Left.\ndef moves(): if head.direction == \u0026quot;up\u0026quot;: y = head.ycor() head.sety(y + 20) if head.direction == \u0026quot;down\u0026quot;: y = head.ycor() head.sety(y - 20) if head.direction == \u0026quot;left\u0026quot;: x = head.xcor() head.setx(x - 20) if head.direction == \u0026quot;right\u0026quot;: x = head.xcor() head.setx(x + 20)   direction is a variable holds the value of which direction the turtle is moving. x and y are the variables that are holding the value of x and y coordinates. xcor() and ycor() are the methods that retrieves the x and y coordinate values. setx() and sety() are the methods that set the x and y coordinate values.  Step 2: Define a List to store the length value of the eggs that the turtle has eaten. length=[]  Step 3: Screen update Screen must keep updating itself after each action, otherwise game progress stops refresh.\nscreen.update()   update() is a method that refreshes the latest status of the turtle.  Step 4: Moving spreed Define the moving speed of the turtle by set the sleep timeout after each moving step.\ntiime.sleep(0.1)   sleep() is the method to set the timeout of each step. The smaller the value is, the faster the turtle moves.  Step 5: Define the moving scope of the turtle in the screen As long as the turtle runs out of the scope of screen in width of 340px and in the height of 340px, game stops.\nif head.xcor() \u0026gt; 340 or head.xcor() \u0026lt; -340 or head.ycor() \u0026gt; 340 or head.ycor() \u0026lt; -330: time.sleep(1) head.direction = \u0026quot;stop\u0026quot; game_over() time.sleep(3)  Returns GAME OVER to the screen.\ndef game_over(): death = turtle.Turtle() death.speed(0) death.shape(\u0026quot;square\u0026quot;) death.color(\u0026quot;white\u0026quot;) death.penup() death.hideturtle() death.goto(0, 0) death.write(\u0026quot;GAME OVER\u0026quot;, align=\u0026quot;center\u0026quot;, font=(\u0026quot;Ariel\u0026quot;, 28, \u0026quot;normal\u0026quot;))   speed() is the method to set the speed of the turtle.Game over, set the speed value to 0. penup() is the method to stop drawing on the screen. hideturtle() is the method to hide the turtle. goto() is the method to set the position coordinate of the turtle. write() is the method to write text to the screen.  Step 6: Randomly populate the eggs Each egg will be randomly populated where 20 steps away from the turtle.\nif hd.distance(ft) \u0026lt; 20: a = random.randint(-320, 320) b = random.randint(-320, 320) ft.goto(a, b)   randomint() is a method to randomly generates a coordinate.  Step 7: Turtle eat eggs Whenever the turtle eats a new egg, it extends it\u0026rsquo;s length by 1.\nbd = turtle.Turtle() bd.speed(0) bd.shape(\u0026quot;square\u0026quot;) bd.color(\u0026quot;yellow\u0026quot;, 'green') bd.penup() l.append(bd)  Step 8: The extended part follows behind the turtle One egg extends the turtle by 1, the extended part should be followed behind the turtle.\nfor i in range(len(l)-1, 0, -1): a = l[i-1].xcor() b = l[i-1].ycor() l[i].goto(a, b)  Step 9: The turtle is always run at the front Set the position coordinate of the turtle to the front. It always run at the front.\nif len(l) \u0026gt; 0: a = hd.xcor() b = hd.ycor() l[0].goto(a, b)  Step 10: Whole work flow of the game # Import the modules import turtle import random import time # Game screen screen = turtle.Screen() screen.title(\u0026quot;snake game\u0026quot;) screen.bgcolor(\u0026quot;black\u0026quot;) screen.setup(width=700, height=700) # Define the turtle head = turtle.Turtle() head.speed(0) head.shape(\u0026quot;square\u0026quot;) head.color(\u0026quot;green\u0026quot;, 'yellow') head.penup() head.goto(0, 0) head.direction = \u0026quot;stop\u0026quot; # Define the egg egg = turtle.Turtle() egg.speed(0) egg.shape(\u0026quot;circle\u0026quot;) egg.color(\u0026quot;lightgreen\u0026quot;) egg.penup() egg.goto(0, 120) # Direction moving functions def up(): head.direction = \u0026quot;up\u0026quot; def down(): head.direction = \u0026quot;down\u0026quot; def right(): head.direction = \u0026quot;right\u0026quot; def left(): head.direction = \u0026quot;left\u0026quot; # Turtle move function def moves(): if head.direction == \u0026quot;up\u0026quot;: y = head.ycor() head.sety(y + 20) if head.direction == \u0026quot;down\u0026quot;: y = head.ycor() head.sety(y - 20) if head.direction == \u0026quot;left\u0026quot;: x = head.xcor() head.setx(x - 20) if head.direction == \u0026quot;right\u0026quot;: x = head.xcor() head.setx(x + 20) # Define the direction keys def keys(): screen.listen() screen.onkeypress(up, 'Up') screen.onkeypress(down, \u0026quot;Down\u0026quot;) screen.onkeypress(right, \u0026quot;Right\u0026quot;) screen.onkeypress(left, \u0026quot;Left\u0026quot;) keys() length=[] while True: screen.update() time.sleep(0.1) if head.xcor() \u0026gt; 340 or head.xcor() \u0026lt; -340 or head.ycor() \u0026gt; 340 or head.ycor() \u0026lt; -330: time.sleep(1) head.direction = \u0026quot;stop\u0026quot; game_over() time.sleep(3) if head.distance(egg) \u0026lt; 20: a = random.randint(-320, 320) b = random.randint(-320, 320) egg.goto(a, b) body = turtle.Turtle() body.speed(0) body.shape(\u0026quot;circle\u0026quot;) body.color(\u0026quot;yellow\u0026quot;, 'green') body.penup() length.append(body) for i in range(len(length)-1, 0, -1): a = length[i-1].xcor() b = length[i-1].ycor() length[i].goto(a, b) if len(length) \u0026gt; 0: a = head.xcor() b = head.ycor() length[0].goto(a, b) moves() screen.mainloop()  "
+},
+{
+	"uri": "/examples/",
+	"title": "Examples",
+	"tags": [],
+	"description": "",
+	"content": " Purpose of practicing examples  Practice Python basics in real examples Understand principles of data structures, variables, Strings, Numbers, List, For loops, conditionals and Functions Connect Python components and tools to achieve logical execution. Refresh our mind by various usage and scenarios of Python programming  RPG games  \nSnake game  \nPac man game  \nTetris game  \n"
+},
+{
+	"uri": "/basics/numbers/",
+	"title": "Numbers",
+	"tags": [],
+	"description": "",
+	"content": "\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping. For example:\n"
+},
+{
+	"uri": "/basics/list/",
+	"title": "List",
+	"tags": [],
+	"description": "",
+	"content": "\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.\nsquares = [1, 4, 9, 16, 25]  "
+},
+{
+	"uri": "/basics/dictionary/",
+	"title": "Dictionary",
+	"tags": [],
+	"description": "",
+	"content": "\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;Another useful data type built into Python is the dictionary (see Mapping Types — dict). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like append() and extend().\n"
+},
+{
+	"uri": "/basics/tuple/",
+	"title": "Tuple",
+	"tags": [],
+	"description": "",
+	"content": "\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;We saw that lists and strings have many common properties, such as indexing and slicing operations. They are two examples of sequence data types (see Sequence Types — list, tuple, range). Since Python is an evolving language, other sequence data types may be added. There is also another standard sequence data type: the tuple.\n"
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/",
+	"title": "Python programming",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

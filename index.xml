@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python programming</title>
+    <link>/</link>
+    <description>Recent content on Python programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set up the screen</title>
+      <link>/examples/snake-game/class01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/examples/snake-game/class01/</guid>
+      <description>In this session, we&amp;rsquo;re going to learn how to set up snake game playground.
+ Step 1: import required modules Turtle is a python feature like a drawing board, which lets you command a turtle to draw all over it! You can use functions like turtle.forward(...) and turtle.left(...) which can move the turtle around.
+import turtle  Random module implements pseudo-random number generators for various distributions.
+import random  Time module provides various time-related functions.</description>
+    </item>
+    
+    <item>
+      <title>Strings</title>
+      <link>/basics/strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/strings/</guid>
+      <description>Strings &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes (&amp;lsquo;&amp;hellip;&amp;rsquo;) or double quotes (&amp;ldquo;&amp;hellip;&amp;rdquo;) with the same result [2]. \ can be used to escape quotes:</description>
+    </item>
+    
+    <item>
+      <title>Connect all elements</title>
+      <link>/examples/snake-game/class02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/examples/snake-game/class02/</guid>
+      <description>In this session, we&amp;rsquo;re going to connect all elements togther. Implement turtle&amp;rsquo;s move, eating eggs and grow long.
+ Step 1: Move the turtle moves is another Function to move the turtle Up, Down, Right and Left.
+def moves(): if head.direction == &amp;quot;up&amp;quot;: y = head.ycor() head.sety(y + 20) if head.direction == &amp;quot;down&amp;quot;: y = head.ycor() head.sety(y - 20) if head.direction == &amp;quot;left&amp;quot;: x = head.xcor() head.setx(x - 20) if head.</description>
+    </item>
+    
+    <item>
+      <title>Numbers</title>
+      <link>/basics/numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/numbers/</guid>
+      <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping. For example:</description>
+    </item>
+    
+    <item>
+      <title>List</title>
+      <link>/basics/list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/list/</guid>
+      <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.
+squares = [1, 4, 9, 16, 25]  </description>
+    </item>
+    
+    <item>
+      <title>Dictionary</title>
+      <link>/basics/dictionary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/dictionary/</guid>
+      <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Another useful data type built into Python is the dictionary (see Mapping Types — dict). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key.</description>
+    </item>
+    
+    <item>
+      <title>Tuple</title>
+      <link>/basics/tuple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/tuple/</guid>
+      <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;We saw that lists and strings have many common properties, such as indexing and slicing operations. They are two examples of sequence data types (see Sequence Types — list, tuple, range). Since Python is an evolving language, other sequence data types may be added. There is also another standard sequence data type: the tuple.</description>
+    </item>
+    
+  </channel>
+</rss>

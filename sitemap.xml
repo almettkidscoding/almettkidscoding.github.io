@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/basics/</loc>
+  </url>
+  
+  <url>
+    <loc>/examples/snake-game/class01/</loc>
+  </url>
+  
+  <url>
+    <loc>/examples/snake-game/</loc>
+  </url>
+  
+  <url>
+    <loc>/basics/strings/</loc>
+  </url>
+  
+  <url>
+    <loc>/examples/snake-game/class02/</loc>
+  </url>
+  
+  <url>
+    <loc>/examples/</loc>
+  </url>
+  
+  <url>
+    <loc>/basics/numbers/</loc>
+  </url>
+  
+  <url>
+    <loc>/basics/list/</loc>
+  </url>
+  
+  <url>
+    <loc>/basics/dictionary/</loc>
+  </url>
+  
+  <url>
+    <loc>/basics/tuple/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

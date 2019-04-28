@@ -36,7 +36,7 @@ chapter: false
 - **xcor()** and **ycor()** are the methods that retrieves the x and y coordinate values.
 - **setx()** and **sety()** are the methods that set the x and y coordinate values.
 
-### Step 2: Define a **List** to store the collection of the eggs that the snake has eaten.
+### Step 2: Define a [**List**](/basics/list) to store the collection of the eggs that the snake has eaten.
 
 	length=[]
 

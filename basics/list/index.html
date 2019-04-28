@@ -12,18 +12,18 @@
     <title>List :: Python programming</title>
 
     
-    <link href="/css/nucleus.css?1556381688" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1556381688" rel="stylesheet">
-    <link href="/css/hybrid.css?1556381688" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1556381688" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1556381688" rel="stylesheet">
-    <link href="/css/auto-complete.css?1556381688" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1556381688" rel="stylesheet">
-    <link href="/css/theme.css?1556381688" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1556381688" rel="stylesheet">
+    <link href="/css/nucleus.css?1556415616" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1556415616" rel="stylesheet">
+    <link href="/css/hybrid.css?1556415616" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1556415616" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1556415616" rel="stylesheet">
+    <link href="/css/auto-complete.css?1556415616" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1556415616" rel="stylesheet">
+    <link href="/css/theme.css?1556415616" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1556415616" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1556381688"></script>
+    <script src="/js/jquery-3.3.1.min.js?1556415616"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -377,7 +377,45 @@
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.</p>
 
+<p>Example</p>
+
 <pre><code>squares = [1, 4, 9, 16, 25]
+</code></pre>
+
+<p>Lists can be indexed and sliced:</p>
+
+<pre><code>first_value = squares[0]  # indexing returns the item
+last_value = squares[-1]  # Returns the last value
+last_three_values = squares[-3:]  # Slicing returns a new value
+</code></pre>
+
+<p>Lists also support operations like concatenation:</p>
+
+<pre><code>after_concatenation = squares + [36, 49, 64, 81, 100]
+</code></pre>
+
+<p>Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content:</p>
+
+<pre><code>squares[4] = 36
+
+output:
+    1, 4, 9, 16, 36
+</code></pre>
+
+<p>You can also add new items at the end of the list, by using the append() method (we will see more about methods later):</p>
+
+<pre><code>cubes.append(216)  # add the cube of 6
+cubes.append(7 ** 3)  # and the cube of 7
+</code></pre>
+
+<p>It is possible to nest lists (create lists containing other lists), for example:</p>
+
+<pre><code>a = ['a', 'b', 'c']
+n = [1, 2, 3]
+x = [a, n]
+
+output:
+    [['a', 'b', 'c'], [1, 2, 3]]
 </code></pre>
 
 
@@ -604,20 +642,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1556381688"></script>
-    <script src="/js/perfect-scrollbar.min.js?1556381688"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1556381688"></script>
-    <script src="/js/jquery.sticky.js?1556381688"></script>
-    <script src="/js/featherlight.min.js?1556381688"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1556381688"></script>
-    <script src="/js/highlight.pack.js?1556381688"></script>
+    <script src="/js/clipboard.min.js?1556415616"></script>
+    <script src="/js/perfect-scrollbar.min.js?1556415616"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1556415616"></script>
+    <script src="/js/jquery.sticky.js?1556415616"></script>
+    <script src="/js/featherlight.min.js?1556415616"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1556415616"></script>
+    <script src="/js/highlight.pack.js?1556415616"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1556381688"></script>
-    <script src="/js/learn.js?1556381688"></script>
-    <script src="/js/hugo-learn.js?1556381688"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1556415616"></script>
+    <script src="/js/learn.js?1556415616"></script>
+    <script src="/js/hugo-learn.js?1556415616"></script>
 
-    <link href="/mermaid/mermaid.css?1556381688" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1556381688"></script>
+    <link href="/mermaid/mermaid.css?1556415616" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1556415616"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

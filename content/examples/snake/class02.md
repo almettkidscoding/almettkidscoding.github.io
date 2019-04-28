@@ -10,7 +10,13 @@ chapter: false
 > - Spend 3 to 5 minutes to explain each step/component. Another 5 minutes to practice and QA.
 > - Redirect to the new knowledge of Python to the other session.
 
-### Step 1: Move the snake
+### Before today's class
+
+|<center>Task</center> 	   |         <center>Time</center>                   |
+---------- | -------------------------------- |
+| <center>Quickly go through the [**previous class**](/examples/snake/class01)</center>  | <center>10 mins</center>  |
+
+### Step 1: Move the snake <sup style="color:red;">5 mins</sup>
 
 **moves** is another **Function** to move the snake **Up**, **Down**, **Right** and **Left**.
 
@@ -36,11 +42,11 @@ chapter: false
 - **xcor()** and **ycor()** are the methods that retrieves the x and y coordinate values.
 - **setx()** and **sety()** are the methods that set the x and y coordinate values.
 
-### Step 2: Define a [**List**](/basics/list) to store the collection of the eggs that the snake has eaten.
+### Step 2: Define a [**List**](/basics/list) to store the collection of the eggs that the snake has eaten <sup style="color:red;">5 mins</sup>
 
 	length=[]
 
-### Step 3: Screen update
+### Step 3: Screen update <sup style="color:red;">3 mins</sup>
 
 Screen must keep updating itself after each action, otherwise game progress stops refresh.
 
@@ -48,7 +54,7 @@ Screen must keep updating itself after each action, otherwise game progress stop
 
 - **update()** is a method that refreshes the latest status of the snake.
 
-### Step 4: Moving spreed
+### Step 4: Moving spreed <sup style="color:red;">3 mins</sup>
 
 Define the moving speed of the snake by set the sleep timeout after each moving step.
 
@@ -56,7 +62,7 @@ Define the moving speed of the snake by set the sleep timeout after each moving 
 
 - **sleep()** is the method to set the timeout of each step. The smaller the value is, the faster the snake moves.
 
-### Step 5: Define the moving scope of the snake in the screen
+### Step 5: Define the moving scope of the snake in the screen <sup style="color:red;">7 mins</sup>
 
 As long as the snake runs out of the scope of screen in width of 340px and in the height of 340px, game stops.
 
@@ -84,7 +90,7 @@ Returns **GAME OVER** to the screen.
 - **goto()** is the method to set the position coordinate of the snake.
 - **write()** is the method to write text to the screen.
 
-### Step 6: Randomly populate the eggs
+### Step 6: Randomly populate the eggs <sup style="color:red;">5 mins</sup>
 
 Each egg will be randomly populated where 20 steps away from the snake.
 
@@ -95,7 +101,7 @@ Each egg will be randomly populated where 20 steps away from the snake.
 
 - **randomint()** is a method to randomly generates a coordinate.
 
-### Step 7: Snake eat eggs
+### Step 7: Snake eat eggs <sup style="color:red;">5 mins</sup>
 
 Whenever the snake eats a new egg, it extends it's length by 1.
 
@@ -106,7 +112,7 @@ Whenever the snake eats a new egg, it extends it's length by 1.
         eaten_egg.penup()
         length.append(eaten_egg) # One egg extends the length of the snake by 1
 
-### Step 8: The extended part follows behind the snake
+### Step 8: The extended part follows behind the snake <sup style="color:red;">5 mins</sup>
 
 One egg extends the snake by 1, the extended part should be followed behind the snake.
 
@@ -115,7 +121,7 @@ One egg extends the snake by 1, the extended part should be followed behind the 
         b = length[i-1].ycor()
         length[i].goto(a, b)
 
-### Step 9: The snake is always run at the front
+### Step 9: The snake is always run at the front <sup style="color:red;">3 mins</sup>
 
 Set the position coordinate of the snake to the front. It always run at the front.
 
@@ -124,7 +130,7 @@ Set the position coordinate of the snake to the front. It always run at the fron
         b = snake.ycor()
         length[0].goto(a, b)
 
-### Step 10: Whole work flow of the game
+### Step 10: Whole work flow of the game <sup style="color:red;">10 mins</sup>
 
 	# Import the modules
 	import turtle
@@ -250,4 +256,13 @@ Set the position coordinate of the snake to the front. It always run at the fron
 
 	forest.mainloop()
 
+### Summorize <sup style="color:red;">10 mins</sup>
 
+What we have practiced and learned in this class?
+
+- Declaration of a **Function**
+- Usage of **if...else** conditionals
+- Set values to an **Object** or **Variable**
+- Basic usage of a **List**
+- Extended usage of **TUrtle** module
+- Work flow of a whole game

@@ -5,35 +5,38 @@ pre: "<b>2. </b>"
 chapter: false
 ---
 
-> In this session, we're going to connect all elements togther. Implement turtle's move, eating eggs and grow long.
+> In this session, we're going to connect all elements togther. Implement snake's move, eating eggs and grow long.
 
-### Step 1: Move the turtle
+> - Spend 3 to 5 minutes to explain each step/component. Another 5 minutes to practice and QA.
+> - Redirect to the new knowledge of Python to the other session.
 
-**moves** is another **Function** to move the turtle **Up**, **Down**, **Right** and **Left**.
+### Step 1: Move the snake
+
+**moves** is another **Function** to move the snake **Up**, **Down**, **Right** and **Left**.
 
 	def moves():
-	    if head.direction == "up":
-	        y = head.ycor()
-	        head.sety(y + 20)
+	    if snake.direction == "up":
+	        y = snake.ycor()
+	        snake.sety(y + 20)
 
-	    if head.direction == "down":
-	        y = head.ycor()
-	        head.sety(y - 20)
+	    if snake.direction == "down":
+	        y = snake.ycor()
+	        snake.sety(y - 20)
 
-	    if head.direction == "left":
-	        x = head.xcor()
-	        head.setx(x - 20)
+	    if snake.direction == "left":
+	        x = snake.xcor()
+	        snake.setx(x - 20)
 
-	    if head.direction == "right":
-	        x = head.xcor()
-	        head.setx(x + 20)
+	    if snake.direction == "right":
+	        x = snake.xcor()
+	        snake.setx(x + 20)
 
-- **direction** is a variable holds the value of which direction the turtle is moving.
+- **direction** is a variable holds the value of which direction the snake is moving.
 - **x** and **y** are the variables that are holding the value of x and y coordinates.
 - **xcor()** and **ycor()** are the methods that retrieves the x and y coordinate values.
 - **setx()** and **sety()** are the methods that set the x and y coordinate values.
 
-### Step 2: Define a **List** to store the length value of the eggs that the turtle has eaten.
+### Step 2: Define a **List** to store the collection of the eggs that the snake has eaten.
 
 	length=[]
 
@@ -41,23 +44,23 @@ chapter: false
 
 Screen must keep updating itself after each action, otherwise game progress stops refresh.
 
-	screen.update()
+	forest.update()
 
-- **update()** is a method that refreshes the latest status of the turtle.
+- **update()** is a method that refreshes the latest status of the snake.
 
 ### Step 4: Moving spreed
 
-Define the moving speed of the turtle by set the sleep timeout after each moving step.
+Define the moving speed of the snake by set the sleep timeout after each moving step.
 
-	tiime.sleep(0.1)
+	time.sleep(0.1)
 
-- **sleep()** is the method to set the timeout of each step. The smaller the value is, the faster the turtle moves.
+- **sleep()** is the method to set the timeout of each step. The smaller the value is, the faster the snake moves.
 
-### Step 5: Define the moving scope of the turtle in the screen
+### Step 5: Define the moving scope of the snake in the screen
 
-As long as the turtle runs out of the scope of screen in width of 340px and in the height of 340px, game stops.
+As long as the snake runs out of the scope of screen in width of 340px and in the height of 340px, game stops.
 
-	if head.xcor() > 340 or head.xcor() < -340 or head.ycor() > 340 or head.ycor() < -330:
+	if snake.xcor() > 340 or snake.xcor() < -340 or snake.ycor() > 340 or snake.ycor() < -330:
         time.sleep(1)
         head.direction = "stop"
         game_over()
@@ -69,57 +72,57 @@ Returns **GAME OVER** to the screen.
 	    death = turtle.Turtle()
 	    death.speed(0)
 	    death.shape("square")
-	    death.color("white")
+	    death.color("white") 
 	    death.penup()
 	    death.hideturtle()
 	    death.goto(0, 0)
 	    death.write("GAME OVER", align="center", font=("Ariel", 28, "normal"))
 
-- **speed()** is the method to set the speed of the turtle.Game over, set the speed value to 0.
+- **speed()** is the method to set the speed of the snake. Game over, set the speed value to 0.
 - **penup()** is the method to stop drawing on the screen.
 - **hideturtle()** is the method to hide the turtle.
-- **goto()** is the method to set the position coordinate of the turtle.
+- **goto()** is the method to set the position coordinate of the snake.
 - **write()** is the method to write text to the screen.
 
 ### Step 6: Randomly populate the eggs
 
-Each egg will be randomly populated where 20 steps away from the turtle.
+Each egg will be randomly populated where 20 steps away from the snake.
 
-	if hd.distance(ft) < 20:
+	if snake.distance(egg) < 20:
         a = random.randint(-320, 320)
         b = random.randint(-320, 320)
-        ft.goto(a, b)
+        egg.goto(a, b)
 
 - **randomint()** is a method to randomly generates a coordinate.
 
-### Step 7: Turtle eat eggs
+### Step 7: Snake eat eggs
 
-Whenever the turtle eats a new egg, it extends it's length by 1.
+Whenever the snake eats a new egg, it extends it's length by 1.
 
-	bd = turtle.Turtle()
-        bd.speed(0)
-        bd.shape("square")
-        bd.color("yellow", 'green')
-        bd.penup()
-        l.append(bd)
+	eaten_egg = turtle.Turtle()
+        eaten_egg.speed(0)
+        eaten_egg.shape("circle")
+        eaten_egg.color("yellow", 'green')
+        eaten_egg.penup()
+        length.append(eaten_egg) # One egg extends the length of the snake by 1
 
-### Step 8: The extended part follows behind the turtle
+### Step 8: The extended part follows behind the snake
 
-One egg extends the turtle by 1, the extended part should be followed behind the turtle.
+One egg extends the snake by 1, the extended part should be followed behind the snake.
 
 	for i in range(len(l)-1, 0, -1):
-        a = l[i-1].xcor()
-        b = l[i-1].ycor()
-        l[i].goto(a, b)
+        a = length[i-1].xcor()
+        b = length[i-1].ycor()
+        length[i].goto(a, b)
 
-### Step 9: The turtle is always run at the front
+### Step 9: The snake is always run at the front
 
-Set the position coordinate of the turtle to the front. It always run at the front.
+Set the position coordinate of the snake to the front. It always run at the front.
 
 	if len(l) > 0:
-        a = hd.xcor()
-        b = hd.ycor()
-        l[0].goto(a, b)
+        a = snake.xcor()
+        b = snake.ycor()
+        length[0].goto(a, b)
 
 ### Step 10: Whole work flow of the game
 
@@ -128,20 +131,20 @@ Set the position coordinate of the turtle to the front. It always run at the fro
 	import random
 	import time
 
-	# Game screen
-	screen = turtle.Screen()
-	screen.title("snake game")
-	screen.bgcolor("black")
-	screen.setup(width=700, height=700)
+	# Game forest
+	forest = turtle.Screen()
+	forest.title("snake game")
+	forest.bgcolor("green")
+	forest.setup(width=700, height=700)
 
 	# Define the turtle
-	head = turtle.Turtle()
-	head.speed(0)
-	head.shape("square")
-	head.color("green", 'yellow')
-	head.penup()
-	head.goto(0, 0)
-	head.direction = "stop"
+	snake = turtle.Turtle()
+	snake.speed(0)
+	snake.shape("square")
+	snake.color("green", 'yellow')
+	snake.penup() # Stop drawing
+	snake.goto(0, 0)
+	snake.direction = "stop"
 
 	# Define the egg
 	egg = turtle.Turtle()
@@ -151,69 +154,80 @@ Set the position coordinate of the turtle to the front. It always run at the fro
 	egg.penup()
 	egg.goto(0, 120)
 
+	# Game over
+	def game_over():
+	    death = turtle.Turtle()
+	    death.speed(0)
+	    death.shape("square")
+	    death.color("white")
+	    death.penup()
+	    death.hideturtle() # hide turtle from the screen
+	    death.goto(0, 0)
+	    death.write("GAME OVER", align="center", font=("Ariel", 28, "normal"))
+
 	# Direction moving functions
 	def up():
-	    head.direction = "up"
+	    snake.direction = "up"
 
 	def down():
-	    head.direction = "down"
+	    snake.direction = "down"
 
 	def right():
-	    head.direction = "right"
+	    snake.direction = "right"
 
 	def left():
-	    head.direction = "left"
+	    snake.direction = "left"
 
 	# Turtle move function
 	def moves():
-	    if head.direction == "up":
-	        y = head.ycor()
-	        head.sety(y + 20)
+		if snake.direction == "up":
+		    y = snake.ycor()
+		    snake.sety(y + 20)
 
-	    if head.direction == "down":
-	        y = head.ycor()
-	        head.sety(y - 20)
+		if snake.direction == "down":
+		    y = snake.ycor()
+		    snake.sety(y - 20)
 
-	    if head.direction == "left":
-	        x = head.xcor()
-	        head.setx(x - 20)
+		if snake.direction == "left":
+		    x = snake.xcor()
+		    snake.setx(x - 20)
 
-	    if head.direction == "right":
-	        x = head.xcor()
-	        head.setx(x + 20)
+		if snake.direction == "right":
+		    x = snake.xcor()
+		    snake.setx(x + 20)
 
 	# Define the direction keys
 	def keys():
-	    screen.listen()
-	    screen.onkeypress(up, 'Up')
-	    screen.onkeypress(down, "Down")
-	    screen.onkeypress(right, "Right")
-	    screen.onkeypress(left, "Left")
+	    forest.listen()
+	    forest.onkeypress(up, 'Up')
+	    forest.onkeypress(down, "Down")
+	    forest.onkeypress(right, "Right")
+	    forest.onkeypress(left, "Left")
 
 	keys()
 
 	length=[]
 	while True:
-	    screen.update()
+	    forest.update()
 	    time.sleep(0.1)
 
-	    if head.xcor() > 340 or head.xcor() < -340 or head.ycor() > 340 or head.ycor() < -330:
+	    if snake.xcor() > 340 or snake.xcor() < -340 or snake.ycor() > 340 or snake.ycor() < -330:
 	        time.sleep(1)
-	        head.direction = "stop"
+	        snake.direction = "stop"
 	        game_over()
 	        time.sleep(3)
 
-	    if head.distance(egg) < 20:
+	    if snake.distance(egg) < 20:
 	        a = random.randint(-320, 320)
 	        b = random.randint(-320, 320)
 	        egg.goto(a, b)
 
-	        body = turtle.Turtle()
-	        body.speed(0)
-	        body.shape("circle")
-	        body.color("yellow", 'green')
-	        body.penup()
-	        length.append(body)
+	        eaten_egg = turtle.Turtle()
+	        eaten_egg.speed(0)
+	        eaten_egg.shape("circle")
+	        eaten_egg.color("yellow", 'green')
+	        eaten_egg.penup()
+	        length.append(eaten_egg) # One egg extends the length of the snake by 1
 
 	    for i in range(len(length)-1, 0, -1):
 	        a = length[i-1].xcor()
@@ -221,11 +235,19 @@ Set the position coordinate of the turtle to the front. It always run at the fro
 	        length[i].goto(a, b)
 
 	    if len(length) > 0:
-	        a = head.xcor()
-	        b = head.ycor()
+	        a = snake.xcor()
+	        b = snake.ycor()
 	        length[0].goto(a, b)
 
 	    moves()
 
-	screen.mainloop()
+	    for i in length:
+	        if i.distance(snake) < 5:
+	            time.sleep(1)
+	            snake.direction = "stop"
+	            game_over()
+	            time.sleep(3)
+
+	forest.mainloop()
+
 

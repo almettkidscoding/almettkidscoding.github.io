@@ -28,9 +28,9 @@ import random  Time module provides various time-related functions.</description
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/examples/snake/class02/</guid>
-      <description>In this session, we&amp;rsquo;re going to connect all elements togther. Implement turtle&amp;rsquo;s move, eating eggs and grow long.
- Step 1: Move the turtle moves is another Function to move the turtle Up, Down, Right and Left.
-def moves(): if head.direction == &amp;quot;up&amp;quot;: y = head.ycor() head.sety(y + 20) if head.direction == &amp;quot;down&amp;quot;: y = head.ycor() head.sety(y - 20) if head.direction == &amp;quot;left&amp;quot;: x = head.xcor() head.setx(x - 20) if head.</description>
+      <description>In this session, we&amp;rsquo;re going to connect all elements togther. Implement snake&amp;rsquo;s move, eating eggs and grow long.
+ Spend 3 to 5 minutes to explain each step/component. Another 5 minutes to practice and QA. Redirect to the new knowledge of Python to the other session.   Step 1: Move the snake moves is another Function to move the snake Up, Down, Right and Left.
+def moves(): if snake.</description>
     </item>
     
   </channel>

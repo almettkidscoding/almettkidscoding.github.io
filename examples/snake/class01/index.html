@@ -12,18 +12,18 @@
     <title>Set up the screen :: Python programming</title>
 
     
-    <link href="/css/nucleus.css?1556381688" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1556381688" rel="stylesheet">
-    <link href="/css/hybrid.css?1556381688" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1556381688" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1556381688" rel="stylesheet">
-    <link href="/css/auto-complete.css?1556381688" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1556381688" rel="stylesheet">
-    <link href="/css/theme.css?1556381688" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1556381688" rel="stylesheet">
+    <link href="/css/nucleus.css?1556414330" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1556414330" rel="stylesheet">
+    <link href="/css/hybrid.css?1556414330" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1556414330" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1556414330" rel="stylesheet">
+    <link href="/css/auto-complete.css?1556414330" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1556414330" rel="stylesheet">
+    <link href="/css/theme.css?1556414330" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1556414330" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1556381688"></script>
+    <script src="/js/jquery-3.3.1.min.js?1556414330"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -420,25 +420,25 @@
 
 <h3 id="step-2-set-up-the-screen">Step 2: Set up the screen</h3>
 
-<p><strong>Screen</strong> is where we play the game. In this step, we&rsquo;re going to define <strong>title</strong>, <strong>background color</strong>, <strong>size</strong> of the playground</p>
+<p><strong>Forest</strong> is where we play the game. In this step, we&rsquo;re going to define <strong>title</strong>, <strong>background color</strong>, <strong>size</strong> of the playground</p>
 
-<pre><code>screen = turtle.Screen()
-screen.title(&quot;snake game&quot;)
-screen.bgcolor(&quot;black&quot;)
-screen.setup(width=700, height=700)
+<pre><code>forest = turtle.Screen()
+forest.title(&quot;snake game&quot;)
+forest.bgcolor(&quot;black&quot;)
+forest.setup(width=700, height=700)
 </code></pre>
 
 <h3 id="step-3-set-up-the-elements">Step 3: Set up the elements</h3>
 
-<p><strong>Turtle</strong> moves and extend itself by eating eggs that appears randomly on the screen. Let&rsquo;s define the <strong>Turtle</strong> object as <strong>head</strong> in the following code.</p>
+<p><strong>Snake</strong> moves and extend itself by eating eggs that appears randomly on the screen. Let&rsquo;s define the <strong>Turtle</strong> object as <strong>snake</strong> in the following code.</p>
 
-<pre><code>head = turtle.Turtle()
-head.speed(0)
-head.shape(&quot;square&quot;)
-head.color(&quot;green&quot;, 'yellow')
-head.penup()
-head.goto(0, 0)
-head.direction = &quot;stop&quot;
+<pre><code>snake = turtle.Turtle()
+snake.speed(0)
+snake.shape(&quot;square&quot;)
+snake.color(&quot;green&quot;, 'yellow')
+snake.penup()
+snake.goto(0, 0)
+snake.direction = &quot;stop&quot;
 </code></pre>
 
 <p>Define the egg:</p>
@@ -456,19 +456,19 @@ egg.goto(0, 120)
 <p>We have four moving directions <strong>Up</strong>, <strong>Down</strong>, <strong>Right</strong> and <strong>Left</strong>. Each moving action is defined as a <strong>Function</strong>. A <strong>Function</strong> is a block of code which only runs when it is called.</p>
 
 <pre><code>def up():
-    head.direction = &quot;up&quot;
+    snake.direction = &quot;up&quot;
 
 def down():
-    head.direction = &quot;down&quot;
+    snake.direction = &quot;down&quot;
 
 def right():
-    head.direction = &quot;right&quot;
+    snake.direction = &quot;right&quot;
 
 def left():
-    head.direction = &quot;left&quot;
+    snake.direction = &quot;left&quot;
 </code></pre>
 
-<p><strong>Keys</strong> are elemnts to control the direction os the moving <strong>Turtle</strong>. Mapping of the key and direction is below:</p>
+<p><strong>Keys</strong> are elemnts to control the direction os the moving <strong>snake</strong>. Mapping of the key and direction is below:</p>
 
 <ul>
 <li><strong>Up</strong> -&gt; Up</li>
@@ -480,11 +480,11 @@ def left():
 <p>See the code details below:</p>
 
 <pre><code>def keys():
-    screen.listen()
-    screen.onkeypress(up, 'Left')
-    screen.onkeypress(down, &quot;Down&quot;)
-    screen.onkeypress(right, &quot;Right&quot;)
-    screen.onkeypress(left, &quot;Left&quot;)
+    forest.listen()
+    forest.onkeypress(up, 'Left')
+    forest.onkeypress(down, &quot;Down&quot;)
+    forest.onkeypress(right, &quot;Right&quot;)
+    forest.onkeypress(left, &quot;Left&quot;)
 
 keys()
 </code></pre>
@@ -497,19 +497,19 @@ import random
 import time
 
 # Game screen
-screen = turtle.Screen()
-screen.title(&quot;snake game&quot;)
-screen.bgcolor(&quot;black&quot;)
-screen.setup(width=700, height=700)
+forest = turtle.Screen()
+forest.title(&quot;snake game&quot;)
+forest.bgcolor(&quot;black&quot;)
+forest.setup(width=700, height=700)
 
-# Define the turtle
-head = turtle.Turtle()
-head.speed(0)
-head.shape(&quot;square&quot;)
-head.color(&quot;green&quot;, 'yellow')
-head.penup()
-head.goto(0, 0)
-head.direction = &quot;stop&quot;
+# Define the snake
+snake = turtle.Turtle()
+snake.speed(0)
+snake.shape(&quot;square&quot;)
+snake.color(&quot;green&quot;, 'yellow')
+snake.penup()
+snake.goto(0, 0)
+snake.direction = &quot;stop&quot;
 
 # Define the egg
 egg = turtle.Turtle()
@@ -521,24 +521,24 @@ egg.goto(0, 120)
 
 # Direction moving functions
 def up():
-    head.direction = &quot;up&quot;
+    snake.direction = &quot;up&quot;
 
 def down():
-    head.direction = &quot;down&quot;
+    snake.direction = &quot;down&quot;
 
 def right():
-    head.direction = &quot;right&quot;
+    snake.direction = &quot;right&quot;
 
 def left():
-    head.direction = &quot;left&quot;
+    snake.direction = &quot;left&quot;
 
 # Define the direction keys
 def keys():
-    screen.listen()
-    screen.onkeypress(up, 'Left')
-    screen.onkeypress(down, &quot;Down&quot;)
-    screen.onkeypress(right, &quot;Right&quot;)
-    screen.onkeypress(left, &quot;Left&quot;)
+    forest.listen()
+    forest.onkeypress(up, 'Left')
+    forest.onkeypress(down, &quot;Down&quot;)
+    forest.onkeypress(right, &quot;Right&quot;)
+    forest.onkeypress(left, &quot;Left&quot;)
 
 keys()
 </code></pre>
@@ -768,20 +768,20 @@ keys()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1556381688"></script>
-    <script src="/js/perfect-scrollbar.min.js?1556381688"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1556381688"></script>
-    <script src="/js/jquery.sticky.js?1556381688"></script>
-    <script src="/js/featherlight.min.js?1556381688"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1556381688"></script>
-    <script src="/js/highlight.pack.js?1556381688"></script>
+    <script src="/js/clipboard.min.js?1556414330"></script>
+    <script src="/js/perfect-scrollbar.min.js?1556414330"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1556414330"></script>
+    <script src="/js/jquery.sticky.js?1556414330"></script>
+    <script src="/js/featherlight.min.js?1556414330"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1556414330"></script>
+    <script src="/js/highlight.pack.js?1556414330"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1556381688"></script>
-    <script src="/js/learn.js?1556381688"></script>
-    <script src="/js/hugo-learn.js?1556381688"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1556414330"></script>
+    <script src="/js/learn.js?1556414330"></script>
+    <script src="/js/hugo-learn.js?1556414330"></script>
 
-    <link href="/mermaid/mermaid.css?1556381688" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1556381688"></script>
+    <link href="/mermaid/mermaid.css?1556414330" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1556414330"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -23,24 +23,24 @@ chapter: false
 
 ### Step 2: Set up the screen
 
-**Screen** is where we play the game. In this step, we're going to define **title**, **background color**, **size** of the playground
+**Forest** is where we play the game. In this step, we're going to define **title**, **background color**, **size** of the playground
 
-	screen = turtle.Screen()
-	screen.title("snake game")
-	screen.bgcolor("black")
-	screen.setup(width=700, height=700)
+	forest = turtle.Screen()
+	forest.title("snake game")
+	forest.bgcolor("black")
+	forest.setup(width=700, height=700)
 
 ### Step 3: Set up the elements
 
-**Turtle** moves and extend itself by eating eggs that appears randomly on the screen. Let's define the **Turtle** object as **head** in the following code.
+**Snake** moves and extend itself by eating eggs that appears randomly on the screen. Let's define the **Turtle** object as **snake** in the following code.
 
-	head = turtle.Turtle()
-	head.speed(0)
-	head.shape("square")
-	head.color("green", 'yellow')
-	head.penup()
-	head.goto(0, 0)
-	head.direction = "stop"
+	snake = turtle.Turtle()
+	snake.speed(0)
+	snake.shape("square")
+	snake.color("green", 'yellow')
+	snake.penup()
+	snake.goto(0, 0)
+	snake.direction = "stop"
 
 Define the egg:
 
@@ -56,18 +56,18 @@ Define the egg:
 We have four moving directions **Up**, **Down**, **Right** and **Left**. Each moving action is defined as a **Function**. A **Function** is a block of code which only runs when it is called.
 
 	def up():
-	    head.direction = "up"
+	    snake.direction = "up"
 
 	def down():
-	    head.direction = "down"
+	    snake.direction = "down"
 
 	def right():
-	    head.direction = "right"
+	    snake.direction = "right"
 
 	def left():
-    	head.direction = "left"
+    	snake.direction = "left"
 
-**Keys** are elemnts to control the direction os the moving **Turtle**. Mapping of the key and direction is below:
+**Keys** are elemnts to control the direction os the moving **snake**. Mapping of the key and direction is below:
 
 - **Up** -> Up 
 - **Down** -> Down
@@ -77,11 +77,11 @@ We have four moving directions **Up**, **Down**, **Right** and **Left**. Each mo
 See the code details below:
 
 	def keys():
-	    screen.listen()
-	    screen.onkeypress(up, 'Left')
-	    screen.onkeypress(down, "Down")
-	    screen.onkeypress(right, "Right")
-	    screen.onkeypress(left, "Left")
+	    forest.listen()
+	    forest.onkeypress(up, 'Left')
+	    forest.onkeypress(down, "Down")
+	    forest.onkeypress(right, "Right")
+	    forest.onkeypress(left, "Left")
 
 	keys()
 
@@ -93,19 +93,19 @@ See the code details below:
 	import time
 
 	# Game screen
-	screen = turtle.Screen()
-	screen.title("snake game")
-	screen.bgcolor("black")
-	screen.setup(width=700, height=700)
+	forest = turtle.Screen()
+	forest.title("snake game")
+	forest.bgcolor("black")
+	forest.setup(width=700, height=700)
 
-	# Define the turtle
-	head = turtle.Turtle()
-	head.speed(0)
-	head.shape("square")
-	head.color("green", 'yellow')
-	head.penup()
-	head.goto(0, 0)
-	head.direction = "stop"
+	# Define the snake
+	snake = turtle.Turtle()
+	snake.speed(0)
+	snake.shape("square")
+	snake.color("green", 'yellow')
+	snake.penup()
+	snake.goto(0, 0)
+	snake.direction = "stop"
 
 	# Define the egg
 	egg = turtle.Turtle()
@@ -117,24 +117,24 @@ See the code details below:
 
 	# Direction moving functions
 	def up():
-	    head.direction = "up"
+	    snake.direction = "up"
 
 	def down():
-	    head.direction = "down"
+	    snake.direction = "down"
 
 	def right():
-	    head.direction = "right"
+	    snake.direction = "right"
 
 	def left():
-	    head.direction = "left"
+	    snake.direction = "left"
 
 	# Define the direction keys
 	def keys():
-	    screen.listen()
-	    screen.onkeypress(up, 'Left')
-	    screen.onkeypress(down, "Down")
-	    screen.onkeypress(right, "Right")
-	    screen.onkeypress(left, "Left")
+	    forest.listen()
+	    forest.onkeypress(up, 'Left')
+	    forest.onkeypress(down, "Down")
+	    forest.onkeypress(right, "Right")
+	    forest.onkeypress(left, "Left")
 
 	keys()
 

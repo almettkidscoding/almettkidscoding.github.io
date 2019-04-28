@@ -12,18 +12,18 @@
     <title>Connect all elements :: Python programming</title>
 
     
-    <link href="/css/nucleus.css?1556381688" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1556381688" rel="stylesheet">
-    <link href="/css/hybrid.css?1556381688" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1556381688" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1556381688" rel="stylesheet">
-    <link href="/css/auto-complete.css?1556381688" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1556381688" rel="stylesheet">
-    <link href="/css/theme.css?1556381688" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1556381688" rel="stylesheet">
+    <link href="/css/nucleus.css?1556414330" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1556414330" rel="stylesheet">
+    <link href="/css/hybrid.css?1556414330" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1556414330" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1556414330" rel="stylesheet">
+    <link href="/css/auto-complete.css?1556414330" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1556414330" rel="stylesheet">
+    <link href="/css/theme.css?1556414330" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1556414330" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1556381688"></script>
+    <script src="/js/jquery-3.3.1.min.js?1556414330"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -363,15 +363,15 @@
 <ul>
 <li>
 <ul>
-<li><a href="#step-1-move-the-turtle">Step 1: Move the turtle</a></li>
-<li><a href="#step-2-define-a-list-to-store-the-length-value-of-the-eggs-that-the-turtle-has-eaten">Step 2: Define a <strong>List</strong> to store the length value of the eggs that the turtle has eaten.</a></li>
+<li><a href="#step-1-move-the-snake">Step 1: Move the snake</a></li>
+<li><a href="#step-2-define-a-list-to-store-the-collection-of-the-eggs-that-the-snake-has-eaten">Step 2: Define a <strong>List</strong> to store the collection of the eggs that the snake has eaten.</a></li>
 <li><a href="#step-3-screen-update">Step 3: Screen update</a></li>
 <li><a href="#step-4-moving-spreed">Step 4: Moving spreed</a></li>
-<li><a href="#step-5-define-the-moving-scope-of-the-turtle-in-the-screen">Step 5: Define the moving scope of the turtle in the screen</a></li>
+<li><a href="#step-5-define-the-moving-scope-of-the-snake-in-the-screen">Step 5: Define the moving scope of the snake in the screen</a></li>
 <li><a href="#step-6-randomly-populate-the-eggs">Step 6: Randomly populate the eggs</a></li>
-<li><a href="#step-7-turtle-eat-eggs">Step 7: Turtle eat eggs</a></li>
-<li><a href="#step-8-the-extended-part-follows-behind-the-turtle">Step 8: The extended part follows behind the turtle</a></li>
-<li><a href="#step-9-the-turtle-is-always-run-at-the-front">Step 9: The turtle is always run at the front</a></li>
+<li><a href="#step-7-snake-eat-eggs">Step 7: Snake eat eggs</a></li>
+<li><a href="#step-8-the-extended-part-follows-behind-the-snake">Step 8: The extended part follows behind the snake</a></li>
+<li><a href="#step-9-the-snake-is-always-run-at-the-front">Step 9: The snake is always run at the front</a></li>
 <li><a href="#step-10-whole-work-flow-of-the-game">Step 10: Whole work flow of the game</a></li>
 </ul></li>
 </ul></li>
@@ -403,39 +403,44 @@
 
 
 <blockquote>
-<p>In this session, we&rsquo;re going to connect all elements togther. Implement turtle&rsquo;s move, eating eggs and grow long.</p>
+<p>In this session, we&rsquo;re going to connect all elements togther. Implement snake&rsquo;s move, eating eggs and grow long.</p>
+
+<ul>
+<li>Spend 3 to 5 minutes to explain each step/component. Another 5 minutes to practice and QA.</li>
+<li>Redirect to the new knowledge of Python to the other session.</li>
+</ul>
 </blockquote>
 
-<h3 id="step-1-move-the-turtle">Step 1: Move the turtle</h3>
+<h3 id="step-1-move-the-snake">Step 1: Move the snake</h3>
 
-<p><strong>moves</strong> is another <strong>Function</strong> to move the turtle <strong>Up</strong>, <strong>Down</strong>, <strong>Right</strong> and <strong>Left</strong>.</p>
+<p><strong>moves</strong> is another <strong>Function</strong> to move the snake <strong>Up</strong>, <strong>Down</strong>, <strong>Right</strong> and <strong>Left</strong>.</p>
 
 <pre><code>def moves():
-    if head.direction == &quot;up&quot;:
-        y = head.ycor()
-        head.sety(y + 20)
+    if snake.direction == &quot;up&quot;:
+        y = snake.ycor()
+        snake.sety(y + 20)
 
-    if head.direction == &quot;down&quot;:
-        y = head.ycor()
-        head.sety(y - 20)
+    if snake.direction == &quot;down&quot;:
+        y = snake.ycor()
+        snake.sety(y - 20)
 
-    if head.direction == &quot;left&quot;:
-        x = head.xcor()
-        head.setx(x - 20)
+    if snake.direction == &quot;left&quot;:
+        x = snake.xcor()
+        snake.setx(x - 20)
 
-    if head.direction == &quot;right&quot;:
-        x = head.xcor()
-        head.setx(x + 20)
+    if snake.direction == &quot;right&quot;:
+        x = snake.xcor()
+        snake.setx(x + 20)
 </code></pre>
 
 <ul>
-<li><strong>direction</strong> is a variable holds the value of which direction the turtle is moving.</li>
+<li><strong>direction</strong> is a variable holds the value of which direction the snake is moving.</li>
 <li><strong>x</strong> and <strong>y</strong> are the variables that are holding the value of x and y coordinates.</li>
 <li><strong>xcor()</strong> and <strong>ycor()</strong> are the methods that retrieves the x and y coordinate values.</li>
 <li><strong>setx()</strong> and <strong>sety()</strong> are the methods that set the x and y coordinate values.</li>
 </ul>
 
-<h3 id="step-2-define-a-list-to-store-the-length-value-of-the-eggs-that-the-turtle-has-eaten">Step 2: Define a <strong>List</strong> to store the length value of the eggs that the turtle has eaten.</h3>
+<h3 id="step-2-define-a-list-to-store-the-collection-of-the-eggs-that-the-snake-has-eaten">Step 2: Define a <strong>List</strong> to store the collection of the eggs that the snake has eaten.</h3>
 
 <pre><code>length=[]
 </code></pre>
@@ -444,29 +449,29 @@
 
 <p>Screen must keep updating itself after each action, otherwise game progress stops refresh.</p>
 
-<pre><code>screen.update()
+<pre><code>forest.update()
 </code></pre>
 
 <ul>
-<li><strong>update()</strong> is a method that refreshes the latest status of the turtle.</li>
+<li><strong>update()</strong> is a method that refreshes the latest status of the snake.</li>
 </ul>
 
 <h3 id="step-4-moving-spreed">Step 4: Moving spreed</h3>
 
-<p>Define the moving speed of the turtle by set the sleep timeout after each moving step.</p>
+<p>Define the moving speed of the snake by set the sleep timeout after each moving step.</p>
 
-<pre><code>tiime.sleep(0.1)
+<pre><code>time.sleep(0.1)
 </code></pre>
 
 <ul>
-<li><strong>sleep()</strong> is the method to set the timeout of each step. The smaller the value is, the faster the turtle moves.</li>
+<li><strong>sleep()</strong> is the method to set the timeout of each step. The smaller the value is, the faster the snake moves.</li>
 </ul>
 
-<h3 id="step-5-define-the-moving-scope-of-the-turtle-in-the-screen">Step 5: Define the moving scope of the turtle in the screen</h3>
+<h3 id="step-5-define-the-moving-scope-of-the-snake-in-the-screen">Step 5: Define the moving scope of the snake in the screen</h3>
 
-<p>As long as the turtle runs out of the scope of screen in width of 340px and in the height of 340px, game stops.</p>
+<p>As long as the snake runs out of the scope of screen in width of 340px and in the height of 340px, game stops.</p>
 
-<pre><code>if head.xcor() &gt; 340 or head.xcor() &lt; -340 or head.ycor() &gt; 340 or head.ycor() &lt; -330:
+<pre><code>if snake.xcor() &gt; 340 or snake.xcor() &lt; -340 or snake.ycor() &gt; 340 or snake.ycor() &lt; -330:
     time.sleep(1)
     head.direction = &quot;stop&quot;
     game_over()
@@ -479,7 +484,7 @@
     death = turtle.Turtle()
     death.speed(0)
     death.shape(&quot;square&quot;)
-    death.color(&quot;white&quot;)
+    death.color(&quot;white&quot;) 
     death.penup()
     death.hideturtle()
     death.goto(0, 0)
@@ -487,57 +492,57 @@
 </code></pre>
 
 <ul>
-<li><strong>speed()</strong> is the method to set the speed of the turtle.Game over, set the speed value to 0.</li>
+<li><strong>speed()</strong> is the method to set the speed of the snake. Game over, set the speed value to 0.</li>
 <li><strong>penup()</strong> is the method to stop drawing on the screen.</li>
 <li><strong>hideturtle()</strong> is the method to hide the turtle.</li>
-<li><strong>goto()</strong> is the method to set the position coordinate of the turtle.</li>
+<li><strong>goto()</strong> is the method to set the position coordinate of the snake.</li>
 <li><strong>write()</strong> is the method to write text to the screen.</li>
 </ul>
 
 <h3 id="step-6-randomly-populate-the-eggs">Step 6: Randomly populate the eggs</h3>
 
-<p>Each egg will be randomly populated where 20 steps away from the turtle.</p>
+<p>Each egg will be randomly populated where 20 steps away from the snake.</p>
 
-<pre><code>if hd.distance(ft) &lt; 20:
+<pre><code>if snake.distance(egg) &lt; 20:
     a = random.randint(-320, 320)
     b = random.randint(-320, 320)
-    ft.goto(a, b)
+    egg.goto(a, b)
 </code></pre>
 
 <ul>
 <li><strong>randomint()</strong> is a method to randomly generates a coordinate.</li>
 </ul>
 
-<h3 id="step-7-turtle-eat-eggs">Step 7: Turtle eat eggs</h3>
+<h3 id="step-7-snake-eat-eggs">Step 7: Snake eat eggs</h3>
 
-<p>Whenever the turtle eats a new egg, it extends it&rsquo;s length by 1.</p>
+<p>Whenever the snake eats a new egg, it extends it&rsquo;s length by 1.</p>
 
-<pre><code>bd = turtle.Turtle()
-    bd.speed(0)
-    bd.shape(&quot;square&quot;)
-    bd.color(&quot;yellow&quot;, 'green')
-    bd.penup()
-    l.append(bd)
+<pre><code>eaten_egg = turtle.Turtle()
+    eaten_egg.speed(0)
+    eaten_egg.shape(&quot;circle&quot;)
+    eaten_egg.color(&quot;yellow&quot;, 'green')
+    eaten_egg.penup()
+    length.append(eaten_egg) # One egg extends the length of the snake by 1
 </code></pre>
 
-<h3 id="step-8-the-extended-part-follows-behind-the-turtle">Step 8: The extended part follows behind the turtle</h3>
+<h3 id="step-8-the-extended-part-follows-behind-the-snake">Step 8: The extended part follows behind the snake</h3>
 
-<p>One egg extends the turtle by 1, the extended part should be followed behind the turtle.</p>
+<p>One egg extends the snake by 1, the extended part should be followed behind the snake.</p>
 
 <pre><code>for i in range(len(l)-1, 0, -1):
-    a = l[i-1].xcor()
-    b = l[i-1].ycor()
-    l[i].goto(a, b)
+    a = length[i-1].xcor()
+    b = length[i-1].ycor()
+    length[i].goto(a, b)
 </code></pre>
 
-<h3 id="step-9-the-turtle-is-always-run-at-the-front">Step 9: The turtle is always run at the front</h3>
+<h3 id="step-9-the-snake-is-always-run-at-the-front">Step 9: The snake is always run at the front</h3>
 
-<p>Set the position coordinate of the turtle to the front. It always run at the front.</p>
+<p>Set the position coordinate of the snake to the front. It always run at the front.</p>
 
 <pre><code>if len(l) &gt; 0:
-    a = hd.xcor()
-    b = hd.ycor()
-    l[0].goto(a, b)
+    a = snake.xcor()
+    b = snake.ycor()
+    length[0].goto(a, b)
 </code></pre>
 
 <h3 id="step-10-whole-work-flow-of-the-game">Step 10: Whole work flow of the game</h3>
@@ -547,20 +552,20 @@ import turtle
 import random
 import time
 
-# Game screen
-screen = turtle.Screen()
-screen.title(&quot;snake game&quot;)
-screen.bgcolor(&quot;black&quot;)
-screen.setup(width=700, height=700)
+# Game forest
+forest = turtle.Screen()
+forest.title(&quot;snake game&quot;)
+forest.bgcolor(&quot;green&quot;)
+forest.setup(width=700, height=700)
 
 # Define the turtle
-head = turtle.Turtle()
-head.speed(0)
-head.shape(&quot;square&quot;)
-head.color(&quot;green&quot;, 'yellow')
-head.penup()
-head.goto(0, 0)
-head.direction = &quot;stop&quot;
+snake = turtle.Turtle()
+snake.speed(0)
+snake.shape(&quot;square&quot;)
+snake.color(&quot;green&quot;, 'yellow')
+snake.penup() # Stop drawing
+snake.goto(0, 0)
+snake.direction = &quot;stop&quot;
 
 # Define the egg
 egg = turtle.Turtle()
@@ -570,69 +575,80 @@ egg.color(&quot;lightgreen&quot;)
 egg.penup()
 egg.goto(0, 120)
 
+# Game over
+def game_over():
+    death = turtle.Turtle()
+    death.speed(0)
+    death.shape(&quot;square&quot;)
+    death.color(&quot;white&quot;)
+    death.penup()
+    death.hideturtle() # hide turtle from the screen
+    death.goto(0, 0)
+    death.write(&quot;GAME OVER&quot;, align=&quot;center&quot;, font=(&quot;Ariel&quot;, 28, &quot;normal&quot;))
+
 # Direction moving functions
 def up():
-    head.direction = &quot;up&quot;
+    snake.direction = &quot;up&quot;
 
 def down():
-    head.direction = &quot;down&quot;
+    snake.direction = &quot;down&quot;
 
 def right():
-    head.direction = &quot;right&quot;
+    snake.direction = &quot;right&quot;
 
 def left():
-    head.direction = &quot;left&quot;
+    snake.direction = &quot;left&quot;
 
 # Turtle move function
 def moves():
-    if head.direction == &quot;up&quot;:
-        y = head.ycor()
-        head.sety(y + 20)
+    if snake.direction == &quot;up&quot;:
+        y = snake.ycor()
+        snake.sety(y + 20)
 
-    if head.direction == &quot;down&quot;:
-        y = head.ycor()
-        head.sety(y - 20)
+    if snake.direction == &quot;down&quot;:
+        y = snake.ycor()
+        snake.sety(y - 20)
 
-    if head.direction == &quot;left&quot;:
-        x = head.xcor()
-        head.setx(x - 20)
+    if snake.direction == &quot;left&quot;:
+        x = snake.xcor()
+        snake.setx(x - 20)
 
-    if head.direction == &quot;right&quot;:
-        x = head.xcor()
-        head.setx(x + 20)
+    if snake.direction == &quot;right&quot;:
+        x = snake.xcor()
+        snake.setx(x + 20)
 
 # Define the direction keys
 def keys():
-    screen.listen()
-    screen.onkeypress(up, 'Up')
-    screen.onkeypress(down, &quot;Down&quot;)
-    screen.onkeypress(right, &quot;Right&quot;)
-    screen.onkeypress(left, &quot;Left&quot;)
+    forest.listen()
+    forest.onkeypress(up, 'Up')
+    forest.onkeypress(down, &quot;Down&quot;)
+    forest.onkeypress(right, &quot;Right&quot;)
+    forest.onkeypress(left, &quot;Left&quot;)
 
 keys()
 
 length=[]
 while True:
-    screen.update()
+    forest.update()
     time.sleep(0.1)
 
-    if head.xcor() &gt; 340 or head.xcor() &lt; -340 or head.ycor() &gt; 340 or head.ycor() &lt; -330:
+    if snake.xcor() &gt; 340 or snake.xcor() &lt; -340 or snake.ycor() &gt; 340 or snake.ycor() &lt; -330:
         time.sleep(1)
-        head.direction = &quot;stop&quot;
+        snake.direction = &quot;stop&quot;
         game_over()
         time.sleep(3)
 
-    if head.distance(egg) &lt; 20:
+    if snake.distance(egg) &lt; 20:
         a = random.randint(-320, 320)
         b = random.randint(-320, 320)
         egg.goto(a, b)
 
-        body = turtle.Turtle()
-        body.speed(0)
-        body.shape(&quot;circle&quot;)
-        body.color(&quot;yellow&quot;, 'green')
-        body.penup()
-        length.append(body)
+        eaten_egg = turtle.Turtle()
+        eaten_egg.speed(0)
+        eaten_egg.shape(&quot;circle&quot;)
+        eaten_egg.color(&quot;yellow&quot;, 'green')
+        eaten_egg.penup()
+        length.append(eaten_egg) # One egg extends the length of the snake by 1
 
     for i in range(len(length)-1, 0, -1):
         a = length[i-1].xcor()
@@ -640,13 +656,20 @@ while True:
         length[i].goto(a, b)
 
     if len(length) &gt; 0:
-        a = head.xcor()
-        b = head.ycor()
+        a = snake.xcor()
+        b = snake.ycor()
         length[0].goto(a, b)
 
     moves()
 
-screen.mainloop()
+    for i in length:
+        if i.distance(snake) &lt; 5:
+            time.sleep(1)
+            snake.direction = &quot;stop&quot;
+            game_over()
+            time.sleep(3)
+
+forest.mainloop()
 </code></pre>
 
 
@@ -874,20 +897,20 @@ screen.mainloop()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1556381688"></script>
-    <script src="/js/perfect-scrollbar.min.js?1556381688"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1556381688"></script>
-    <script src="/js/jquery.sticky.js?1556381688"></script>
-    <script src="/js/featherlight.min.js?1556381688"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1556381688"></script>
-    <script src="/js/highlight.pack.js?1556381688"></script>
+    <script src="/js/clipboard.min.js?1556414330"></script>
+    <script src="/js/perfect-scrollbar.min.js?1556414330"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1556414330"></script>
+    <script src="/js/jquery.sticky.js?1556414330"></script>
+    <script src="/js/featherlight.min.js?1556414330"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1556414330"></script>
+    <script src="/js/highlight.pack.js?1556414330"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1556381688"></script>
-    <script src="/js/learn.js?1556381688"></script>
-    <script src="/js/hugo-learn.js?1556381688"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1556414330"></script>
+    <script src="/js/learn.js?1556414330"></script>
+    <script src="/js/hugo-learn.js?1556414330"></script>
 
-    <link href="/mermaid/mermaid.css?1556381688" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1556381688"></script>
+    <link href="/mermaid/mermaid.css?1556414330" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1556414330"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

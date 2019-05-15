@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Strings :: Python programming</title>
+    <title>Fully functioning game :: Python programming</title>
 
     
     <link href="/css/nucleus.css?1557886600" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/strings/">
+  <body class="" data-url="/examples/snake/class03/">
     <nav id="sidebar" class="">
 
 
@@ -61,7 +61,7 @@
   
     
     <li data-nav-id="/basics/" title="Basics" class="dd-item 
-        parent
+        
         
         
         ">
@@ -85,7 +85,7 @@
  
   
     
-      <li data-nav-id="/basics/strings/" title="Strings" class="dd-item active">
+      <li data-nav-id="/basics/strings/" title="Strings" class="dd-item ">
         <a href="/basics/strings/">
         <b>1. </b>Strings
         
@@ -207,7 +207,7 @@
   
     
     <li data-nav-id="/examples/" title="Examples" class="dd-item 
-        
+        parent
         
         
         ">
@@ -234,7 +234,7 @@
   
     
     <li data-nav-id="/examples/snake/" title="Snake Game" class="dd-item 
-        
+        parent
         
         
         ">
@@ -296,7 +296,7 @@
  
   
     
-      <li data-nav-id="/examples/snake/class03/" title="Fully functioning game" class="dd-item ">
+      <li data-nav-id="/examples/snake/class03/" title="Fully functioning game" class="dd-item active">
         <a href="/examples/snake/class03/">
         <b>3. </b>Fully functioning game
         
@@ -429,7 +429,13 @@
             
           
           
-            <a href='/'>Python programming</a> > <a href='/basics/'>Basics</a> > Strings
+            
+            
+          
+          
+            <a href='/'>Python programming</a> > <a href='/examples/'>Examples</a> > <a href='/examples/snake/'>Snake Game</a> > Fully functioning game
+          
+         
           
          
           
@@ -448,7 +454,10 @@
 <ul>
 <li>
 <ul>
-<li><a href="#strings">Strings</a></li>
+<li><a href="#simply-go-over-the-previous-class">Simply go over the previous class</a></li>
+<li><a href="#step-1-what-if-the-snake-runs-out-of-the-screen">Step 1: What if the snake runs out of the screen?</a></li>
+<li><a href="#step-2-what-happens-it-the-snake-hits-itself">Step 2: What happens it the snake hits itself?</a></li>
+<li><a href="#step-3-game-is-over">Step 3: Game is over</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -468,7 +477,7 @@
           
             <h1>
               
-              Strings
+              Fully functioning game
             </h1>
           
 
@@ -478,9 +487,66 @@
 
 
 
-<h3 id="strings">Strings</h3>
+<p><img src="/images/new_flowchart.png" alt="" /></p>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes (&lsquo;&hellip;&rsquo;) or double quotes (&ldquo;&hellip;&rdquo;) with the same result [2]. \ can be used to escape quotes:</p>
+<h3 id="simply-go-over-the-previous-class">Simply go over the previous class</h3>
+
+<table>
+<thead>
+<tr>
+<th><center>Task</center></th>
+<th><center>Time</center></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><center>Quickly go through the <a href="/examples/snake/class02"><strong>previous class</strong></a></center></td>
+<td><center>10 mins</center></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="step-1-what-if-the-snake-runs-out-of-the-screen">Step 1: What if the snake runs out of the screen?</h3>
+
+<p>Both <code>X</code> and <code>Y</code> coordinates ranges from 340 to -340. Once the snake runs out of this range, game is over. Code snippet is given below:</p>
+
+<pre><code># Out of screen
+def out_of_screen():
+    if snake.xcor() &gt; 340 or snake.xcor() &lt; -340 or snake.ycor() &gt; 340 or snake.ycor() &lt; -330:
+        time.sleep(1)
+        snake.direction = &quot;stop&quot;
+        game_over()
+        time.sleep(3)
+</code></pre>
+
+<h3 id="step-2-what-happens-it-the-snake-hits-itself">Step 2: What happens it the snake hits itself?</h3>
+
+<p>Calculate the distance of the snake from it&rsquo;s tail. If it&rsquo;s less than 5 steps, game is over. Code snippet is below:</p>
+
+<pre><code># Snake hits itself
+def hits_itself():
+    for i in length:
+        if i.distance(snake) &lt; 5:
+            time.sleep(1)
+            snake.direction = &quot;stop&quot;
+            game_over()
+            time.sleep(3)
+</code></pre>
+
+<h3 id="step-3-game-is-over">Step 3: Game is over</h3>
+
+<p>Whenever game is over, game will stop processing and &ldquo;GAME OVER&rdquo; displays on the screen.</p>
+
+<pre><code># Game over
+def game_over():
+    death = turtle.Turtle()
+    death.speed(0)
+    death.penup()
+    death.hideturtle()
+    death.goto(0, 0)
+    death.write(&quot;GAME OVER&quot;, align=&quot;center&quot;, font=(&quot;Ariel&quot;, 28, &quot;normal&quot;))
+</code></pre>
 
 
 <footer class=" footline" >
@@ -519,6 +585,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -532,26 +600,6 @@
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -628,69 +676,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -714,6 +699,94 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -754,10 +827,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/basics/" title="Basics"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/examples/snake/class02/" title="Connect all elements"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/basics/numbers/" title="Numbers" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/examples/tetris/" title="Tetris Game" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

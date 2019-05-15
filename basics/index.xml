@@ -58,5 +58,16 @@ first_value = squares[0] # indexing returns the item last_value = squares[-1] # 
       <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;We saw that lists and strings have many common properties, such as indexing and slicing operations. They are two examples of sequence data types (see Sequence Types — list, tuple, range). Since Python is an evolving language, other sequence data types may be added. There is also another standard sequence data type: the tuple.</description>
     </item>
     
+    <item>
+      <title>Object Oriented Programming</title>
+      <link>/basics/oop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/oop/</guid>
+      <description>The four principles of object-oriented programming are
+ Encapsulation Abstraction Inheritance Polymorphism.  Encapsulation Say we have a program. It has a few logically different objects which communicate with each other — according to the rules defined in the program.
+Encapsulation is achieved when each object keeps its state private, inside a class. Other objects don’t have direct access to this state. Instead, they can only call a list of public functions — called methods.</description>
+    </item>
+    
   </channel>
 </rss>

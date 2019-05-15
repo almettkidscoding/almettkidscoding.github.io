@@ -6,6 +6,7 @@
     <description>Recent content in Snake Game on Python programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
+    <lastBuildDate>Wed, 08 May 2019 09:30:27 +0800</lastBuildDate>
     
 	<atom:link href="/examples/snake/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +31,16 @@ import random  Time module provides various time-related functions.</description
       <guid>/examples/snake/class02/</guid>
       <description>In this session, we&amp;rsquo;re going to connect all elements togther. Implement snake&amp;rsquo;s move, eating eggs and grow long.
  Spend 3 to 5 minutes to explain each step/component. Another 5 minutes to practice and QA. Redirect to the new knowledge of Python to the other session.   Before today&amp;rsquo;s class    Task Time     Quickly go through the previous class 10 mins    Step 1: Move the snake 5 mins moves is another Function to move the snake Up, Down, Right and Left.</description>
+    </item>
+    
+    <item>
+      <title>Fully functioning game</title>
+      <link>/examples/snake/class03/</link>
+      <pubDate>Wed, 08 May 2019 09:30:27 +0800</pubDate>
+      
+      <guid>/examples/snake/class03/</guid>
+      <description>Simply go over the previous class    Task Time     Quickly go through the previous class 10 mins    Step 1: What if the snake runs out of the screen? Both X and Y coordinates ranges from 340 to -340. Once the snake runs out of this range, game is over. Code snippet is given below:
+# Out of screen def out_of_screen(): if snake.</description>
     </item>
     
   </channel>

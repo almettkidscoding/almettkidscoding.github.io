@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snake Game on Python programming</title>
+    <link>/examples/snake/</link>
+    <description>Recent content in Snake Game on Python programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 08 May 2019 09:30:27 +0800</lastBuildDate>
+    
+	<atom:link href="/examples/snake/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set up the screen</title>
+      <link>/examples/snake/class01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/examples/snake/class01/</guid>
+      <description>In this session, we&amp;rsquo;re going to learn how to set up snake game playground.
+ Step 1: import required modules Turtle is a python feature like a drawing board, which lets you command a turtle to draw all over it! You can use functions like turtle.forward(...) and turtle.left(...) which can move the turtle around.
+import turtle  Random module implements pseudo-random number generators for various distributions.
+import random  Time module provides various time-related functions.</description>
+    </item>
+    
+    <item>
+      <title>Connect all elements</title>
+      <link>/examples/snake/class02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/examples/snake/class02/</guid>
+      <description>In this session, we&amp;rsquo;re going to connect all elements togther. Implement snake&amp;rsquo;s move, eating eggs and grow long.
+ Spend 3 to 5 minutes to explain each step/component. Another 5 minutes to practice and QA. Redirect to the new knowledge of Python to the other session.   Before today&amp;rsquo;s class    Task Time     Quickly go through the previous class 10 mins    Step 1: Move the snake 5 mins moves is another Function to move the snake Up, Down, Right and Left.</description>
+    </item>
+    
+    <item>
+      <title>Fully functioning game</title>
+      <link>/examples/snake/class03/</link>
+      <pubDate>Wed, 08 May 2019 09:30:27 +0800</pubDate>
+      
+      <guid>/examples/snake/class03/</guid>
+      <description>Simply go over the previous class    Task Time     Quickly go through the previous class 10 mins    Step 1: What if the snake runs out of the screen? Both X and Y coordinates ranges from 340 to -340. Once the snake runs out of this range, game is over. Code snippet is given below:
+# Out of screen def out_of_screen(): if snake.</description>
+    </item>
+    
+  </channel>
+</rss>

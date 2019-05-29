@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.55.4" />
+    <meta name="description" content="Kids programming curriculum">
+<meta name="author" content="Alim">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>AI model integration :: Python programming</title>
+
+    
+    <link href="/css/nucleus.css?1559109079" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1559109079" rel="stylesheet">
+    <link href="/css/hybrid.css?1559109079" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1559109079" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1559109079" rel="stylesheet">
+    <link href="/css/auto-complete.css?1559109079" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1559109079" rel="stylesheet">
+    <link href="/css/theme.css?1559109079" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1559109079" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1559109079"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/examples/tetris/class03/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+ 
+  <h3 style="color: white;">Python Class</h3>
+</a>
+
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/">
+          <b>1. </b>Basics
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/strings/" title="Strings" class="dd-item ">
+        <a href="/basics/strings/">
+        <b>1. </b>Strings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/numbers/" title="Numbers" class="dd-item ">
+        <a href="/basics/numbers/">
+        <b>2. </b>Numbers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/list/" title="List" class="dd-item ">
+        <a href="/basics/list/">
+        <b>3. </b>List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/dictionary/" title="Dictionary" class="dd-item ">
+        <a href="/basics/dictionary/">
+        <b>4. </b>Dictionary
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/tuple/" title="Tuple" class="dd-item ">
+        <a href="/basics/tuple/">
+        <b>5. </b>Tuple
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/oop/" title="Object Oriented Programming" class="dd-item ">
+        <a href="/basics/oop/">
+        <b>6. </b>Object Oriented Programming
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/examples/" title="Examples" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/examples/">
+          <b>2. </b>Examples
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/examples/snake/" title="Snake Game" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/examples/snake/">
+          <b>1. </b>Snake Game
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/snake/class01/" title="Set up the screen" class="dd-item ">
+        <a href="/examples/snake/class01/">
+        <b>1. </b>Set up the screen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/snake/class02/" title="Connect all elements" class="dd-item ">
+        <a href="/examples/snake/class02/">
+        <b>2. </b>Connect all elements
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/snake/class03/" title="Fully functioning game" class="dd-item ">
+        <a href="/examples/snake/class03/">
+        <b>3. </b>Fully functioning game
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/examples/tetris/" title="Tetris Game" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/examples/tetris/">
+          <b>2. </b>Tetris Game
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/tetris/class01/" title="Set up Tetris UI" class="dd-item ">
+        <a href="/examples/tetris/class01/">
+        <b>1. </b>Set up Tetris UI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/tetris/class02/" title="Draw squares" class="dd-item ">
+        <a href="/examples/tetris/class02/">
+        <b>2. </b>Draw squares
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/tetris/class03/" title="AI model integration" class="dd-item active">
+        <a href="/examples/tetris/class03/">
+        <b>3. </b>AI model integration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <center>
+<p>We <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> Python<a href="http://getgrav.org"></a> <a href="http://gohugo.io/"></a></p>
+</center>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Python programming</a> > <a href='/examples/'>Examples</a> > <a href='/examples/tetris/'>Tetris Game</a> > AI model integration
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#tetris-game-architecture">Tetris game architecture</a></li>
+<li><a href="#step-1-create-ai-workflow">Step 1: Create AI workflow</a></li>
+<li><a href="#step-2-create-the-model-file">Step 2: Create the model file</a></li>
+<li><a href="#what-is-shape-coordinates">What is shape coordinates?</a></li>
+<li><a href="#what-is-numpy-array">What is Numpy Array?</a></li>
+<li><a href="#three-dimentional-array">Three dimentional array</a></li>
+</ul></li>
+<li><a href="#what-do-you-expect-from-future-classes">What do you expect from future classes?</a>
+<ul>
+<li><a href="#other-data-visualization-examples">Other data visualization examples</a>
+<ul>
+<li><a href="#evolution-of-data-science">Evolution of data science</a></li>
+<li><a href="#world-climate-change">World climate change</a></li>
+</ul></li>
+<li><a href="#chatbot-examples">Chatbot examples</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              AI model integration
+            </h1>
+          
+
+        
+
+
+
+
+
+<h3 id="tetris-game-architecture">Tetris game architecture</h3>
+
+<p>Following is the basic architecture of the tetris game. The game hierarchy is seperated to three layers:</p>
+
+<ul>
+<li>AI layer</li>
+<li>Basics layer</li>
+<li>Infrastructure layer</li>
+</ul>
+
+<p><img src="/images/tetris_game_workflow.jpg" alt="" /></p>
+
+<p>In this class, we will integrate our Tetris game with AI model.</p>
+
+<h3 id="step-1-create-ai-workflow">Step 1: Create AI workflow</h3>
+
+<ol>
+<li>Under the same directory of <code>tetris_game.py</code> file create <code>tetris_ai.py</code> and copy/paste following code.</li>
+
+<li><p>This module leverages data and algorithms from the <code>tetris_model.py</code> file, helps us integrate the AI model with our general tetris game and make it smarter. We call this process workflow.</p>
+
+<p>from tetris_model import BOARD_DATA, Shape
+import math
+from datetime import datetime
+import numpy as np</p>
+
+<pre><code>class TetrisAI(object):
+
+    def nextMove(self):
+        t1 = datetime.now()
+        if BOARD_DATA.currentShape == Shape.shapeNone:
+            return None
+
+        currentDirection = BOARD_DATA.currentDirection
+        currentY = BOARD_DATA.currentY
+        _, _, minY, _ = BOARD_DATA.nextShape.getBoundingOffsets(0)
+        nextY = -minY
+
+        # print(&quot;=======&quot;)
+        strategy = None
+        if BOARD_DATA.currentShape.shape in (Shape.shapeI, Shape.shapeZ, Shape.shapeS):
+            d0Range = (0, 1)
+        elif BOARD_DATA.currentShape.shape == Shape.shapeO:
+            d0Range = (0,)
+        else:
+            d0Range = (0, 1, 2, 3)
+
+        if BOARD_DATA.nextShape.shape in (Shape.shapeI, Shape.shapeZ, Shape.shapeS):
+            d1Range = (0, 1)
+        elif BOARD_DATA.nextShape.shape == Shape.shapeO:
+            d1Range = (0,)
+        else:
+            d1Range = (0, 1, 2, 3)
+
+        for d0 in d0Range:
+            minX, maxX, _, _ = BOARD_DATA.currentShape.getBoundingOffsets(d0)
+            for x0 in range(-minX, BOARD_DATA.width - maxX):
+                board = self.calcStep1Board(d0, x0)
+                for d1 in d1Range:
+                    minX, maxX, _, _ = BOARD_DATA.nextShape.getBoundingOffsets(d1)
+                    dropDist = self.calcNextDropDist(board, d1, range(-minX, BOARD_DATA.width - maxX))
+                    for x1 in range(-minX, BOARD_DATA.width - maxX):
+                        score = self.calculateScore(np.copy(board), d1, x1, dropDist)
+                        if not strategy or strategy[2] &lt; score:
+                            strategy = (d0, x0, score)
+        print(&quot;===&quot;, datetime.now() - t1)
+        return strategy
+
+    def calcNextDropDist(self, data, d0, xRange):
+        res = {}
+        for x0 in xRange:
+            if x0 not in res:
+                res[x0] = BOARD_DATA.height - 1
+            for x, y in BOARD_DATA.nextShape.getCoords(d0, x0, 0):
+                yy = 0
+                while yy + y &lt; BOARD_DATA.height and (yy + y &lt; 0 or data[(y + yy), x] == Shape.shapeNone):
+                    yy += 1
+                yy -= 1
+                if yy &lt; res[x0]:
+                    res[x0] = yy
+        return res
+
+    def calcStep1Board(self, d0, x0):
+        board = np.array(BOARD_DATA.getData()).reshape((BOARD_DATA.height, BOARD_DATA.width))
+        self.dropDown(board, BOARD_DATA.currentShape, d0, x0)
+        return board
+
+    def dropDown(self, data, shape, direction, x0):
+        dy = BOARD_DATA.height - 1
+        for x, y in shape.getCoords(direction, x0, 0):
+            yy = 0
+            while yy + y &lt; BOARD_DATA.height and (yy + y &lt; 0 or data[(y + yy), x] == Shape.shapeNone):
+                yy += 1
+            yy -= 1
+            if yy &lt; dy:
+                dy = yy
+        # print(&quot;dropDown: shape {0}, direction {1}, x0 {2}, dy {3}&quot;.format(shape.shape, direction, x0, dy))
+        self.dropDownByDist(data, shape, direction, x0, dy)
+
+    def dropDownByDist(self, data, shape, direction, x0, dist):
+        for x, y in shape.getCoords(direction, x0, 0):
+            data[y + dist, x] = shape.shape
+
+    def calculateScore(self, step1Board, d1, x1, dropDist):
+        # print(&quot;calculateScore&quot;)
+        t1 = datetime.now()
+        width = BOARD_DATA.width
+        height = BOARD_DATA.height
+
+        self.dropDownByDist(step1Board, BOARD_DATA.nextShape, d1, x1, dropDist[x1])
+        # print(datetime.now() - t1)
+
+        # Term 1: lines to be removed
+        fullLines, nearFullLines = 0, 0
+        roofY = [0] * width
+        holeCandidates = [0] * width
+        holeConfirm = [0] * width
+        vHoles, vBlocks = 0, 0
+        for y in range(height - 1, -1, -1):
+            hasHole = False
+            hasBlock = False
+            for x in range(width):
+                if step1Board[y, x] == Shape.shapeNone:
+                    hasHole = True
+                    holeCandidates[x] += 1
+                else:
+                    hasBlock = True
+                    roofY[x] = height - y
+                    if holeCandidates[x] &gt; 0:
+                        holeConfirm[x] += holeCandidates[x]
+                        holeCandidates[x] = 0
+                    if holeConfirm[x] &gt; 0:
+                        vBlocks += 1
+            if not hasBlock:
+                break
+            if not hasHole and hasBlock:
+                fullLines += 1
+        vHoles = sum([x ** .7 for x in holeConfirm])
+        maxHeight = max(roofY) - fullLines
+        # print(datetime.now() - t1)
+
+        roofDy = [roofY[i] - roofY[i+1] for i in range(len(roofY) - 1)]
+
+        if len(roofY) &lt;= 0:
+            stdY = 0
+        else:
+            stdY = math.sqrt(sum([y ** 2 for y in roofY]) / len(roofY) - (sum(roofY) / len(roofY)) ** 2)
+        if len(roofDy) &lt;= 0:
+            stdDY = 0
+        else:
+            stdDY = math.sqrt(sum([y ** 2 for y in roofDy]) / len(roofDy) - (sum(roofDy) / len(roofDy)) ** 2)
+
+        absDy = sum([abs(x) for x in roofDy])
+        maxDy = max(roofY) - min(roofY)
+        # print(datetime.now() - t1)
+
+        score = fullLines * 1.8 - vHoles * 1.0 - vBlocks * 0.5 - maxHeight ** 1.5 * 0.02 \
+            - stdY * 0.0 - stdDY * 0.01 - absDy * 0.2 - maxDy * 0.3
+        # print(score, fullLines, vHoles, vBlocks, maxHeight, stdY, stdDY, absDy, roofY, d0, x0, d1, x1)
+        return score
+
+TETRIS_AI = TetrisAI()
+</code></pre></li>
+</ol>
+
+<h3 id="step-2-create-the-model-file">Step 2: Create the model file</h3>
+
+<p>Under the same directory of <code>tetris_game.py</code> file create <code>tetris_model.py</code> and copy/paste following code.</p>
+
+<pre><code>import random
+
+class Shape(object):
+    shapeNone = 0
+    shapeI = 1
+    shapeL = 2
+    shapeJ = 3
+    shapeT = 4
+    shapeO = 5
+    shapeS = 6
+    shapeZ = 7
+
+    shapeCoord = (
+        ((0, 0), (0, 0), (0, 0), (0, 0)),
+        ((0, -1), (0, 0), (0, 1), (0, 2)),
+        ((0, -1), (0, 0), (0, 1), (1, 1)),
+        ((0, -1), (0, 0), (0, 1), (-1, 1)),
+        ((0, -1), (0, 0), (0, 1), (1, 0)),
+        ((0, 0), (0, -1), (1, 0), (1, -1)),
+        ((0, 0), (0, -1), (-1, 0), (1, -1)),
+        ((0, 0), (0, -1), (1, 0), (-1, -1))
+    )
+
+    def __init__(self, shape=0):
+        self.shape = shape
+
+    def getRotatedOffsets(self, direction):
+        tmpCoords = Shape.shapeCoord[self.shape]
+        if direction == 0 or self.shape == Shape.shapeO:
+            return ((x, y) for x, y in tmpCoords)
+
+        if direction == 1:
+            return ((-y, x) for x, y in tmpCoords)
+
+        if direction == 2:
+            if self.shape in (Shape.shapeI, Shape.shapeZ, Shape.shapeS):
+                return ((x, y) for x, y in tmpCoords)
+            else:
+                return ((-x, -y) for x, y in tmpCoords)
+
+        if direction == 3:
+            if self.shape in (Shape.shapeI, Shape.shapeZ, Shape.shapeS):
+                return ((-y, x) for x, y in tmpCoords)
+            else:
+                return ((y, -x) for x, y in tmpCoords)
+
+    def getCoords(self, direction, x, y):
+        return ((x + xx, y + yy) for xx, yy in self.getRotatedOffsets(direction))
+
+    def getBoundingOffsets(self, direction):
+        tmpCoords = self.getRotatedOffsets(direction)
+        minX, maxX, minY, maxY = 0, 0, 0, 0
+        for x, y in tmpCoords:
+            if minX &gt; x:
+                minX = x
+            if maxX &lt; x:
+                maxX = x
+            if minY &gt; y:
+                minY = y
+            if maxY &lt; y:
+                maxY = y
+        return (minX, maxX, minY, maxY)
+
+
+class BoardData(object):
+    width = 10
+    height = 22
+
+    def __init__(self):
+        self.backBoard = [0] * BoardData.width * BoardData.height
+
+        self.currentX = -1
+        self.currentY = -1
+        self.currentDirection = 0
+        self.currentShape = Shape()
+        self.nextShape = Shape(random.randint(1, 7))
+
+        self.shapeStat = [0] * 8
+
+    def getData(self):
+        return self.backBoard[:]
+
+    def getValue(self, x, y):
+        return self.backBoard[x + y * BoardData.width]
+
+    def getCurrentShapeCoord(self):
+        return self.currentShape.getCoords(self.currentDirection, self.currentX, self.currentY)
+
+    def createNewPiece(self):
+        minX, maxX, minY, maxY = self.nextShape.getBoundingOffsets(0)
+        result = False
+        if self.tryMoveCurrent(0, 5, -minY):
+            self.currentX = 5
+            self.currentY = -minY
+            self.currentDirection = 0
+            self.currentShape = self.nextShape
+            self.nextShape = Shape(random.randint(1, 7))
+            result = True
+        else:
+            self.currentShape = Shape()
+            self.currentX = -1
+            self.currentY = -1
+            self.currentDirection = 0
+            result = False
+        self.shapeStat[self.currentShape.shape] += 1
+        return result
+
+    def tryMoveCurrent(self, direction, x, y):
+        return self.tryMove(self.currentShape, direction, x, y)
+
+    def tryMove(self, shape, direction, x, y):
+        for x, y in shape.getCoords(direction, x, y):
+            if x &gt;= BoardData.width or x &lt; 0 or y &gt;= BoardData.height or y &lt; 0:
+                return False
+            if self.backBoard[x + y * BoardData.width] &gt; 0:
+                return False
+        return True
+
+    def moveDown(self):
+        lines = 0
+        if self.tryMoveCurrent(self.currentDirection, self.currentX, self.currentY + 1):
+            self.currentY += 1
+        else:
+            self.mergePiece()
+            lines = self.removeFullLines()
+            self.createNewPiece()
+        return lines
+
+    def dropDown(self):
+        while self.tryMoveCurrent(self.currentDirection, self.currentX, self.currentY + 1):
+            self.currentY += 1
+        self.mergePiece()
+        lines = self.removeFullLines()
+        self.createNewPiece()
+        return lines
+
+    def moveLeft(self):
+        if self.tryMoveCurrent(self.currentDirection, self.currentX - 1, self.currentY):
+            self.currentX -= 1
+
+    def moveRight(self):
+        if self.tryMoveCurrent(self.currentDirection, self.currentX + 1, self.currentY):
+            self.currentX += 1
+
+    def rotateRight(self):
+        if self.tryMoveCurrent((self.currentDirection + 1) % 4, self.currentX, self.currentY):
+            self.currentDirection += 1
+            self.currentDirection %= 4
+
+    def rotateLeft(self):
+        if self.tryMoveCurrent((self.currentDirection - 1) % 4, self.currentX, self.currentY):
+            self.currentDirection -= 1
+            self.currentDirection %= 4
+
+    def removeFullLines(self):
+        newBackBoard = [0] * BoardData.width * BoardData.height
+        newY = BoardData.height - 1
+        lines = 0
+        for y in range(BoardData.height - 1, -1, -1):
+            blockCount = sum([1 if self.backBoard[x + y * BoardData.width] &gt; 0 else 0 for x in range(BoardData.width)])
+            if blockCount &lt; BoardData.width:
+                for x in range(BoardData.width):
+                    newBackBoard[x + newY * BoardData.width] = self.backBoard[x + y * BoardData.width]
+                newY -= 1
+            else:
+                lines += 1
+        if lines &gt; 0:
+            self.backBoard = newBackBoard
+        return lines
+
+    def mergePiece(self):
+        for x, y in self.currentShape.getCoords(self.currentDirection, self.currentX, self.currentY):
+            self.backBoard[x + y * BoardData.width] = self.currentShape.shape
+
+        self.currentX = -1
+        self.currentY = -1
+        self.currentDirection = 0
+        self.currentShape = Shape()
+
+    def clear(self):
+        self.currentX = -1
+        self.currentY = -1
+        self.currentDirection = 0
+        self.currentShape = Shape()
+        self.backBoard = [0] * BoardData.width * BoardData.height
+
+
+BOARD_DATA = BoardData()
+</code></pre>
+
+<h3 id="what-is-shape-coordinates">What is shape coordinates?</h3>
+
+<pre><code>shapeCoord = (
+        ((0, 0), (0, 0), (0, 0), (0, 0)),
+        ((0, -1), (0, 0), (0, 1), (0, 2)),
+        ((0, -1), (0, 0), (0, 1), (1, 1)),
+        ((0, -1), (0, 0), (0, 1), (-1, 1)),
+        ((0, -1), (0, 0), (0, 1), (1, 0)),
+        ((0, 0), (0, -1), (1, 0), (1, -1)),
+        ((0, 0), (0, -1), (-1, 0), (1, -1)),
+        ((0, 0), (0, -1), (1, 0), (-1, -1))
+    )
+</code></pre>
+
+<h3 id="what-is-numpy-array">What is Numpy Array?</h3>
+
+<p>As the name gives away, a NumPy array is a central data structure of the numpy library. The library’s name is short for “Numeric Python” or “Numerical Python”.</p>
+
+<p><img src="/images/numpy_array_t.png" alt="" /></p>
+
+<h3 id="three-dimentional-array">Three dimentional array</h3>
+
+<p><img src="/images/numpy_array_visual.gif" alt="" /></p>
+
+<h2 id="what-do-you-expect-from-future-classes">What do you expect from future classes?</h2>
+
+<h3 id="other-data-visualization-examples">Other data visualization examples</h3>
+
+<h4 id="evolution-of-data-science">Evolution of data science</h4>
+
+<p><img src="/images/evolution_data_science.gif" alt="" /></p>
+
+<h4 id="world-climate-change">World climate change</h4>
+
+<p><img src="/images/world_climate_change.gif" alt="" /></p>
+
+<h3 id="chatbot-examples">Chatbot examples</h3>
+
+<p><img src="/images/chatbot01.gif" alt="" /></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/examples/tetris/class02/" title="Draw squares"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/examples/tetris/class01/" title="Set up Tetris UI" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1559109079"></script>
+    <script src="/js/perfect-scrollbar.min.js?1559109079"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1559109079"></script>
+    <script src="/js/jquery.sticky.js?1559109079"></script>
+    <script src="/js/featherlight.min.js?1559109079"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1559109079"></script>
+    <script src="/js/highlight.pack.js?1559109079"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1559109079"></script>
+    <script src="/js/learn.js?1559109079"></script>
+    <script src="/js/hugo-learn.js?1559109079"></script>
+
+    <link href="/mermaid/mermaid.css?1559109079" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1559109079"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

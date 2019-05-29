@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python programming</title>
+    <link>/</link>
+    <description>Recent content on Python programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 28 May 2019 20:38:27 +0800</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set up Tetris UI</title>
+      <link>/examples/tetris/class01/</link>
+      <pubDate>Wed, 08 May 2019 09:30:27 +0800</pubDate>
+      
+      <guid>/examples/tetris/class01/</guid>
+      <description>Simply go over the previous class    Task Time     Quickly go through the Python basics we have already learned 10 mins    Step 1: Create a Python file tetris_game.py As we have already learned how to create a Python file, open Sublime text editor -&amp;gt; File -&amp;gt; New File -&amp;gt; press CTRL + S -&amp;gt; name the file as tetris_game.py
+Step 2: Import required libraries Copy and Paste the code snippet below to import required libraries.</description>
+    </item>
+    
+    <item>
+      <title>Set up the screen</title>
+      <link>/examples/snake/class01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/examples/snake/class01/</guid>
+      <description>In this session, we&amp;rsquo;re going to learn how to set up snake game playground.
+ Step 1: import required modules Turtle is a python feature like a drawing board, which lets you command a turtle to draw all over it! You can use functions like turtle.forward(...) and turtle.left(...) which can move the turtle around.
+import turtle  Random module implements pseudo-random number generators for various distributions.
+import random  Time module provides various time-related functions.</description>
+    </item>
+    
+    <item>
+      <title>Strings</title>
+      <link>/basics/strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/strings/</guid>
+      <description>Strings &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes (&amp;lsquo;&amp;hellip;&amp;rsquo;) or double quotes (&amp;ldquo;&amp;hellip;&amp;rdquo;) with the same result [2]. \ can be used to escape quotes:</description>
+    </item>
+    
+    <item>
+      <title>Draw squares</title>
+      <link>/examples/tetris/class02/</link>
+      <pubDate>Tue, 21 May 2019 17:36:23 +0800</pubDate>
+      
+      <guid>/examples/tetris/class02/</guid>
+      <description>Before today&amp;rsquo;s class    Task Time     Quickly go through the previous class 10 mins    In the previous class, we&amp;rsquo;ve set up the basic structure of the tetris game. In this class, we&amp;rsquo;re going to customize the game screen and add squares.
+The customize version of the code import sys, random from PyQt5.QtWidgets import QMainWindow, QFrame, QDesktopWidget, QApplication, QHBoxLayout, QLabel from PyQt5.</description>
+    </item>
+    
+    <item>
+      <title>Connect all elements</title>
+      <link>/examples/snake/class02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/examples/snake/class02/</guid>
+      <description>In this session, we&amp;rsquo;re going to connect all elements togther. Implement snake&amp;rsquo;s move, eating eggs and grow long.
+ Spend 3 to 5 minutes to explain each step/component. Another 5 minutes to practice and QA. Redirect to the new knowledge of Python to the other session.   Before today&amp;rsquo;s class    Task Time     Quickly go through the previous class 10 mins    Step 1: Move the snake 5 mins moves is another Function to move the snake Up, Down, Right and Left.</description>
+    </item>
+    
+    <item>
+      <title>Numbers</title>
+      <link>/basics/numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/numbers/</guid>
+      <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping. For example:</description>
+    </item>
+    
+    <item>
+      <title>AI model integration</title>
+      <link>/examples/tetris/class03/</link>
+      <pubDate>Tue, 28 May 2019 20:38:27 +0800</pubDate>
+      
+      <guid>/examples/tetris/class03/</guid>
+      <description>Tetris game architecture Following is the basic architecture of the tetris game. The game hierarchy is seperated to three layers:
+ AI layer Basics layer Infrastructure layer  In this class, we will integrate our Tetris game with AI model.
+Step 1: Create AI workflow  Under the same directory of tetris_game.py file create tetris_ai.py and copy/paste following code. This module leverages data and algorithms from the tetris_model.py file, helps us integrate the AI model with our general tetris game and make it smarter.</description>
+    </item>
+    
+    <item>
+      <title>Fully functioning game</title>
+      <link>/examples/snake/class03/</link>
+      <pubDate>Wed, 08 May 2019 09:30:27 +0800</pubDate>
+      
+      <guid>/examples/snake/class03/</guid>
+      <description>Simply go over the previous class    Task Time     Quickly go through the previous class 10 mins    Step 1: What if the snake runs out of the screen? Both X and Y coordinates ranges from 340 to -340. Once the snake runs out of this range, game is over. Code snippet is given below:
+# Out of screen def out_of_screen(): if snake.</description>
+    </item>
+    
+    <item>
+      <title>List</title>
+      <link>/basics/list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/list/</guid>
+      <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.
+Example
+squares = [1, 4, 9, 16, 25]  Lists can be indexed and sliced:
+first_value = squares[0] # indexing returns the item last_value = squares[-1] # Returns the last value last_three_values = squares[-3:] # Slicing returns a new value  Lists also support operations like concatenation:</description>
+    </item>
+    
+    <item>
+      <title>Dictionary</title>
+      <link>/basics/dictionary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/dictionary/</guid>
+      <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Another useful data type built into Python is the dictionary (see Mapping Types — dict). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key.</description>
+    </item>
+    
+    <item>
+      <title>Tuple</title>
+      <link>/basics/tuple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/tuple/</guid>
+      <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;We saw that lists and strings have many common properties, such as indexing and slicing operations. They are two examples of sequence data types (see Sequence Types — list, tuple, range). Since Python is an evolving language, other sequence data types may be added. There is also another standard sequence data type: the tuple.</description>
+    </item>
+    
+    <item>
+      <title>Object Oriented Programming</title>
+      <link>/basics/oop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/basics/oop/</guid>
+      <description>The four principles of object-oriented programming are
+ Encapsulation Abstraction Inheritance Polymorphism.  Encapsulation Say we have a program. It has a few logically different objects which communicate with each other — according to the rules defined in the program.
+Encapsulation is achieved when each object keeps its state private, inside a class. Other objects don’t have direct access to this state. Instead, they can only call a list of public functions — called methods.</description>
+    </item>
+    
+  </channel>
+</rss>

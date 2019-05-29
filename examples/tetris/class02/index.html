@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.55.4" />
+    <meta name="description" content="Kids programming curriculum">
+<meta name="author" content="Alim">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Draw squares :: Python programming</title>
+
+    
+    <link href="/css/nucleus.css?1559109079" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1559109079" rel="stylesheet">
+    <link href="/css/hybrid.css?1559109079" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1559109079" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1559109079" rel="stylesheet">
+    <link href="/css/auto-complete.css?1559109079" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1559109079" rel="stylesheet">
+    <link href="/css/theme.css?1559109079" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1559109079" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1559109079"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/examples/tetris/class02/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+ 
+  <h3 style="color: white;">Python Class</h3>
+</a>
+
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/">
+          <b>1. </b>Basics
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/strings/" title="Strings" class="dd-item ">
+        <a href="/basics/strings/">
+        <b>1. </b>Strings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/numbers/" title="Numbers" class="dd-item ">
+        <a href="/basics/numbers/">
+        <b>2. </b>Numbers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/list/" title="List" class="dd-item ">
+        <a href="/basics/list/">
+        <b>3. </b>List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/dictionary/" title="Dictionary" class="dd-item ">
+        <a href="/basics/dictionary/">
+        <b>4. </b>Dictionary
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/tuple/" title="Tuple" class="dd-item ">
+        <a href="/basics/tuple/">
+        <b>5. </b>Tuple
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/oop/" title="Object Oriented Programming" class="dd-item ">
+        <a href="/basics/oop/">
+        <b>6. </b>Object Oriented Programming
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/examples/" title="Examples" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/examples/">
+          <b>2. </b>Examples
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/examples/snake/" title="Snake Game" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/examples/snake/">
+          <b>1. </b>Snake Game
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/snake/class01/" title="Set up the screen" class="dd-item ">
+        <a href="/examples/snake/class01/">
+        <b>1. </b>Set up the screen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/snake/class02/" title="Connect all elements" class="dd-item ">
+        <a href="/examples/snake/class02/">
+        <b>2. </b>Connect all elements
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/snake/class03/" title="Fully functioning game" class="dd-item ">
+        <a href="/examples/snake/class03/">
+        <b>3. </b>Fully functioning game
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/examples/tetris/" title="Tetris Game" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/examples/tetris/">
+          <b>2. </b>Tetris Game
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/tetris/class01/" title="Set up Tetris UI" class="dd-item ">
+        <a href="/examples/tetris/class01/">
+        <b>1. </b>Set up Tetris UI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/tetris/class02/" title="Draw squares" class="dd-item active">
+        <a href="/examples/tetris/class02/">
+        <b>2. </b>Draw squares
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/tetris/class03/" title="AI model integration" class="dd-item ">
+        <a href="/examples/tetris/class03/">
+        <b>3. </b>AI model integration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <center>
+<p>We <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> Python<a href="http://getgrav.org"></a> <a href="http://gohugo.io/"></a></p>
+</center>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Python programming</a> > <a href='/examples/'>Examples</a> > <a href='/examples/tetris/'>Tetris Game</a> > Draw squares
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#before-today-s-class">Before today&rsquo;s class</a></li>
+<li><a href="#the-customize-version-of-the-code">The customize version of the code</a></li>
+<li><a href="#step-1-set-the-squares-to-the-center-of-the-screen">Step 1: Set the squares to the center of the screen</a></li>
+<li><a href="#step-2-update-the-window">Step 2: Update the window</a></li>
+<li><a href="#step-3-start-the-game">Step 3: Start the game</a></li>
+<li><a href="#step-4-pause-the-game">Step 4: Pause the game</a></li>
+<li><a href="#step-5-key-press-event">Step 5: Key press event</a></li>
+<li><a href="#step-6-draw-the-squares">Step 6: Draw the squares</a></li>
+<li><a href="#step-7-put-them-all-together-in-to-the-workflow">Step 7: Put them all together in to the workflow</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Draw squares
+            </h1>
+          
+
+        
+
+
+
+
+
+<h3 id="before-today-s-class">Before today&rsquo;s class</h3>
+
+<table>
+<thead>
+<tr>
+<th><center>Task</center></th>
+<th><center>Time</center></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><center>Quickly go through the <a href="/examples/tetris/class01"><strong>previous class</strong></a></center></td>
+<td><center>10 mins</center></td>
+</tr>
+</tbody>
+</table>
+
+<p>In the previous class, we&rsquo;ve set up the basic structure of the tetris game. In this class, we&rsquo;re going to customize the game screen and add squares.</p>
+
+<h3 id="the-customize-version-of-the-code">The customize version of the code</h3>
+
+<pre><code>import sys, random
+from PyQt5.QtWidgets import QMainWindow, QFrame, QDesktopWidget, QApplication, QHBoxLayout, QLabel
+from PyQt5.QtCore import Qt, QBasicTimer, pyqtSignal
+from PyQt5.QtGui import QPainter, QColor
+
+from tetris_model import BOARD_DATA, Shape
+from tetris_ai import TETRIS_AI
+
+# TETRIS_AI = None
+
+class Tetris(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.isStarted = False
+        self.isPaused = False
+        self.nextMove = None
+        self.lastShape = Shape.shapeNone
+
+        self.initUI()
+
+    def initUI(self):
+        self.gridSize = 22
+        self.speed = 10
+
+        self.timer = QBasicTimer()
+        self.setFocusPolicy(Qt.StrongFocus)
+
+        hLayout = QHBoxLayout()
+        self.tboard = Board(self, self.gridSize)
+        hLayout.addWidget(self.tboard)
+
+        self.sidePanel = SidePanel(self, self.gridSize)
+        hLayout.addWidget(self.sidePanel)
+
+        self.statusbar = self.statusBar()
+        self.tboard.msg2Statusbar[str].connect(self.statusbar.showMessage)
+
+        self.setWindowTitle('Tetris')
+        self.show()
+
+        self.setFixedSize(self.tboard.width() + self.sidePanel.width(),
+                          self.sidePanel.height() + self.statusbar.height())
+
+class SidePanel(QFrame):
+    def __init__(self, parent, gridSize):
+        super().__init__(parent)
+        self.setFixedSize(gridSize * 5, gridSize * BOARD_DATA.height)
+        self.move(gridSize * BOARD_DATA.width, 0)
+        self.gridSize = gridSize
+
+    def updateData(self):
+        self.update()
+
+    def paintEvent(self, event):
+        painter = QPainter(self)
+        minX, maxX, minY, maxY = BOARD_DATA.nextShape.getBoundingOffsets(0)
+
+        dy = 3 * self.gridSize
+        dx = (self.width() - (maxX - minX) * self.gridSize) / 2
+
+        val = BOARD_DATA.nextShape.shape
+        for x, y in BOARD_DATA.nextShape.getCoords(0, 0, -minY):
+            drawSquare(painter, x * self.gridSize + dx, y * self.gridSize + dy, val, self.gridSize)
+
+class Board(QFrame):
+    msg2Statusbar = pyqtSignal(str)
+    speed = 10
+
+    def __init__(self, parent, gridSize):
+        super().__init__(parent)
+        self.setFixedSize(gridSize * BOARD_DATA.width, gridSize * BOARD_DATA.height)
+        self.gridSize = gridSize
+        self.initBoard()
+
+    def initBoard(self):
+        self.score = 0
+        BOARD_DATA.clear()
+
+    def paintEvent(self, event):
+        painter = QPainter(self)
+
+        # Draw backboard
+        for x in range(BOARD_DATA.width):
+            for y in range(BOARD_DATA.height):
+                val = BOARD_DATA.getValue(x, y)
+                drawSquare(painter, x * self.gridSize, y * self.gridSize, val, self.gridSize)
+
+        # Draw current shape
+        for x, y in BOARD_DATA.getCurrentShapeCoord():
+            val = BOARD_DATA.currentShape.shape
+            drawSquare(painter, x * self.gridSize, y * self.gridSize, val, self.gridSize)
+
+        # Draw a border
+        painter.setPen(QColor(0x777777))
+        painter.drawLine(self.width()-1, 0, self.width()-1, self.height())
+        painter.setPen(QColor(0xCCCCCC))
+        painter.drawLine(self.width(), 0, self.width(), self.height())
+
+    def updateData(self):
+        self.msg2Statusbar.emit(str(self.score))
+        self.update()
+
+
+if __name__ == '__main__':
+    # random.seed(32)
+    app = QApplication([])
+    tetris = Tetris()
+    sys.exit(app.exec_())
+</code></pre>
+
+<h3 id="step-1-set-the-squares-to-the-center-of-the-screen">Step 1: Set the squares to the center of the screen</h3>
+
+<pre><code>    def center(self):
+        screen = QDesktopWidget().screenGeometry()
+        size = self.geometry()
+        self.move((screen.width() - size.width()) // 2, (screen.height() - size.height()) // 2)
+</code></pre>
+
+<p>Set the game window to the center.</p>
+
+<h3 id="step-2-update-the-window">Step 2: Update the window</h3>
+
+<pre><code>def updateWindow(self):
+    self.tboard.updateData()
+    self.sidePanel.updateData()
+    self.update() 
+</code></pre>
+
+<p>Update the window by calling this function whenever it&rsquo;s necessary.</p>
+
+<h3 id="step-3-start-the-game">Step 3: Start the game</h3>
+
+<pre><code>def start(self):
+    if self.isPaused:
+        return
+
+    self.isStarted = True
+    self.tboard.score = 0
+    BOARD_DATA.clear()
+
+    self.tboard.msg2Statusbar.emit(str(self.tboard.score))
+
+    BOARD_DATA.createNewPiece()
+    self.timer.start(self.speed, self)
+</code></pre>
+
+<p>Call this start function in the tetris class instantiation to start the game.</p>
+
+<h3 id="step-4-pause-the-game">Step 4: Pause the game</h3>
+
+<pre><code>    def pause(self):
+        if not self.isStarted:
+            return
+
+        self.isPaused = not self.isPaused
+
+        if self.isPaused:
+            self.timer.stop()
+            self.tboard.msg2Statusbar.emit(&quot;paused&quot;)
+        else:
+            self.timer.start(self.speed, self)
+
+        self.updateWindow()
+</code></pre>
+
+<p>Whenever the game state is paused, timer and board state will also be paused.</p>
+
+<h3 id="step-5-key-press-event">Step 5: Key press event</h3>
+
+<p>An event is an entity which encapsulates the action and the contextual variables triggering the action.Events can be generated or triggered by the system, by the user or in other ways.</p>
+
+<p>For Example:</p>
+
+<ul>
+<li>Keystrokes on the keyboard</li>
+<li>Hardware device like a timer</li>
+<li>Mouse click</li>
+<li>Sensors</li>
+
+<li><p>Messages from other application</p>
+
+<pre><code>def keyPressEvent(self, event):
+    if not self.isStarted or BOARD_DATA.currentShape == Shape.shapeNone:
+        super(Tetris, self).keyPressEvent(event)
+        return
+
+    key = event.key()
+
+    if key == Qt.Key_P:
+        self.pause()
+        return
+
+    if self.isPaused:
+        return
+    elif key == Qt.Key_Left:
+        BOARD_DATA.moveLeft()
+    elif key == Qt.Key_Right:
+        BOARD_DATA.moveRight()
+    elif key == Qt.Key_Up:
+        BOARD_DATA.rotateLeft()
+    elif key == Qt.Key_Space:
+        self.tboard.score += BOARD_DATA.dropDown()
+    else:
+        super(Tetris, self).keyPressEvent(event)
+
+    self.updateWindow()
+</code></pre></li>
+</ul>
+
+<p>Press event listens to each key press of changing the square state such as shape, direction,etc.</p>
+
+<h3 id="step-6-draw-the-squares">Step 6: Draw the squares</h3>
+
+<pre><code>def drawSquare(painter, x, y, val, s):
+    colorTable = [0x000000, 0xCC6666, 0x66CC66, 0x6666CC,
+                  0xCCCC66, 0xCC66CC, 0x66CCCC, 0xDAAA00]
+
+    if val == 0:
+        return
+
+    color = QColor(colorTable[val])
+    painter.fillRect(x + 1, y + 1, s - 2, s - 2, color)
+
+    painter.setPen(color.lighter())
+    painter.drawLine(x, y + s - 1, x, y)
+    painter.drawLine(x, y, x + s - 1, y)
+
+    painter.setPen(color.darker())
+    painter.drawLine(x + 1, y + s - 1, x + s - 1, y + s - 1)
+    painter.drawLine(x + s - 1, y + s - 1, x + s - 1, y + 1)
+</code></pre>
+
+<p>Draw the squares to present on the game screen. In this function, we have <a href="/basics/list"><strong>List</strong></a> to store different colors.</p>
+
+<h3 id="step-7-put-them-all-together-in-to-the-workflow">Step 7: Put them all together in to the workflow</h3>
+
+<pre><code>import sys, random
+from PyQt5.QtWidgets import QMainWindow, QFrame, QDesktopWidget, QApplication, QHBoxLayout, QLabel
+from PyQt5.QtCore import Qt, QBasicTimer, pyqtSignal
+from PyQt5.QtGui import QPainter, QColor
+
+from tetris_model import BOARD_DATA, Shape
+from tetris_ai import TETRIS_AI
+
+# TETRIS_AI = None
+
+class Tetris(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.isStarted = False
+        self.isPaused = False
+        self.nextMove = None
+        self.lastShape = Shape.shapeNone
+
+        self.initUI()
+
+    def initUI(self):
+        self.gridSize = 22
+        self.speed = 10
+
+        self.timer = QBasicTimer()
+        self.setFocusPolicy(Qt.StrongFocus)
+
+        hLayout = QHBoxLayout()
+        self.tboard = Board(self, self.gridSize)
+        hLayout.addWidget(self.tboard)
+
+        self.sidePanel = SidePanel(self, self.gridSize)
+        hLayout.addWidget(self.sidePanel)
+
+        self.statusbar = self.statusBar()
+        self.tboard.msg2Statusbar[str].connect(self.statusbar.showMessage)
+
+        self.start()
+
+        self.center()
+        self.setWindowTitle('Tetris')
+        self.show()
+
+        self.setFixedSize(self.tboard.width() + self.sidePanel.width(),
+                          self.sidePanel.height() + self.statusbar.height())
+    def center(self):
+        screen = QDesktopWidget().screenGeometry()
+        size = self.geometry()
+        self.move((screen.width() - size.width()) // 2, (screen.height() - size.height()) // 2)
+
+    def start(self):
+        if self.isPaused:
+            return
+
+        self.isStarted = True
+        self.tboard.score = 0
+        BOARD_DATA.clear()
+
+        self.tboard.msg2Statusbar.emit(str(self.tboard.score))
+
+        BOARD_DATA.createNewPiece()
+        self.timer.start(self.speed, self)
+
+    def pause(self):
+        if not self.isStarted:
+            return
+
+        self.isPaused = not self.isPaused
+
+        if self.isPaused:
+            self.timer.stop()
+            self.tboard.msg2Statusbar.emit(&quot;paused&quot;)
+        else:
+            self.timer.start(self.speed, self)
+
+        self.updateWindow()
+
+    def updateWindow(self):
+        self.tboard.updateData()
+        self.sidePanel.updateData()
+        self.update()
+
+    def keyPressEvent(self, event):
+        if not self.isStarted or BOARD_DATA.currentShape == Shape.shapeNone:
+            super(Tetris, self).keyPressEvent(event)
+            return
+
+        key = event.key()
+
+        if key == Qt.Key_P:
+            self.pause()
+            return
+
+        if self.isPaused:
+            return
+        elif key == Qt.Key_Left:
+            BOARD_DATA.moveLeft()
+        elif key == Qt.Key_Right:
+            BOARD_DATA.moveRight()
+        elif key == Qt.Key_Up:
+            BOARD_DATA.rotateLeft()
+        elif key == Qt.Key_Space:
+            self.tboard.score += BOARD_DATA.dropDown()
+        else:
+            super(Tetris, self).keyPressEvent(event)
+
+        self.updateWindow()
+
+def drawSquare(painter, x, y, val, s):
+    colorTable = [0x000000, 0xCC6666, 0x66CC66, 0x6666CC,
+                  0xCCCC66, 0xCC66CC, 0x66CCCC, 0xDAAA00]
+
+    if val == 0:
+        return
+
+    color = QColor(colorTable[val])
+    painter.fillRect(x + 1, y + 1, s - 2, s - 2, color)
+
+    painter.setPen(color.lighter())
+    painter.drawLine(x, y + s - 1, x, y)
+    painter.drawLine(x, y, x + s - 1, y)
+
+    painter.setPen(color.darker())
+    painter.drawLine(x + 1, y + s - 1, x + s - 1, y + s - 1)
+    painter.drawLine(x + s - 1, y + s - 1, x + s - 1, y + 1)
+
+class SidePanel(QFrame):
+    def __init__(self, parent, gridSize):
+        super().__init__(parent)
+        self.setFixedSize(gridSize * 5, gridSize * BOARD_DATA.height)
+        self.move(gridSize * BOARD_DATA.width, 0)
+        self.gridSize = gridSize
+
+    def updateData(self):
+        self.update()
+
+    def paintEvent(self, event):
+        painter = QPainter(self)
+        minX, maxX, minY, maxY = BOARD_DATA.nextShape.getBoundingOffsets(0)
+
+        dy = 3 * self.gridSize
+        dx = (self.width() - (maxX - minX) * self.gridSize) / 2
+
+        val = BOARD_DATA.nextShape.shape
+        for x, y in BOARD_DATA.nextShape.getCoords(0, 0, -minY):
+            drawSquare(painter, x * self.gridSize + dx, y * self.gridSize + dy, val, self.gridSize)
+
+class Board(QFrame):
+    msg2Statusbar = pyqtSignal(str)
+    speed = 10
+
+    def __init__(self, parent, gridSize):
+        super().__init__(parent)
+        self.setFixedSize(gridSize * BOARD_DATA.width, gridSize * BOARD_DATA.height)
+        self.gridSize = gridSize
+        self.initBoard()
+
+    def initBoard(self):
+        self.score = 0
+        BOARD_DATA.clear()
+
+    def paintEvent(self, event):
+        painter = QPainter(self)
+
+        # Draw backboard
+        for x in range(BOARD_DATA.width):
+            for y in range(BOARD_DATA.height):
+                val = BOARD_DATA.getValue(x, y)
+                drawSquare(painter, x * self.gridSize, y * self.gridSize, val, self.gridSize)
+
+        # Draw current shape
+        for x, y in BOARD_DATA.getCurrentShapeCoord():
+            val = BOARD_DATA.currentShape.shape
+            drawSquare(painter, x * self.gridSize, y * self.gridSize, val, self.gridSize)
+
+        # Draw a border
+        painter.setPen(QColor(0x777777))
+        painter.drawLine(self.width()-1, 0, self.width()-1, self.height())
+        painter.setPen(QColor(0xCCCCCC))
+        painter.drawLine(self.width(), 0, self.width(), self.height())
+
+    def updateData(self):
+        self.msg2Statusbar.emit(str(self.score))
+        self.update()
+
+
+if __name__ == '__main__':
+    # random.seed(32)
+    app = QApplication([])
+    tetris = Tetris()
+    sys.exit(app.exec_())
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/examples/tetris/class01/" title="Set up Tetris UI"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/examples/tetris/class03/" title="AI model integration" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1559109079"></script>
+    <script src="/js/perfect-scrollbar.min.js?1559109079"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1559109079"></script>
+    <script src="/js/jquery.sticky.js?1559109079"></script>
+    <script src="/js/featherlight.min.js?1559109079"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1559109079"></script>
+    <script src="/js/highlight.pack.js?1559109079"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1559109079"></script>
+    <script src="/js/learn.js?1559109079"></script>
+    <script src="/js/hugo-learn.js?1559109079"></script>
+
+    <link href="/mermaid/mermaid.css?1559109079" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1559109079"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

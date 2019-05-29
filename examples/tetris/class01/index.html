@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.55.4" />
+    <meta name="description" content="Kids programming curriculum">
+<meta name="author" content="Alim">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Set up Tetris UI :: Python programming</title>
+
+    
+    <link href="/css/nucleus.css?1559109079" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1559109079" rel="stylesheet">
+    <link href="/css/hybrid.css?1559109079" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1559109079" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1559109079" rel="stylesheet">
+    <link href="/css/auto-complete.css?1559109079" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1559109079" rel="stylesheet">
+    <link href="/css/theme.css?1559109079" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1559109079" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1559109079"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/examples/tetris/class01/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+ 
+  <h3 style="color: white;">Python Class</h3>
+</a>
+
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/">
+          <b>1. </b>Basics
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/strings/" title="Strings" class="dd-item ">
+        <a href="/basics/strings/">
+        <b>1. </b>Strings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/numbers/" title="Numbers" class="dd-item ">
+        <a href="/basics/numbers/">
+        <b>2. </b>Numbers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/list/" title="List" class="dd-item ">
+        <a href="/basics/list/">
+        <b>3. </b>List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/dictionary/" title="Dictionary" class="dd-item ">
+        <a href="/basics/dictionary/">
+        <b>4. </b>Dictionary
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/tuple/" title="Tuple" class="dd-item ">
+        <a href="/basics/tuple/">
+        <b>5. </b>Tuple
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/oop/" title="Object Oriented Programming" class="dd-item ">
+        <a href="/basics/oop/">
+        <b>6. </b>Object Oriented Programming
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/examples/" title="Examples" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/examples/">
+          <b>2. </b>Examples
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/examples/snake/" title="Snake Game" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/examples/snake/">
+          <b>1. </b>Snake Game
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/snake/class01/" title="Set up the screen" class="dd-item ">
+        <a href="/examples/snake/class01/">
+        <b>1. </b>Set up the screen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/snake/class02/" title="Connect all elements" class="dd-item ">
+        <a href="/examples/snake/class02/">
+        <b>2. </b>Connect all elements
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/snake/class03/" title="Fully functioning game" class="dd-item ">
+        <a href="/examples/snake/class03/">
+        <b>3. </b>Fully functioning game
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/examples/tetris/" title="Tetris Game" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/examples/tetris/">
+          <b>2. </b>Tetris Game
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/tetris/class01/" title="Set up Tetris UI" class="dd-item active">
+        <a href="/examples/tetris/class01/">
+        <b>1. </b>Set up Tetris UI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/tetris/class02/" title="Draw squares" class="dd-item ">
+        <a href="/examples/tetris/class02/">
+        <b>2. </b>Draw squares
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/examples/tetris/class03/" title="AI model integration" class="dd-item ">
+        <a href="/examples/tetris/class03/">
+        <b>3. </b>AI model integration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <center>
+<p>We <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> Python<a href="http://getgrav.org"></a> <a href="http://gohugo.io/"></a></p>
+</center>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Python programming</a> > <a href='/examples/'>Examples</a> > <a href='/examples/tetris/'>Tetris Game</a> > Set up Tetris UI
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#simply-go-over-the-previous-class">Simply go over the previous class</a></li>
+<li><a href="#step-1-create-a-python-file-tetris-game-py">Step 1: Create a Python file <code>tetris_game.py</code></a></li>
+<li><a href="#step-2-import-required-libraries">Step 2: Import required libraries</a></li>
+<li><a href="#step-3-create-a-tetris-class-which-is-inherited-qmainwindow">Step 3: Create a Tetris class which is inherited <code>QMainWindow</code></a></li>
+<li><a href="#step-4-instantiate-the-tetris-ui">Step 4: Instantiate the tetris UI</a></li>
+<li><a href="#step-5-main-function-call">Step 5: Main function call</a></li>
+<li><a href="#step-6-put-them-all-together">Step 6: Put them all together</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Set up Tetris UI
+            </h1>
+          
+
+        
+
+
+
+
+
+<p><img src="/images/" alt="" /></p>
+
+<h3 id="simply-go-over-the-previous-class">Simply go over the previous class</h3>
+
+<table>
+<thead>
+<tr>
+<th><center>Task</center></th>
+<th><center>Time</center></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><center>Quickly go through the <a href="/examples/snake"><strong>Python basics we have already learned</strong></a></center></td>
+<td><center>10 mins</center></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="step-1-create-a-python-file-tetris-game-py">Step 1: Create a Python file <code>tetris_game.py</code></h3>
+
+<p>As we have already learned how to create a Python file, open Sublime text editor -&gt; File -&gt; New File -&gt; press <code>CTRL + S</code> -&gt; name the file as <code>tetris_game.py</code></p>
+
+<h3 id="step-2-import-required-libraries">Step 2: Import required libraries</h3>
+
+<p>Copy and Paste the code snippet below to import required libraries.</p>
+
+<pre><code>import sys, random
+from PyQt5.QtWidgets import QMainWindow, QFrame, QDesktopWidget, QApplication, QHBoxLayout, QLabel
+from PyQt5.QtCore import Qt, QBasicTimer, pyqtSignal
+from PyQt5.QtGui import QPainter, QColor
+from tetris_model import BOARD_DATA, Shape
+</code></pre>
+
+<p><strong>Introduction to the new libraries</strong></p>
+
+<ul>
+<li><strong>sys</strong> - System-specific parameters and functions. This module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter. It is always available. &hellip; If no script name was passed to the Python interpreter, argv[0] is the empty string.</li>
+<li><strong>PyQt5</strong> is a comprehensive set of Python bindings for Qt v5. It is implemented as more than 35 extension modules and enables Python to be used as an alternative application development language to C++ on all supported platforms including iOS and Android.</li>
+<li><strong>Qt</strong> (pronounced &ldquo;cute&rdquo;) is a free and open-source widget toolkit for creating graphical user interfaces as well as cross-platform applications that run on various software and hardware platforms such as Linux, Windows, macOS, Android or embedded systems with little or no change in the underlying codebase while still being a native application with native capabilities and speed.</li>
+</ul>
+
+<h3 id="step-3-create-a-tetris-class-which-is-inherited-qmainwindow">Step 3: Create a Tetris class which is inherited <code>QMainWindow</code></h3>
+
+<pre><code>class Tetris(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.isStarted = False
+        self.isPaused = False
+        self.nextMove = None
+        self.lastShape = Shape.shapeNone
+</code></pre>
+
+<ul>
+<li><code>class Tetris():</code> This is how a class declared in Python.</li>
+<li><code>class Tetris(QMainWindow):</code> This is how a <code>Inheritance</code> declared in Python. Pass <code>QMainWindow</code> as a attribute to the Tetris class because the class <code>QMainWindow</code> is inherited by the Tetris class.</li>
+<li><code>__init__</code> - When a class defines an <code>__init__()</code> method, class instantiation automatically invokes <code>__init__()</code> for the newly-created class instance.</li>
+<li><code>super().__init__()</code> - <code>super()</code> lets you avoid referring to the base class explicitly,</li>
+</ul>
+
+<h3 id="step-4-instantiate-the-tetris-ui">Step 4: Instantiate the tetris UI</h3>
+
+<p>In this process, we instantiate the tetris user interface where we put all elements together.</p>
+
+<pre><code>def initUI(self):
+    self.setWindowTitle('Tetris')
+    self.show()
+</code></pre>
+
+<p><code>initUI</code> is the function defined inside the Tetris class to customize the tetris UI. In additionally, it must be instantiated in the <code>__init()__</code>.</p>
+
+<pre><code>class Tetris(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.isStarted = False
+        self.isPaused = False
+        self.nextMove = None
+        self.lastShape = Shape.shapeNone
+
+        self.initUI()
+
+    def initUI(self):
+        self.setWindowTitle('Tetris')
+        self.show()
+</code></pre>
+
+<h3 id="step-5-main-function-call">Step 5: Main function call</h3>
+
+<pre><code>if __name__ == '__main__':
+    app = QApplication([])
+    tetris = Tetris()
+    sys.exit(app.exec_())
+</code></pre>
+
+<ul>
+<li><code>__main__</code> is the name of the scope in which top-level code executes. A module’s <code>__name__</code> is set equal to <code>__main__</code> when read from standard input, a script, or from an interactive prompt. A module can discover whether or not it is running in the main scope by checking its own <strong>name</strong>, which allows a common idiom for conditionally executing code in a module when it is run as a script or with python -m but not when it is imported:</li>
+</ul>
+
+<h3 id="step-6-put-them-all-together">Step 6: Put them all together</h3>
+
+<p>All valid code that is written in this class is given below:</p>
+
+<pre><code>import sys, random
+from PyQt5.QtWidgets import QMainWindow, QFrame, QDesktopWidget, QApplication, QHBoxLayout, QLabel
+from PyQt5.QtCore import Qt, QBasicTimer, pyqtSignal
+from PyQt5.QtGui import QPainter, QColor
+from tetris_model import BOARD_DATA, Shape
+
+class Tetris(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.isStarted = False
+        self.isPaused = False
+        self.nextMove = None
+        self.lastShape = Shape.shapeNone
+
+        self.initUI()
+
+    def initUI(self):
+        self.setWindowTitle('Tetris')
+        self.show()
+
+if __name__ == '__main__':
+    app = QApplication([])
+    tetris = Tetris()
+    sys.exit(app.exec_())
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/examples/tetris/" title="Tetris Game"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/examples/tetris/class02/" title="Draw squares" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1559109079"></script>
+    <script src="/js/perfect-scrollbar.min.js?1559109079"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1559109079"></script>
+    <script src="/js/jquery.sticky.js?1559109079"></script>
+    <script src="/js/featherlight.min.js?1559109079"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1559109079"></script>
+    <script src="/js/highlight.pack.js?1559109079"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1559109079"></script>
+    <script src="/js/learn.js?1559109079"></script>
+    <script src="/js/hugo-learn.js?1559109079"></script>
+
+    <link href="/mermaid/mermaid.css?1559109079" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1559109079"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

@@ -6,10 +6,21 @@
     <description>Recent content on Python programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 28 May 2019 20:38:27 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jun 2019 16:38:20 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Easy chatbot implementation</title>
+      <link>/examples/chatbot/class01/</link>
+      <pubDate>Tue, 04 Jun 2019 16:38:20 +0800</pubDate>
+      
+      <guid>/examples/chatbot/class01/</guid>
+      <description>Chatbot architecture Step 1: Open Sublime Text editor, File -&amp;gt; New File create a Python file chatbot.py. Step 2: Import library Import random library
+import random  Step 3: Specify greetings Create a Python list, specify greetings that we start the conversation with chatbot.
+greetings = [&#39;hola&#39;, &#39;hello&#39;, &#39;hi&#39;, &#39;Hi&#39;, &#39;hey!&#39;,&#39;hey&#39;]  Step 4: Specify chatbot greetings Presumably, chatbot replys randomly to our greetings. Therefor chatbot_greeting variable carrys random value.</description>
+    </item>
     
     <item>
       <title>Set up Tetris UI</title>
@@ -17,7 +28,7 @@
       <pubDate>Wed, 08 May 2019 09:30:27 +0800</pubDate>
       
       <guid>/examples/tetris/class01/</guid>
-      <description>Simply go over the previous class    Task Time     Quickly go through the Python basics we have already learned 10 mins    Step 1: Create a Python file tetris_game.py As we have already learned how to create a Python file, open Sublime text editor -&amp;gt; File -&amp;gt; New File -&amp;gt; press CTRL + S -&amp;gt; name the file as tetris_game.py
+      <description>Simply go over the previous class    Task Time     Quickly go through the Previous class 10 mins    Step 1: Create a Python file tetris_game.py As we have already learned how to create a Python file, open Sublime text editor -&amp;gt; File -&amp;gt; New File -&amp;gt; press CTRL + S -&amp;gt; name the file as tetris_game.py
 Step 2: Import required libraries Copy and Paste the code snippet below to import required libraries.</description>
     </item>
     
@@ -45,11 +56,22 @@ import random  Time module provides various time-related functions.</description
     <item>
       <title>Draw squares</title>
       <link>/examples/tetris/class02/</link>
-      <pubDate>Tue, 21 May 2019 17:36:23 +0800</pubDate>
+      <pubDate>Tue, 18 Jun 2019 18:36:12 +0800</pubDate>
       
       <guid>/examples/tetris/class02/</guid>
-      <description>Before today&amp;rsquo;s class    Task Time     Quickly go through the previous class 10 mins    In the previous class, we&amp;rsquo;ve set up the basic structure of the tetris game. In this class, we&amp;rsquo;re going to customize the game screen and add squares.
+      <description>Before today&amp;rsquo;s class    Task Time     Quickly go through the Previous class 10 mins    In the previous class, we’ve set up the basic structure of the tetris game. In this class, we’re going to customize the game screen and add squares.
 The customize version of the code import sys, random from PyQt5.QtWidgets import QMainWindow, QFrame, QDesktopWidget, QApplication, QHBoxLayout, QLabel from PyQt5.</description>
+    </item>
+    
+    <item>
+      <title>Smart chatbot design</title>
+      <link>/examples/chatbot/class02/</link>
+      <pubDate>Tue, 11 Jun 2019 18:58:00 +0800</pubDate>
+      
+      <guid>/examples/chatbot/class02/</guid>
+      <description>In today&amp;rsquo;s class, we&amp;rsquo;re going to build a smart Chatbot. A smart Chatbot can be trained with data sets and react to the question more efficiently.
+Our smart Chatbot training is based on Chatterbot which is Python library that provides basic capabilities to train Chatbots.
+Chatterbot architecture Step 1: Install Chatterbot to our local environment  Open Terminal application Type pip3 install chatterbot Wait for installation complete  Step 2: Import Chatterbot libraries to our work environment Open up Sublime Text editor to create Python file chatbot_smart.</description>
     </item>
     
     <item>
@@ -74,12 +96,11 @@ The customize version of the code import sys, random from PyQt5.QtWidgets import
     <item>
       <title>AI model integration</title>
       <link>/examples/tetris/class03/</link>
-      <pubDate>Tue, 28 May 2019 20:38:27 +0800</pubDate>
+      <pubDate>Tue, 18 Jun 2019 18:36:19 +0800</pubDate>
       
       <guid>/examples/tetris/class03/</guid>
-      <description>Tetris game architecture Following is the basic architecture of the tetris game. The game hierarchy is seperated to three layers:
- AI layer Basics layer Infrastructure layer  In this class, we will integrate our Tetris game with AI model.
-Step 1: Create AI workflow  Under the same directory of tetris_game.py file create tetris_ai.py and copy/paste following code. This module leverages data and algorithms from the tetris_model.py file, helps us integrate the AI model with our general tetris game and make it smarter.</description>
+      <description>Before today&amp;rsquo;s class    Task Time     Quickly go through the Previous class 10 mins    In the previous class, we’ve set up the basic structure of the tetris game. In this class, we’re going to customize the game screen and add squares.
+Tetris game architecture Following is the basic architecture of the tetris game. The game hierarchy is seperated to three layers:</description>
     </item>
     
     <item>

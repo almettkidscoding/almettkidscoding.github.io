@@ -12,7 +12,7 @@ chapter: false
 
 |<center>Task</center> 	   |         <center>Time</center>                   |
 ---------- | -------------------------------- |
-| <center>Quickly go through the [**Python basics we have already learned**](/examples/snake)</center>  | <center>10 mins</center>  |
+| <center>Quickly go through the [**Previous class**](/examples/snake)</center>  | <center>10 mins</center>  |
 
 ### Step 1: Create a Python file `tetris_game.py`
 

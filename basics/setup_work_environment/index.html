@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="description" content="Kids programming curriculum">
+<meta name="author" content="Alim">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>搭建Python编程环境 :: Python programming</title>
+
+    
+    <link href="/css/nucleus.css?1568393439" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1568393439" rel="stylesheet">
+    <link href="/css/hybrid.css?1568393439" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1568393439" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1568393439" rel="stylesheet">
+    <link href="/css/auto-complete.css?1568393439" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1568393439" rel="stylesheet">
+    <link href="/css/theme.css?1568393439" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1568393439" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1568393439"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/basics/setup_work_environment/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <h4 style="color: white;">Python人工智能课程</h4>
+</a>
+
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Python入门课程" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/basics/">
+          <b>1. </b>Python入门课程
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/introduction/" title="Python简介" class="dd-item ">
+        <a href="/basics/introduction/">
+        <b>1. </b>Python简介
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/setup_work_environment/" title="搭建Python编程环境" class="dd-item active">
+        <a href="/basics/setup_work_environment/">
+        <b>2. </b>搭建Python编程环境
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > 搭建Python编程环境
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#课程计划">课程计划</a>
+<ul>
+<li><a href="#课程目标">课程目标</a></li>
+<li><a href="#课程要求">课程要求</a></li>
+<li><a href="#课程软件">课程软件</a></li>
+<li><a href="#课程时间">课程时间</a></li>
+</ul></li>
+<li><a href="#课程内容">课程内容</a>
+<ul>
+<li><a href="#常用的操作系统有三种">常用的操作系统有三种</a></li>
+<li><a href="#windows下载并安装python">Windows下载并安装Python</a>
+<ul>
+<li><a href="#windows操作系统要求">Windows操作系统要求</a></li>
+<li><a href="#下载软件">下载软件</a></li>
+<li><a href="#软件安装步骤">软件安装步骤</a></li>
+<li><a href="#第一步-打开官网">第一步: 打开官网</a></li>
+<li><a href="#第二部-找到windows安装文件">第二部： 找到Windows安装文件</a></li>
+<li><a href="#第三步-下载文件">第三步: 下载文件</a></li>
+<li><a href="#第四步-添加python路径到系统环境标量">第四步： 添加Python路径到系统环境标量</a></li>
+<li><a href="#第五步-安装python3-7-4">第五步： 安装Python3.7.4</a></li>
+<li><a href="#第六步-指定python安装路径">第六步： 指定Python安装路径</a></li>
+<li><a href="#第七部-验证是否安装成功">第七部： 验证是否安装成功</a></li>
+</ul></li>
+<li><a href="#windows下载并安装sublime-text编辑器">Windows下载并安装Sublime Text编辑器</a>
+<ul>
+<li><a href="#下载软件-1">下载软件</a></li>
+<li><a href="#软件安装步骤-1">软件安装步骤</a></li>
+<li><a href="#第一步-打开官网找到sublime-text下载文件并下载">第一步： 打开官网找到Sublime Text下载文件并下载</a></li>
+<li><a href="#第二步-开始安装">第二步： 开始安装</a></li>
+<li><a href="#第三步-下一步">第三步： 下一步</a></li>
+<li><a href="#第四步-指定安装目录">第四步： 指定安装目录</a></li>
+<li><a href="#第五步-将其添加到开始菜单中">第五步： 将其添加到开始菜单中</a></li>
+<li><a href="#第六步-安装">第六步： 安装</a></li>
+<li><a href="#第七部-正在安装">第七部： 正在安装</a></li>
+<li><a href="#第八部-完成安装">第八部： 完成安装</a></li>
+<li><a href="#第九部-验证是否安装成功">第九部： 验证是否安装成功</a></li>
+<li><a href="#mac电脑python环境搭建跟windows类似-mac电脑安装python不需要手动配置系统环境变量">Mac电脑Python环境搭建跟Windows类似。Mac电脑安装Python不需要手动配置系统环境变量。</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              搭建Python编程环境
+            </h1>
+          
+
+        
+
+
+
+
+
+<h2 id="课程计划">课程计划</h2>
+
+<hr/>
+
+<h3 id="课程目标">课程目标</h3>
+
+<ul>
+<li>了解各种操作系统</li>
+<li>一步步安装Python编程环境</li>
+</ul>
+
+<h3 id="课程要求">课程要求</h3>
+
+<ul>
+<li>每位学生必须自带预装Windows或者Mac操作系统的笔记本电脑(不包括iPad)</li>
+</ul>
+
+<h3 id="课程软件">课程软件</h3>
+
+<ul>
+<li>Python 3.7.4 安装文件</li>
+<li>Sublime Text 3 编辑器</li>
+</ul>
+
+<blockquote>
+<p>老师课前准备好课程所需软件，学生不必准备</p>
+</blockquote>
+
+<h3 id="课程时间">课程时间</h3>
+
+<ul>
+<li>40分钟</li>
+</ul>
+
+<h2 id="课程内容">课程内容</h2>
+
+<hr/>
+
+<h3 id="常用的操作系统有三种">常用的操作系统有三种</h3>
+
+<ul>
+<li>Windows操作系统</li>
+<li>Mac操作系统</li>
+<li>Linux操作系统</li>
+</ul>
+
+<h3 id="windows下载并安装python">Windows下载并安装Python</h3>
+
+<h4 id="windows操作系统要求">Windows操作系统要求</h4>
+
+<ul>
+<li>Windows 7或者以上版本</li>
+</ul>
+
+<h4 id="下载软件">下载软件</h4>
+
+<ul>
+<li><a href="https://www.python.org/downloads/windows/">Python 3.7.4下载</a></li>
+</ul>
+
+<h4 id="软件安装步骤">软件安装步骤</h4>
+
+<h4 id="第一步-打开官网">第一步: 打开官网</h4>
+
+<p>进入Python官网，Python官网主页如下图所示。</p>
+
+<p><img src="/images/environment_setup/01.png" alt="" /></p>
+
+<h4 id="第二部-找到windows安装文件">第二部： 找到Windows安装文件</h4>
+
+<p>当前最新的Python版本是3.7.4，在Pyhton官网主页单击Download标题下的Python3.7.4连接，进入下载页面，并拖动页面到Files位置。如下图所示。</p>
+
+<p><img src="/images/environment_setup/02.png" alt="" /></p>
+
+<h4 id="第三步-下载文件">第三步: 下载文件</h4>
+
+<p>本次实验是在Windows10 64位操作系统下安装Python开发环境。因此选择下图红色边框内的Python开发环境安装包，并保存到指定的磁盘目录。</p>
+
+<p><img src="/images/environment_setup/03.png" alt="" /></p>
+
+<h4 id="第四步-添加python路径到系统环境标量">第四步： 添加Python路径到系统环境标量</h4>
+
+<p>安装包下载完成后，进入安装包下载目录运行安装包，在Python安装向导首页，勾选【Add Python3.7 to PATH】选项。如下图所示。</p>
+
+<p><img src="/images/environment_setup/04.jpg" alt="" /></p>
+
+<h4 id="第五步-安装python3-7-4">第五步： 安装Python3.7.4</h4>
+
+<p>进入Python安装选项。安装选项有文档、IDLE集成开发环境、PIP工具（用于下载和安装Python的第三方库）等。接收默认选项，直接选择【Next】按钮进入下一步。</p>
+
+<p><img src="/images/environment_setup/05.jpg" alt="" /></p>
+
+<h4 id="第六步-指定python安装路径">第六步： 指定Python安装路径</h4>
+
+<p>进入Python高级安装选项，该页面主要用于配置安装目录。接受默认选项，选择【Install】按钮开始安装。</p>
+
+<p><img src="/images/environment_setup/06.jpg" alt="" /></p>
+
+<h4 id="第七部-验证是否安装成功">第七部： 验证是否安装成功</h4>
+
+<p>验证Python是否安装成功。进入Windows命令行窗口，在命令行窗口输入【Python】命令。如果出现下图所示的内容，则说明Python安装成功。</p>
+
+<p><img src="/images/environment_setup/07.png" alt="" /></p>
+
+<h3 id="windows下载并安装sublime-text编辑器">Windows下载并安装Sublime Text编辑器</h3>
+
+<h4 id="下载软件-1">下载软件</h4>
+
+<ul>
+<li><a href="https://www.sublimetext.com/3">Sublime Text 3下载</a></li>
+</ul>
+
+<h4 id="软件安装步骤-1">软件安装步骤</h4>
+
+<h4 id="第一步-打开官网找到sublime-text下载文件并下载">第一步： 打开官网找到Sublime Text下载文件并下载</h4>
+
+<p>打开浏览器在搜索栏里面输入: <strong><a href="http://www.sublimetext.com/3">http://www.sublimetext.com/3</a></strong> 进入到 <strong>Subliem</strong> 官网地址, 可以选择 32bit 或 64 bit 来进行下载</p>
+
+<p><img src="/images/sublime_environment_setup/01.png" alt="" /></p>
+
+<h4 id="第二步-开始安装">第二步： 开始安装</h4>
+
+<p>双击打开下载好的 <strong>Sublime.exe</strong>, 点击: <strong>运行</strong></p>
+
+<p><img src="/images/sublime_environment_setup/02.png" alt="" /></p>
+
+<h4 id="第三步-下一步">第三步： 下一步</h4>
+
+<p>点击：Next</p>
+
+<p><img src="/images/sublime_environment_setup/03.png" alt="" /></p>
+
+<h4 id="第四步-指定安装目录">第四步： 指定安装目录</h4>
+
+<p>选择默认目录或自定义目录将 Sublime 进行存放, 接着点击: <strong>Next</strong></p>
+
+<p><img src="/images/sublime_environment_setup/04.png" alt="" /></p>
+
+<h4 id="第五步-将其添加到开始菜单中">第五步： 将其添加到开始菜单中</h4>
+
+<p>将其添加到开始菜单中, 将 Add to explorer context menu 前面 <strong>√</strong> 号勾选上,接着点击: <strong>Next</strong></p>
+
+<p><img src="/images/sublime_environment_setup/05.png" alt="" /></p>
+
+<h4 id="第六步-安装">第六步： 安装</h4>
+
+<p>点击：Install</p>
+
+<p><img src="/images/sublime_environment_setup/06.png" alt="" /></p>
+
+<h4 id="第七部-正在安装">第七部： 正在安装</h4>
+
+<p>等待安装&hellip;</p>
+
+<p><img src="/images/sublime_environment_setup/07.png" alt="" /></p>
+
+<h4 id="第八部-完成安装">第八部： 完成安装</h4>
+
+<p>点击：Finish 安装完成</p>
+
+<p><img src="/images/sublime_environment_setup/08.png" alt="" /></p>
+
+<h4 id="第九部-验证是否安装成功">第九部： 验证是否安装成功</h4>
+
+<p>点击 <strong>win</strong> 键,输入 <strong>Sublime</strong> 来查看是否安装成功,</p>
+
+<p><img src="/images/sublime_environment_setup/09.png" alt="" /></p>
+
+<blockquote>
+<h4 id="mac电脑python环境搭建跟windows类似-mac电脑安装python不需要手动配置系统环境变量">Mac电脑Python环境搭建跟Windows类似。Mac电脑安装Python不需要手动配置系统环境变量。</h4>
+</blockquote>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/basics/introduction/" title="Python简介"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/basics/introduction/" title="Python简介" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1568393439"></script>
+    <script src="/js/perfect-scrollbar.min.js?1568393439"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1568393439"></script>
+    <script src="/js/jquery.sticky.js?1568393439"></script>
+    <script src="/js/featherlight.min.js?1568393439"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1568393439"></script>
+    <script src="/js/highlight.pack.js?1568393439"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1568393439"></script>
+    <script src="/js/learn.js?1568393439"></script>
+    <script src="/js/hugo-learn.js?1568393439"></script>
+
+    <link href="/mermaid/mermaid.css?1568393439" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1568393439"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

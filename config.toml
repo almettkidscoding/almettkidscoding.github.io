@@ -1,0 +1,15 @@
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Python programming"
+theme = "learn"
+themesdir = "themes"
+
+[params]
+  # editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
+  description = "Kids programming curriculum"
+  author = "Alim"
+
+
+

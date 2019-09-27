@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="description" content="Kids programming curriculum">
+<meta name="author" content="Alim">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Turtle programming :: Python programming</title>
+
+    
+    <link href="/css/nucleus.css?1569569233" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1569569233" rel="stylesheet">
+    <link href="/css/hybrid.css?1569569233" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1569569233" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1569569233" rel="stylesheet">
+    <link href="/css/auto-complete.css?1569569233" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1569569233" rel="stylesheet">
+    <link href="/css/theme.css?1569569233" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1569569233" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1569569233"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/basics/turtle_programming/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <h4 style="color: white;">Python人工智能课程</h4>
+</a>
+
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Python入门课程" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/basics/">
+          <b>1. </b>Python入门课程
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/introduction/" title="Python简介" class="dd-item ">
+        <a href="/basics/introduction/">
+        <b>1. </b>Python简介
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/setup_work_environment/" title="Python学习环境搭建" class="dd-item ">
+        <a href="/basics/setup_work_environment/">
+        <b>2. </b>Python学习环境搭建
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/turtle_programming/" title="Turtle programming" class="dd-item active">
+        <a href="/basics/turtle_programming/">
+        <b>3. </b>Turtle programming
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/numbers_strings_list/" title="Numbers,strings,list" class="dd-item ">
+        <a href="/basics/numbers_strings_list/">
+        <b>4. [Data Types]</b>Numbers,strings,list
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Turtle programming
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#class-objectives">Class objectives</a></li>
+<li><a href="#syntax-table">Syntax table</a></li>
+<li><a href="#draw-the-first-turtle-graphic">Draw the first turtle graphic</a>
+<ul>
+<li><a href="#square-programs-in-comparison">Square programs in comparison</a></li>
+<li><a href="#square-program-in-comparison-with-loop">Square program in comparison (with loop)</a></li>
+</ul></li>
+<li><a href="#write-a-square-program-in-python">Write a square program in Python</a>
+<ul>
+<li><a href="#step-1-create-python-file">Step 1: Create Python file</a></li>
+<li><a href="#step-2-import-turtle-module">Step 2: Import turtle module</a></li>
+<li><a href="#step-3-draw-a-square">Step 3: Draw a square</a></li>
+<li><a href="#step-4-finalize-the-program">Step 4: Finalize the program</a></li>
+<li><a href="#step-5-complete-code-for-square">Step 5: Complete code for square</a></li>
+<li><a href="#step-6-run-the-square-program">Step 6: Run the square program</a></li>
+</ul></li>
+<li><a href="#draw-shapes-in-practice">Draw shapes in practice</a>
+<ul>
+<li><a href="#draw-a-triangle">Draw a triangle</a></li>
+<li><a href="#draw-a-polygon">Draw a Polygon</a></li>
+<li><a href="#draw-polygons">Draw polygons</a></li>
+<li><a href="#draw-more-polygons">Draw more polygons</a></li>
+<li><a href="#draw-a-symbol">Draw a symbol</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Turtle programming
+            </h1>
+          
+
+        
+
+
+
+
+
+<h3 id="class-objectives">Class objectives</h3>
+
+<ul>
+<li><a href="#syntax-table"><strong>Learn key syntax in turtle</strong></a></li>
+<li><a href="#draw-the-first-turtle-graphic"><strong>Draw the first turtle graphic</strong></a></li>
+<li><a href="#draw-shapes-in-practice"><strong>Draw shapes in practice</strong></a></li>
+</ul>
+
+<h3 id="syntax-table">Syntax table</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left"><center>Keyword</center></th>
+<th align="center"><center>description</center></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><center>import</center></td>
+<td align="center">import statement is the most common way of invocking the required modules</td>
+</tr>
+
+<tr>
+<td align="left"><center>star mark(*)</center></td>
+<td align="center">stands for everything</td>
+</tr>
+
+<tr>
+<td align="left"><center>forward(distance)</center></td>
+<td align="center">Parameter: distance- is a number (integer or float). Move the turtle forward by the specified distance, in the direction the turtle is headed.</td>
+</tr>
+
+<tr>
+<td align="left"><center>backward(distance)</center></td>
+<td align="center">Parameter: distance- is a number (integer or float). Move the turtle backward by the specified distance, in the direction the turtle is headed.</td>
+</tr>
+
+<tr>
+<td align="left"><center>right(angle)</center></td>
+<td align="center">Parameter: angle- a number (integer or float). Turn turtle right by angle units.(Units are by default degrees)</td>
+</tr>
+
+<tr>
+<td align="left"><center>left(angle)</center></td>
+<td align="center">Parameter: angle- a number (integer or float). Turn turtle left by angle units.(Units are by default degrees)</td>
+</tr>
+
+<tr>
+<td align="left"><center>goto(x, y=None)</center></td>
+<td align="center">Parameters: x and y are numbers. y can be None</td>
+</tr>
+
+<tr>
+<td align="left"><center>pendown()</center></td>
+<td align="center">Pull the pen down – drawing when moving.</td>
+</tr>
+
+<tr>
+<td align="left"><center>penup()</center></td>
+<td align="center">Pull the pen up – no drawing when moving.</td>
+</tr>
+
+<tr>
+<td align="left"><center>color(color1, color2)</center></td>
+<td align="center">color1 is fill color. color2 is pen color.</td>
+</tr>
+
+<tr>
+<td align="left"><center>shape(name=None)</center></td>
+<td align="center">Parameter: name - a string which is a valid shapename. Set turtle shape to shape with given name or, if name is not given, return name of current shape.</td>
+</tr>
+
+<tr>
+<td align="left"><center>done()</center></td>
+<td align="center">Must be the last statement that finalize the program</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="draw-the-first-turtle-graphic">Draw the first turtle graphic</h3>
+
+<h4 id="square-programs-in-comparison">Square programs in comparison</h4>
+
+<ol>
+<li>Square program in Scratch</li>
+</ol>
+
+<p><img src="/images/turtle/square_in_scratch.png" alt="" /></p>
+
+<ol>
+<li>Square program in Python</li>
+</ol>
+
+<pre><code class="language-python">	shape(&quot;turtle&quot;)
+	forward(100)
+	right(90)
+	forward(100)
+	right(90)
+	forward(100)
+	right(90)
+	forward(100)
+	right(90)
+</code></pre>
+
+<ul>
+<li><code>forward()</code>:</li>
+<li><code>right()</code>:</li>
+</ul>
+
+<h4 id="square-program-in-comparison-with-loop">Square program in comparison (with loop)</h4>
+
+<ol>
+<li>Square program in Scratch</li>
+</ol>
+
+<p><img src="/images/turtle/square_loop.png" alt="" /></p>
+
+<ol>
+<li>Square program in Python</li>
+</ol>
+
+<pre><code class="language-python">for each_time in range(4):
+	shape(&quot;turtle&quot;)
+	forward(100)
+	right(90)
+</code></pre>
+
+<h3 id="write-a-square-program-in-python">Write a square program in Python</h3>
+
+<h4 id="step-1-create-python-file">Step 1: Create Python file</h4>
+
+<p>Open <code>Sublime Text</code> editor, create a file by clickng <code>File -&gt; New File</code> at the left top, name it as <code>turtle_program.py</code>.</p>
+
+<h4 id="step-2-import-turtle-module">Step 2: Import turtle module</h4>
+
+<p>Import Turtle module to the <code>turtle_program.py</code> file.</p>
+
+<pre><code>from turtle import *
+</code></pre>
+
+<blockquote>
+<p>Look at <a href="#syntax-table"><strong>syntax table</strong></a> for more introduction about <code>import</code></p>
+</blockquote>
+
+<h4 id="step-3-draw-a-square">Step 3: Draw a square</h4>
+
+<p>Draw a square of which 100 pixels each side.</p>
+
+<pre><code class="language-python">	shape(&quot;turtle&quot;)
+	forward(100)
+	right(90)
+	forward(100)
+	right(90)
+	forward(100)
+	right(90)
+	forward(100)
+	right(90)
+</code></pre>
+
+<blockquote>
+<p>Look at <a href="#syntax-table"><strong>syntax table</strong></a> for more introduction about <code>forward()</code> and <code>right()</code></p>
+</blockquote>
+
+<h4 id="step-4-finalize-the-program">Step 4: Finalize the program</h4>
+
+<p>Finalize the program with <code>done()</code> statement at the last line</p>
+
+<pre><code class="language-python">	done()
+</code></pre>
+
+<blockquote>
+<p>Look at <a href="#syntax-table"><strong>syntax table</strong></a> for more introduction about <code>done()</code> statement</p>
+</blockquote>
+
+<h4 id="step-5-complete-code-for-square">Step 5: Complete code for square</h4>
+
+<pre><code class="language-python">	from turtle import *
+
+	# Square program without loop
+	forward(100)
+	right(90)
+	forward(100)
+	right(90)
+	forward(100)
+	right(90)
+	forward(100)
+	right(90)
+
+	done()
+</code></pre>
+
+<h4 id="step-6-run-the-square-program">Step 6: Run the square program</h4>
+
+<p>Run the program by pressing <code>Ctrl + B</code> if it presents the result as below:</p>
+
+<p><img src="/images/turtle/result.png" alt="" /></p>
+
+<h3 id="draw-shapes-in-practice">Draw shapes in practice</h3>
+
+<h4 id="draw-a-triangle">Draw a triangle</h4>
+
+<pre><code class="language-python">	from turtle import *
+
+	# Triangle program with a loop
+	for each_time in range(3):
+		forward(100)
+		right(120)
+
+	done()
+</code></pre>
+
+<p><img src="/images/turtle/01.png" alt="" /></p>
+
+<h4 id="draw-a-polygon">Draw a Polygon</h4>
+
+<pre><code class="language-python">	from turtle import *
+
+	# Polygram program with a loop
+	for each_time in range(6):
+		forward(100)
+		right(60)
+
+	done()
+</code></pre>
+
+<p><img src="/images/turtle/02.png" alt="" /></p>
+
+<h4 id="draw-polygons">Draw polygons</h4>
+
+<pre><code class="language-python">	for each_square in range(18):
+		color(&quot;red&quot;, &quot;green&quot;)
+		speed(100)
+		for each_line in range(6):
+			forward(100)
+			right(60)
+		left(20)
+
+	done()
+</code></pre>
+
+<p><img src="/images/turtle/03.png" alt="" /></p>
+
+<h4 id="draw-more-polygons">Draw more polygons</h4>
+
+<pre><code class="language-python">	for each_square in range(36):
+		color(&quot;red&quot;, &quot;green&quot;)
+		speed(100)
+		for each_line in range(6):
+			forward(100)
+			right(10)
+		left(20)
+
+	done()
+</code></pre>
+
+<p><img src="/images/turtle/04.png" alt="" /></p>
+
+<h4 id="draw-a-symbol">Draw a symbol</h4>
+
+<pre><code class="language-python">	from turtle import *
+
+	reset()
+	Screen()
+	up()
+	goto(-320,-195)
+	width(70)
+
+	for i in range(7):
+		color(&quot;green&quot;)
+		down()
+		forward(640)
+		up()
+		backward(640)
+		left(90)
+		forward(66)
+		right(90)
+
+	width(25)
+	color(&quot;white&quot;)
+	goto(0,-170)
+	down()
+
+	circle(170)
+	left(90)
+	forward(340)
+	up()
+	left(180)
+	forward(170)
+	right(45)
+	down()
+	forward(170)
+	up()
+	backward(170)
+	left(90)
+	down()
+	forward(170)
+	up()
+	goto(0,300)
+
+	done()
+</code></pre>
+
+<p><img src="/images/turtle/05.png" alt="" /></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/basics/setup_work_environment/" title="Python学习环境搭建"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/basics/numbers_strings_list/" title="Numbers,strings,list" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1569569233"></script>
+    <script src="/js/perfect-scrollbar.min.js?1569569233"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1569569233"></script>
+    <script src="/js/jquery.sticky.js?1569569233"></script>
+    <script src="/js/featherlight.min.js?1569569233"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1569569233"></script>
+    <script src="/js/highlight.pack.js?1569569233"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1569569233"></script>
+    <script src="/js/learn.js?1569569233"></script>
+    <script src="/js/hugo-learn.js?1569569233"></script>
+
+    <link href="/mermaid/mermaid.css?1569569233" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1569569233"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

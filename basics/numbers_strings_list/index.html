@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="description" content="Kids programming curriculum">
+<meta name="author" content="Alim">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Numbers,strings,list :: Python programming</title>
+
+    
+    <link href="/css/nucleus.css?1569569233" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1569569233" rel="stylesheet">
+    <link href="/css/hybrid.css?1569569233" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1569569233" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1569569233" rel="stylesheet">
+    <link href="/css/auto-complete.css?1569569233" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1569569233" rel="stylesheet">
+    <link href="/css/theme.css?1569569233" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1569569233" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1569569233"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/basics/numbers_strings_list/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <h4 style="color: white;">Python人工智能课程</h4>
+</a>
+
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Python入门课程" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/basics/">
+          <b>1. </b>Python入门课程
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/introduction/" title="Python简介" class="dd-item ">
+        <a href="/basics/introduction/">
+        <b>1. </b>Python简介
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/setup_work_environment/" title="Python学习环境搭建" class="dd-item ">
+        <a href="/basics/setup_work_environment/">
+        <b>2. </b>Python学习环境搭建
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/turtle_programming/" title="Turtle programming" class="dd-item ">
+        <a href="/basics/turtle_programming/">
+        <b>3. </b>Turtle programming
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/numbers_strings_list/" title="Numbers,strings,list" class="dd-item active">
+        <a href="/basics/numbers_strings_list/">
+        <b>4. [Data Types]</b>Numbers,strings,list
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Numbers,strings,list
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#class-objectives">Class objectives</a></li>
+<li><a href="#syntax-table">Syntax table</a></li>
+<li><a href="#brief-introduction-to-number">Brief introduction to Number</a>
+<ul>
+<li><a href="#what-is-number">What is Number?</a></li>
+</ul></li>
+<li><a href="#brief-introduction-to-string">Brief introduction to String</a>
+<ul>
+<li><a href="#what-is-string">What is String?</a></li>
+</ul></li>
+<li><a href="#brief-introduction-to-list">Brief introduction to List</a>
+<ul>
+<li><a href="#what-is-list">What is List?</a></li>
+</ul></li>
+<li><a href="#practice-them-in-turtle">Practice them in turtle</a>
+<ul>
+<li><a href="#how-to-print-a-string-in-turtle">How to print a String in turtle?</a></li>
+<li><a href="#how-to-practice-number-in-turtle">How to practice Number in turtle?</a></li>
+<li><a href="#how-to-practice-list-in-turtle">How to practice List in turtle?</a></li>
+<li><a href="#homework">Homework</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Numbers,strings,list
+            </h1>
+          
+
+        
+
+
+
+
+
+<h3 id="class-objectives">Class objectives</h3>
+
+<ul>
+<li><a href="#syntax-table"><strong>Key syntax introduction in this class</strong></a></li>
+<li><a href="#brief-introduction-to-number"><strong>Brief introduction to Numbers</strong></a></li>
+<li><a href="#brief-introduction-to-string"><strong>Brief introduction to Strings</strong></a></li>
+<li><a href="#brief-introduction-to-list"><strong>Brief introduction to List</strong></a></li>
+<li><a href="#practice-them-in-turtle"><strong>How to do it in turtle?</strong></a></li>
+<li><a href="#homework"><strong>Homework</strong></a></li>
+</ul>
+
+<h3 id="syntax-table">Syntax table</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left"><center>Keyword</center></th>
+<th align="center"><center>description</center></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><center>width(integer)</center></td>
+<td align="center">Defines the width of the pen. Patameter - integer is a value type of int</td>
+</tr>
+
+<tr>
+<td align="left"><center>if statement</center></td>
+<td align="center">is a conditional statement.</td>
+</tr>
+
+<tr>
+<td align="left"><center>for statement</center></td>
+<td align="center">is a loop statement in which operations repeat itself for a limited amount of time</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="brief-introduction-to-number">Brief introduction to Number</h3>
+
+<h4 id="what-is-number">What is Number?</h4>
+
+<p>Numbers in Python are the same as the numbers you have learnt in math class. We have four mathmatical operators.</p>
+
+<ul>
+<li>addition +</li>
+<li>subtraction -</li>
+<li>multiplication *</li>
+<li>division /</li>
+<li>floor division //</li>
+<li>remainder %</li>
+<li>assign sign =</li>
+<li>equal sign ==</li>
+</ul>
+
+<pre><code class="language-python">	print(5 + 7) # 12
+	print(5 - 3) # 2
+	print(6 * 3) # 18
+	print(9 / 3) # 3
+	print(10 // 3) # 3
+	print(7 % 2) # 1
+	print(5 == 5) # True
+	print(6 == 7) # False
+
+	num = 12
+	print(num) # 12
+</code></pre>
+
+<h3 id="brief-introduction-to-string">Brief introduction to String</h3>
+
+<h4 id="what-is-string">What is String?</h4>
+
+<p>String is the text we print in console or in turtle screen.</p>
+
+<pre><code class="language-python">	print(&quot;Happy coding!&quot;) # Happy coding!
+</code></pre>
+
+<h3 id="brief-introduction-to-list">Brief introduction to List</h3>
+
+<h4 id="what-is-list">What is List?</h4>
+
+<p>List is a box full of <code>Strings</code> or <code>Numbers</code>. For example:</p>
+
+<pre><code class="language-python">	# List of Number
+	list_of_number = [2, 3, 5, 1, 6]
+	print(list_of_number) # [2, 3, 5, 1, 6]
+
+	# List of Number
+	list_of_number = [&quot;Python&quot;, &quot;kids&quot;, &quot;fun&quot;]
+	print(list_of_number) # [&quot;Python&quot;, &quot;kids&quot;, &quot;fun&quot;]
+</code></pre>
+
+<h3 id="practice-them-in-turtle">Practice them in turtle</h3>
+
+<h4 id="how-to-print-a-string-in-turtle">How to print a String in turtle?</h4>
+
+<p>We need <code>write()</code> function to print a String in turtle. For example:</p>
+
+<pre><code class="language-python">	from turtle import *
+
+	write(&quot;Python is fun!&quot;, align='center', font=('Arial', 38, 'bold'))
+</code></pre>
+
+<h4 id="how-to-practice-number-in-turtle">How to practice Number in turtle?</h4>
+
+<p>It&rsquo;s easy to do a calculation and present the result on turtle screen. For example:</p>
+
+<pre><code>write(&quot;{0} + {1} = {2}&quot;.format(5, 7, 5 + 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
+penup()
+goto(0, 200)
+write(&quot;{0} - {1} = {2}&quot;.format(5, 7, 5 - 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
+penup()
+goto(0, 100)
+write(&quot;{0} * {1} = {2}&quot;.format(5, 7, 5 * 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
+penup()
+goto(0, -100)
+write(&quot;{0} / {1} = {2}&quot;.format(5, 7, 5 / 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
+penup()
+goto(0, -200)
+write(&quot;{0} // {1} = {2}&quot;.format(5, 7, 5 // 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
+penup()
+goto(0, -300)
+done()
+</code></pre>
+
+<p><img src="/images/turtle/operators.png" alt="" /></p>
+
+<h4 id="how-to-practice-list-in-turtle">How to practice List in turtle?</h4>
+
+<p>Assume we have random colors in a list, paint each shape in a different color. For example:</p>
+
+<pre><code>square = 4
+triangle = 3
+colors = [&quot;green&quot;, &quot;yellow&quot;, &quot;red&quot;]
+def draw(sides):
+    width(30)
+    if sides == square:
+        color(colors[0])
+    elif sides == triangle:
+        color(colors[1])
+    for each_side in range(sides):
+        forward(200)
+        right(360/sides)
+    done()
+</code></pre>
+
+<p>if <code>draw(4)</code></p>
+
+<p><img src="/images/turtle/green_square.png" alt="" /></p>
+
+<p>if <code>draw(3)</code></p>
+
+<p><img src="/images/turtle/yellow_triangle.png" alt="" /></p>
+
+<blockquote>
+<h4 id="homework">Homework</h4>
+</blockquote>
+
+<p><strong>Input</strong></p>
+
+<p>Given a <code>function</code> with a parameter of <code>sides</code>. If <code>sides</code> is even, draw the shape in red color. If <code>sides</code> is odd, draw the shape in green color.</p>
+
+<p><strong>For example</strong></p>
+
+<pre><code>def draw_even_odd(sides):
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<p>if <code>draw_even_odd(8)</code></p>
+
+<p><img src="/images/turtle/red_polygon.png" alt="" /></p>
+
+<p>if <code>draw_even_odd(5)</code></p>
+
+<p><img src="/images/turtle/green_polygon.png" alt="" /></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/basics/turtle_programming/" title="Turtle programming"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/basics/introduction/" title="Python简介" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1569569233"></script>
+    <script src="/js/perfect-scrollbar.min.js?1569569233"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1569569233"></script>
+    <script src="/js/jquery.sticky.js?1569569233"></script>
+    <script src="/js/featherlight.min.js?1569569233"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1569569233"></script>
+    <script src="/js/highlight.pack.js?1569569233"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1569569233"></script>
+    <script src="/js/learn.js?1569569233"></script>
+    <script src="/js/hugo-learn.js?1569569233"></script>
+
+    <link href="/mermaid/mermaid.css?1569569233" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1569569233"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

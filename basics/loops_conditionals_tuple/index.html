@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Numbers, strings, list I :: Python programming</title>
+    <title>Loops, If...else, Tuple :: Python programming</title>
 
     
     <link href="/css/nucleus.css?1570593264" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/numbers_strings_list/">
+  <body class="" data-url="/basics/loops_conditionals_tuple/">
     <nav id="sidebar" class="">
 
 
@@ -141,7 +141,7 @@
  
   
     
-      <li data-nav-id="/basics/numbers_strings_list/" title="Numbers, strings, list I" class="dd-item active">
+      <li data-nav-id="/basics/numbers_strings_list/" title="Numbers, strings, list I" class="dd-item ">
         <a href="/basics/numbers_strings_list/">
         <b>4. </b>Numbers, strings, list I
         
@@ -160,7 +160,7 @@
  
   
     
-      <li data-nav-id="/basics/loops_conditionals_tuple/" title="Loops, If...else, Tuple" class="dd-item ">
+      <li data-nav-id="/basics/loops_conditionals_tuple/" title="Loops, If...else, Tuple" class="dd-item active">
         <a href="/basics/loops_conditionals_tuple/">
         <b>5. </b>Loops, If...else, Tuple
         
@@ -226,7 +226,7 @@
             
           
           
-            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Numbers, strings, list I
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Loops, If...else, Tuple
           
          
           
@@ -247,24 +247,20 @@
 <ul>
 <li><a href="#class-objectives">Class objectives</a></li>
 <li><a href="#syntax-table">Syntax table</a></li>
-<li><a href="#brief-introduction-to-number">Brief introduction to Number</a>
+<li><a href="#what-is-loop-statement">What is loop statement?</a>
 <ul>
-<li><a href="#what-is-number">What is Number?</a></li>
+<li><a href="#how-to-write-the-python-code">How to write the Python code?</a></li>
 </ul></li>
-<li><a href="#brief-introduction-to-string">Brief introduction to String</a>
+<li><a href="#what-is-ifelse-statement">What is ifelse statement?</a>
 <ul>
-<li><a href="#what-is-string">What is String?</a></li>
+<li><a href="#how-to-write-the-python-code-1">How to write the Python code?</a></li>
 </ul></li>
-<li><a href="#brief-introduction-to-list">Brief introduction to List</a>
+<li><a href="#exercises-with-little-turtle">Exercises with little turtle</a>
 <ul>
-<li><a href="#what-is-list">What is List?</a></li>
-</ul></li>
-<li><a href="#practice-them-in-turtle">Practice them in turtle</a>
-<ul>
-<li><a href="#how-to-print-a-string-in-turtle">How to print a String in turtle?</a></li>
-<li><a href="#how-to-practice-number-in-turtle">How to practice Number in turtle?</a></li>
-<li><a href="#how-to-practice-list-in-turtle">How to practice List in turtle?</a></li>
-<li><a href="#homework">Homework</a></li>
+<li><a href="#artistic-shapes">Artistic shapes</a></li>
+<li><a href="#artist-turtle">Artist turtle</a></li>
+<li><a href="#homework-create-the-logo-of-olympics">Homework : Create the logo of Olympics</a></li>
+<li><a href="#tips">Tips</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -285,7 +281,7 @@
           
             <h1>
               
-              Numbers, strings, list I
+              Loops, If...else, Tuple
             </h1>
           
 
@@ -299,10 +295,10 @@
 
 <ul>
 <li><a href="#syntax-table"><strong>Key syntax introduction in this class</strong></a></li>
-<li><a href="#brief-introduction-to-number"><strong>Brief introduction to Numbers</strong></a></li>
-<li><a href="#brief-introduction-to-string"><strong>Brief introduction to Strings</strong></a></li>
-<li><a href="#brief-introduction-to-list"><strong>Brief introduction to List</strong></a></li>
-<li><a href="#practice-them-in-turtle"><strong>How to do it in turtle?</strong></a></li>
+<li><a href="#what-is-loop-statement"><strong>What is Loop statement?</strong></a></li>
+<li><a href="#what-is-ifelse-statement"><strong>What is if&hellip;else statement?</strong></a></li>
+<li><a href="#what-is-tuple"><strong>What is Tuple?</strong></a></li>
+<li><a href="#exercises-with-little-turtle"><strong>Exercises with little turtle</strong></a></li>
 <li><a href="#homework"><strong>Homework</strong></a></li>
 </ul>
 
@@ -334,144 +330,127 @@
 </tbody>
 </table>
 
-<h3 id="brief-introduction-to-number">Brief introduction to Number</h3>
+<h3 id="what-is-loop-statement">What is loop statement?</h3>
 
-<h4 id="what-is-number">What is Number?</h4>
+<p>Look at the diagram below to know how does loop statement work.</p>
 
-<p>Numbers in Python are the same as the numbers you have learnt in math class. We have four mathmatical operators.</p>
+<p><img src="/images/loop_diagram.png" alt="" /></p>
 
-<ul>
-<li>addition +</li>
-<li>subtraction -</li>
-<li>multiplication *</li>
-<li>division /</li>
-<li>floor division //</li>
-<li>remainder %</li>
-<li>assign sign =</li>
-<li>equal sign ==</li>
-</ul>
+<h4 id="how-to-write-the-python-code">How to write the Python code?</h4>
 
-<pre><code class="language-python">	print(5 + 7) # 12
-	print(5 - 3) # 2
-	print(6 * 3) # 18
-	print(9 / 3) # 3
-	print(10 // 3) # 3
-	print(7 % 2) # 1
-	print(5 == 5) # True
-	print(6 == 7) # False
-
-	num = 12
-	print(num) # 12
+<pre><code class="language-python">	# Define a list of apples
+	box = [&quot;appleA&quot;, &quot;appleB&quot;, &quot;appleC&quot;, &quot;appleD&quot;, &quot;appleE&quot;]
+	for apple in box: # Check if there is a next apple in the box
+		print(apple) # If there is a next apple, print it out.
 </code></pre>
 
-<h3 id="brief-introduction-to-string">Brief introduction to String</h3>
+<h3 id="what-is-ifelse-statement">What is ifelse statement?</h3>
 
-<h4 id="what-is-string">What is String?</h4>
+<p>Look at the diagram below to know how does if&hellip;else statement work</p>
 
-<p>String is the text we print in console or in turtle screen.</p>
+<p><img src="/images/apple_pear_if_else_check.png" alt="" /></p>
 
-<pre><code class="language-python">	print(&quot;Happy coding!&quot;) # Happy coding!
+<h4 id="how-to-write-the-python-code-1">How to write the Python code?</h4>
+
+<pre><code class="language-python">	# Define a list of fruits
+	box = [&quot;appleA&quot;, &quot;pearB&quot;, &quot;appleC&quot;, &quot;appleD&quot;, &quot;pearE&quot;]
+	# fruit_label is the label of fruits in the box which starts from 0
+	for fruit_label in range(len(box)):
+		if fruit_label == 1 or fruit_label == 4:
+			print(&quot;This is a pear&quot; + box[fruit_label])
+		else:
+			# If it's not pear, it's a apple since we only have two types of fruit in the box.
+			print(box[fruit_label])
 </code></pre>
 
-<h3 id="brief-introduction-to-list">Brief introduction to List</h3>
+<h3 id="exercises-with-little-turtle">Exercises with little turtle</h3>
 
-<h4 id="what-is-list">What is List?</h4>
+<h4 id="artistic-shapes">Artistic shapes</h4>
 
-<p>List is a box full of <code>Strings</code> or <code>Numbers</code>. For example:</p>
+<p>Following example presents the usage of <code>For loops</code>, <code>value assignment</code>, <code>mathmatical incremention</code>.</p>
 
-<pre><code class="language-python">	# List of Number
-	list_of_number = [2, 3, 5, 1, 6]
-	print(list_of_number) # [2, 3, 5, 1, 6]
+<pre><code class="language-python">	import random
+	from turtle import *
+	colors  = [&quot;red&quot;,&quot;green&quot;,&quot;blue&quot;,&quot;orange&quot;,&quot;purple&quot;,&quot;pink&quot;,&quot;yellow&quot;]
 
-	# List of Number
-	list_of_number = [&quot;Python&quot;, &quot;kids&quot;, &quot;fun&quot;]
-	print(list_of_number) # [&quot;Python&quot;, &quot;kids&quot;, &quot;fun&quot;]
+	width(10)
+	length = 5
+	for count in range(100):
+		speed(100)
+		a_color = random.choice(colors)
+		color(a_color)
+		forward(length)
+		right(135)
+		length = length + 5
+
+	done()
 </code></pre>
 
-<h3 id="practice-them-in-turtle">Practice them in turtle</h3>
+<p><img src="/images/turtle/artistic_shapes.png" alt="" /></p>
 
-<h4 id="how-to-print-a-string-in-turtle">How to print a String in turtle?</h4>
+<h4 id="artist-turtle">Artist turtle</h4>
 
-<p>We need <code>write()</code> function to print a String in turtle. For example:</p>
+<p>Following example presents the usage of <code>For loops</code>, <code>range()</code>, <code>random.choice()</code> and <code>Lists</code>.</p>
 
 <pre><code class="language-python">	from turtle import *
+	import random
 
-	write(&quot;Python is fun!&quot;, align='center', font=('Arial', 38, 'bold'))
+	shape(&quot;turtle&quot;)
+	setup(800,600)
+	colors = [&quot;red&quot;,&quot;green&quot;,&quot;blue&quot;,&quot;orange&quot;,&quot;purple&quot;,&quot;pink&quot;,&quot;yellow&quot;]
+	titles = [&quot;怎么这么好看！&quot;, &quot;小乌龟是个艺术家唉！&quot;]
+
+	penup()
+	setpos(0, 230)
+	pendown()
+	pencolor(random.choice(colors))
+	write(random.choice(titles), align=&quot;center&quot;, font=(&quot;Arial&quot;, 28, &quot;bold&quot;))
+	penup()
+
+	for i in range(1,20):
+		color(random.choice(colors))
+		speed(100)
+		width(5)
+		circle(i*10)
+		penup()
+		sety(-i*10)
+		pendown()
+	 
+	done()
 </code></pre>
 
-<h4 id="how-to-practice-number-in-turtle">How to practice Number in turtle?</h4>
-
-<p>It&rsquo;s easy to do a calculation and present the result on turtle screen. For example:</p>
-
-<pre><code>write(&quot;{0} + {1} = {2}&quot;.format(5, 7, 5 + 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
-penup()
-goto(0, 200)
-write(&quot;{0} - {1} = {2}&quot;.format(5, 7, 5 - 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
-penup()
-goto(0, 100)
-write(&quot;{0} * {1} = {2}&quot;.format(5, 7, 5 * 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
-penup()
-goto(0, -100)
-write(&quot;{0} / {1} = {2}&quot;.format(5, 7, 5 / 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
-penup()
-goto(0, -200)
-write(&quot;{0} // {1} = {2}&quot;.format(5, 7, 5 // 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
-penup()
-goto(0, -300)
-done()
-</code></pre>
-
-<p><img src="/images/turtle/operators.png" alt="" /></p>
-
-<h4 id="how-to-practice-list-in-turtle">How to practice List in turtle?</h4>
-
-<p>Assume we have random colors in a list, paint each shape in a different color. For example:</p>
-
-<pre><code>square = 4
-triangle = 3
-colors = [&quot;green&quot;, &quot;yellow&quot;, &quot;red&quot;]
-def draw(sides):
-    width(30)
-    if sides == square:
-        color(colors[0])
-    elif sides == triangle:
-        color(colors[1])
-    for each_side in range(sides):
-        forward(200)
-        right(360/sides)
-    done()
-</code></pre>
-
-<p>if <code>draw(4)</code></p>
-
-<p><img src="/images/turtle/green_square.png" alt="" /></p>
-
-<p>if <code>draw(3)</code></p>
-
-<p><img src="/images/turtle/yellow_triangle.png" alt="" /></p>
+<p><img src="/images/turtle/artist_turtle.png" alt="" /></p>
 
 <blockquote>
-<h4 id="homework">Homework</h4>
+<h4 id="homework-create-the-logo-of-olympics">Homework : Create the logo of Olympics</h4>
 </blockquote>
+
+<p>Given five lists with two items in each. First item is the coordinate of the circle, second item is the color of the circle. Please write a <code>for loop</code> to create logo of olympics.</p>
 
 <p><strong>Input</strong></p>
 
-<p>Given a <code>function</code> with a parameter of <code>sides</code>. If <code>sides</code> is even, draw the shape in red color. If <code>sides</code> is odd, draw the shape in green color.</p>
-
-<p><strong>For example</strong></p>
-
-<pre><code>def draw_even_odd(sides):
+<pre><code class="language-python">	blue = [-120,0,&quot;blue&quot;]
+	balck = [0,0,&quot;black&quot;]
+	red = [120,0,&quot;red&quot;]
+	yellow = [-60,-60,&quot;yellow&quot;]
+	green = [60,-60,&quot;green&quot;]
 </code></pre>
+
+<h4 id="tips">Tips</h4>
+
+<pre><code class="language-python">	from turtle import *
+	setup(800, 600)
+</code></pre>
+
+<ul>
+<li><strong>setpos():</strong> Sets the position that is passed as a argument. For example: <code>setpos(-120,0)</code></li>
+<li><strong>pencolor()</strong>: Sets the color of pen. Foe example: <code>pencolor(&quot;red&quot;)</code></li>
+<li><strong>pensize()</strong>: Size of the pen. For example: <code>pensize(5)</code></li>
+</ul>
 
 <p><strong>Output</strong></p>
 
-<p>if <code>draw_even_odd(8)</code></p>
-
-<p><img src="/images/turtle/red_polygon.png" alt="" /></p>
-
-<p>if <code>draw_even_odd(5)</code></p>
-
-<p><img src="/images/turtle/green_polygon.png" alt="" /></p>
+<p><img src="/images/turtle/olympics.png" alt="" /></p>
 
 
 <footer class=" footline" >
@@ -575,7 +554,6 @@ def draw(sides):
             
                 
                     
-                    
                 
                 
 
@@ -592,8 +570,6 @@ def draw(sides):
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -618,10 +594,10 @@ def draw(sides):
 	 
 	 
 		
-			<a class="nav nav-prev" href="/basics/turtle_programming/" title="Turtle programming"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/basics/numbers_strings_list/" title="Numbers, strings, list I"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/basics/loops_conditionals_tuple/" title="Loops, If...else, Tuple" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/basics/introduction/" title="Python简介" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

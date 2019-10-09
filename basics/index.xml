@@ -71,12 +71,21 @@ PyGame游戏引擎 包含图像、声音。建立在SDL基础上，允许实时�
     </item>
     
     <item>
-      <title>Numbers,strings,list</title>
+      <title>Numbers, strings, list I</title>
       <link>/basics/numbers_strings_list/</link>
       <pubDate>Tue, 24 Sep 2019 15:24:05 +0800</pubDate>
       
       <guid>/basics/numbers_strings_list/</guid>
       <description>Class objectives  Key syntax introduction in this class Brief introduction to Numbers Brief introduction to Strings Brief introduction to List How to do it in turtle? Homework  Syntax table    Keyword description     width(integer) Defines the width of the pen. Patameter - integer is a value type of int   if statement is a conditional statement.   for statement is a loop statement in which operations repeat itself for a limited amount of time    Brief introduction to Number What is Number?</description>
+    </item>
+    
+    <item>
+      <title>Loops, If...else, Tuple</title>
+      <link>/basics/loops_conditionals_tuple/</link>
+      <pubDate>Sun, 29 Sep 2019 20:43:07 +0800</pubDate>
+      
+      <guid>/basics/loops_conditionals_tuple/</guid>
+      <description>Class objectives  Key syntax introduction in this class What is Loop statement? What is if&amp;hellip;else statement? What is Tuple? Exercises with little turtle Homework  Syntax table    Keyword description     width(integer) Defines the width of the pen. Patameter - integer is a value type of int   if statement is a conditional statement.   for statement is a loop statement in which operations repeat itself for a limited amount of time    What is loop statement?</description>
     </item>
     
   </channel>

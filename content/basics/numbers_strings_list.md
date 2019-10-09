@@ -1,8 +1,8 @@
 ---
-title: "Numbers,strings,list"
+title: "Numbers, strings, list I"
 date: 2019-09-24T15:24:05+08:00
 weight: 4
-pre: "<b>4. [Data Types]</b>"
+pre: "<b>4. </b>"
 chapter: false
 ---
 

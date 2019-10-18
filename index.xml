@@ -88,5 +88,14 @@ PyGame游戏引擎 包含图像、声音。建立在SDL基础上，允许实时�
       <description>Class objectives  Key syntax introduction in this class What is Loop statement? What is if&amp;hellip;else statement? What is Tuple? Exercises with little turtle Homework  Syntax table    Keyword description     width(integer) Defines the width of the pen. Patameter - integer is a value type of int   if statement is a conditional statement.   for statement is a loop statement in which operations repeat itself for a limited amount of time    What is loop statement?</description>
     </item>
     
+    <item>
+      <title>Function, string and list slicing</title>
+      <link>/basics/function_and_slicing/</link>
+      <pubDate>Thu, 17 Oct 2019 19:31:39 +0800</pubDate>
+      
+      <guid>/basics/function_and_slicing/</guid>
+      <description>Class objectives  Key syntax introduction String slicing and formatting How to add items to a List? List slicing More on list Homework  Syntax table    Keyword description     str.format() Perform a string formatting operation. The string on which this method is called can contain literal text or replacement fields delimited by braces {}. Each replacement field contains either the numeric index of a positional argument, or the name of a keyword argument.</description>
+    </item>
+    
   </channel>
 </rss>

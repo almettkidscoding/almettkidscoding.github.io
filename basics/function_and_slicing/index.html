@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Turtle programming :: Python programming</title>
+    <title>Function, string and list slicing :: Python programming</title>
 
     
     <link href="/css/nucleus.css?1571315997" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/turtle_programming/">
+  <body class="" data-url="/basics/function_and_slicing/">
     <nav id="sidebar" class="">
 
 
@@ -122,7 +122,7 @@
  
   
     
-      <li data-nav-id="/basics/turtle_programming/" title="Turtle programming" class="dd-item active">
+      <li data-nav-id="/basics/turtle_programming/" title="Turtle programming" class="dd-item ">
         <a href="/basics/turtle_programming/">
         <b>3. </b>Turtle programming
         
@@ -179,7 +179,7 @@
  
   
     
-      <li data-nav-id="/basics/function_and_slicing/" title="Function, string and list slicing" class="dd-item ">
+      <li data-nav-id="/basics/function_and_slicing/" title="Function, string and list slicing" class="dd-item active">
         <a href="/basics/function_and_slicing/">
         <b>6. </b>Function, string and list slicing
         
@@ -245,7 +245,7 @@
             
           
           
-            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Turtle programming
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Function, string and list slicing
           
          
           
@@ -266,27 +266,18 @@
 <ul>
 <li><a href="#class-objectives">Class objectives</a></li>
 <li><a href="#syntax-table">Syntax table</a></li>
-<li><a href="#draw-the-first-turtle-graphic">Draw the first turtle graphic</a>
+<li><a href="#string-slicing-and-formatting">String slicing and formatting</a>
 <ul>
-<li><a href="#square-programs-in-comparison">Square programs in comparison</a></li>
-<li><a href="#square-program-in-comparison-with-loop">Square program in comparison (with loop)</a></li>
+<li><a href="#slicing">Slicing</a></li>
+<li><a href="#formatting">Formatting</a></li>
+<li><a href="#type-converting">Type converting</a></li>
 </ul></li>
-<li><a href="#write-a-square-program-in-python">Write a square program in Python</a>
+<li><a href="#how-to-add-items-to-a-list">How to add items to a list?</a></li>
+<li><a href="#list-slicing">List slicing</a></li>
+<li><a href="#homework-separate-items">Homework: Separate items</a>
 <ul>
-<li><a href="#step-1-create-python-file">Step 1: Create Python file</a></li>
-<li><a href="#step-2-import-turtle-module">Step 2: Import turtle module</a></li>
-<li><a href="#step-3-draw-a-square">Step 3: Draw a square</a></li>
-<li><a href="#step-4-finalize-the-program">Step 4: Finalize the program</a></li>
-<li><a href="#step-5-complete-code-for-square">Step 5: Complete code for square</a></li>
-<li><a href="#step-6-run-the-square-program">Step 6: Run the square program</a></li>
-</ul></li>
-<li><a href="#draw-shapes-in-practice">Draw shapes in practice</a>
-<ul>
-<li><a href="#draw-a-triangle">Draw a triangle</a></li>
-<li><a href="#draw-a-polygon">Draw a Polygon</a></li>
-<li><a href="#draw-polygons">Draw polygons</a></li>
-<li><a href="#draw-more-polygons">Draw more polygons</a></li>
-<li><a href="#draw-a-symbol">Draw a symbol</a></li>
+<li><a href="#input">Input</a></li>
+<li><a href="#output">Output</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -307,7 +298,7 @@
           
             <h1>
               
-              Turtle programming
+              Function, string and list slicing
             </h1>
           
 
@@ -320,9 +311,12 @@
 <h3 id="class-objectives">Class objectives</h3>
 
 <ul>
-<li><a href="#syntax-table"><strong>Learn key syntax in turtle</strong></a></li>
-<li><a href="#draw-the-first-turtle-graphic"><strong>Draw the first turtle graphic</strong></a></li>
-<li><a href="#draw-shapes-in-practice"><strong>Draw shapes in practice</strong></a></li>
+<li><a href="#syntax-table"><strong>Key syntax introduction</strong></a></li>
+<li><a href="#string-slicing-formatting"><strong>String slicing and formatting</strong></a></li>
+<li><a href="#how-to-add-items-to-a-list"><strong>How to add items to a List?</strong></a></li>
+<li><a href="#list-slicing"><strong>List slicing</strong></a></li>
+<li><a href="#More-on-list"><strong>More on list</strong></a></li>
+<li><a href="#homework"><strong>Homework</strong></a></li>
 </ul>
 
 <h3 id="syntax-table">Syntax table</h3>
@@ -337,291 +331,131 @@
 
 <tbody>
 <tr>
-<td align="left"><center>import</center></td>
-<td align="center">import statement is the most common way of invocking the required modules</td>
+<td align="left"><center>str.format()</center></td>
+<td align="center">Perform a string formatting operation. The string on which this method is called can contain literal text or replacement fields delimited by braces {}. Each replacement field contains either the numeric index of a positional argument, or the name of a keyword argument. Returns a copy of the string where each replacement field is replaced with the string value of the corresponding argument.</td>
 </tr>
 
 <tr>
-<td align="left"><center>star mark(*)</center></td>
-<td align="center">stands for everything</td>
+<td align="left"><center>str.isalpha()</center></td>
+<td align="center">Return true if all characters in the string are alphabetic and there is at least one character, false otherwise. Alphabetic characters are those characters defined in the Unicode character database as “Letter”, i.e., those with general category property being one of “Lm”, “Lt”, “Lu”, “Ll”, or “Lo”. Note that this is different from the “Alphabetic” property defined in the Unicode Standard.</td>
 </tr>
 
 <tr>
-<td align="left"><center>forward(distance)</center></td>
-<td align="center">Parameter: distance- is a number (integer or float). Move the turtle forward by the specified distance, in the direction the turtle is headed.</td>
+<td align="left"><center>str.isdigit()</center></td>
+<td align="center">Return true if all characters in the string are digits and there is at least one character, false otherwise. Digits include decimal characters and digits that need special handling, such as the compatibility superscript digits. This covers digits which cannot be used to form numbers in base 10, like the Kharosthi numbers. Formally, a digit is a character that has the property value Numeric_Type=Digit or Numeric_Type=Decimal.</td>
 </tr>
 
 <tr>
-<td align="left"><center>backward(distance)</center></td>
-<td align="center">Parameter: distance- is a number (integer or float). Move the turtle backward by the specified distance, in the direction the turtle is headed.</td>
+<td align="left"><center>str.islower()</center></td>
+<td align="center">Return true if all cased characters 4 in the string are lowercase and there is at least one cased character, false otherwise.</td>
 </tr>
 
 <tr>
-<td align="left"><center>right(angle)</center></td>
-<td align="center">Parameter: angle- a number (integer or float). Turn turtle right by angle units.(Units are by default degrees)</td>
+<td align="left"><center>str.isspace()</center></td>
+<td align="center">Return true if there are only whitespace characters in the string and there is at least one character, false otherwise.</td>
 </tr>
 
 <tr>
-<td align="left"><center>left(angle)</center></td>
-<td align="center">Parameter: angle- a number (integer or float). Turn turtle left by angle units.(Units are by default degrees)</td>
+<td align="left"><center>str.isupper()</center></td>
+<td align="center">Return true if all cased characters 4 in the string are uppercase and there is at least one cased character, false otherwise.</td>
 </tr>
 
 <tr>
-<td align="left"><center>goto(x, y=None)</center></td>
-<td align="center">Parameters: x and y are numbers. y can be None</td>
+<td align="left"><center>lst.append()</center></td>
+<td align="center">Add an item to the end of the list. Equivalent to a[len(a):] = [x].</td>
 </tr>
 
 <tr>
-<td align="left"><center>pendown()</center></td>
-<td align="center">Pull the pen down – drawing when moving.</td>
-</tr>
-
-<tr>
-<td align="left"><center>penup()</center></td>
-<td align="center">Pull the pen up – no drawing when moving.</td>
-</tr>
-
-<tr>
-<td align="left"><center>color(color1, color2)</center></td>
-<td align="center">color1 is fill color. color2 is pen color.</td>
-</tr>
-
-<tr>
-<td align="left"><center>shape(name=None)</center></td>
-<td align="center">Parameter: name - a string which is a valid shapename. Set turtle shape to shape with given name or, if name is not given, return name of current shape.</td>
-</tr>
-
-<tr>
-<td align="left"><center>done()</center></td>
-<td align="center">Must be the last statement that finalize the program</td>
+<td align="left"><center>str.split()</center></td>
+<td align="center">Return a list of the words in the string, using sep as the delimiter string. If maxsplit is given, at most maxsplit splits are done (thus, the list will have at most maxsplit+1 elements). If maxsplit is not specified or -1, then there is no limit on the number of splits (all possible splits are made).</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="draw-the-first-turtle-graphic">Draw the first turtle graphic</h3>
+<h3 id="string-slicing-and-formatting">String slicing and formatting</h3>
 
-<h4 id="square-programs-in-comparison">Square programs in comparison</h4>
+<h4 id="slicing">Slicing</h4>
 
-<ol>
-<li>Square program in Scratch</li>
-</ol>
+<pre><code class="language-python">	string = 'Hello, Python'
+	print(string[6:]) # Prints after index 6 which is Python
 
-<p><img src="/images/turtle/square_in_scratch.png" alt="" /></p>
+	print(string[1:4]) # Prints from index 1 to index 4 
 
-<ol>
-<li>Square program in Python</li>
-</ol>
+	print(string[:-3]) # Removes the last three characters
 
-<pre><code class="language-python">	shape(&quot;turtle&quot;)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
+	print(string[::-1]) # Let's see what happens
 </code></pre>
 
-<ul>
-<li><code>forward()</code>:</li>
-<li><code>right()</code>:</li>
-</ul>
+<h4 id="formatting">Formatting</h4>
 
-<h4 id="square-program-in-comparison-with-loop">Square program in comparison (with loop)</h4>
-
-<ol>
-<li>Square program in Scratch</li>
-</ol>
-
-<p><img src="/images/turtle/square_loop.png" alt="" /></p>
-
-<ol>
-<li>Square program in Python</li>
-</ol>
-
-<pre><code class="language-python">for each_time in range(4):
-	shape(&quot;turtle&quot;)
-	forward(100)
-	right(90)
+<pre><code class="language-python">	name = 'Alex'
+	age = 9
+	string = &quot;My name is {}, I'm {} years old&quot;.format(name, age)
+	print(string) # Let's see what is the result
 </code></pre>
 
-<h3 id="write-a-square-program-in-python">Write a square program in Python</h3>
+<h4 id="type-converting">Type converting</h4>
 
-<h4 id="step-1-create-python-file">Step 1: Create Python file</h4>
+<pre><code class="language-python">	print('I am ' + 9 + 'years old') # Let's see what happens
+</code></pre>
 
-<p>Open <code>Sublime Text</code> editor, create a file by clickng <code>File -&gt; New File</code> at the left top, name it as <code>turtle_program.py</code>.</p>
+<p>Valus of different types are not being able to added to one another. <code>str()</code> and <code>int()</code> are the functions convert <code>int</code> value to <code>string</code> and back.</p>
 
-<h4 id="step-2-import-turtle-module">Step 2: Import turtle module</h4>
+<pre><code class="language-python">	print('I am ' + str(9) + 'years old')
 
-<p>Import Turtle module to the <code>turtle_program.py</code> file.</p>
+	print('10' + str(6)) # 106
 
-<pre><code>from turtle import *
+	print(int('10' + 6)) # 16
 </code></pre>
 
 <blockquote>
-<p>Look at <a href="#syntax-table"><strong>syntax table</strong></a> for more introduction about <code>import</code></p>
+<p>Look up <a href="#syntax-table"><strong>Key syntax introduction</strong></a> for more functions in String</p>
 </blockquote>
 
-<h4 id="step-3-draw-a-square">Step 3: Draw a square</h4>
+<h3 id="how-to-add-items-to-a-list">How to add items to a list?</h3>
 
-<p>Draw a square of which 100 pixels each side.</p>
+<p><code>append()</code> is the function to add items to a list. For example:</p>
 
-<pre><code class="language-python">	shape(&quot;turtle&quot;)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
+<pre><code class="language-python">	a_list = ['Alex','Lucy', 'Andy']
+	a_list.append('Ryan')
+	print(a_list)
+</code></pre>
+
+<h3 id="list-slicing">List slicing</h3>
+
+<pre><code class="language-python">	a_list = ['Alex','Lucy', 'Andy', 'Ryan']
+
+	print(a_list[1:3]) # Prints the second the third item
 </code></pre>
 
 <blockquote>
-<p>Look at <a href="#syntax-table"><strong>syntax table</strong></a> for more introduction about <code>forward()</code> and <code>right()</code></p>
+<h3 id="homework-separate-items">Homework: Separate items</h3>
 </blockquote>
 
-<h4 id="step-4-finalize-the-program">Step 4: Finalize the program</h4>
+<p>Given a string and four empty lists:</p>
 
-<p>Finalize the program with <code>done()</code> statement at the last line</p>
+<h4 id="input">Input</h4>
 
-<pre><code class="language-python">	done()
+<pre><code class="language-python">	str = &quot;Today'S HOme WoRk iS abOuT SeparAtIng 12345 from chAraCterS&quot;
+
+	lower_case_letters = []
+
+	upper_case_letters = []
+
+	digits = []
+
+	characters = []
 </code></pre>
 
-<blockquote>
-<p>Look at <a href="#syntax-table"><strong>syntax table</strong></a> for more introduction about <code>done()</code> statement</p>
-</blockquote>
+<p>Write a program to separate them into four empty lists and print.</p>
 
-<h4 id="step-5-complete-code-for-square">Step 5: Complete code for square</h4>
+<h4 id="output">Output</h4>
 
-<pre><code class="language-python">	from turtle import *
-
-	# Square program without loop
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-
-	done()
+<pre><code class="language-python">	['o','d','a','y'...]
+	['T','S','H','O'...]
+	[1,2,3,4,5]
+	['T','o','d','a','y','S'...]
 </code></pre>
-
-<h4 id="step-6-run-the-square-program">Step 6: Run the square program</h4>
-
-<p>Run the program by pressing <code>Ctrl + B</code> if it presents the result as below:</p>
-
-<p><img src="/images/turtle/result.png" alt="" /></p>
-
-<h3 id="draw-shapes-in-practice">Draw shapes in practice</h3>
-
-<h4 id="draw-a-triangle">Draw a triangle</h4>
-
-<pre><code class="language-python">	from turtle import *
-
-	# Triangle program with a loop
-	for each_time in range(3):
-		forward(100)
-		right(120)
-
-	done()
-</code></pre>
-
-<p><img src="/images/turtle/01.png" alt="" /></p>
-
-<h4 id="draw-a-polygon">Draw a Polygon</h4>
-
-<pre><code class="language-python">	from turtle import *
-
-	# Polygram program with a loop
-	for each_time in range(6):
-		forward(100)
-		right(60)
-
-	done()
-</code></pre>
-
-<p><img src="/images/turtle/02.png" alt="" /></p>
-
-<h4 id="draw-polygons">Draw polygons</h4>
-
-<pre><code class="language-python">	for each_square in range(18):
-		color(&quot;red&quot;, &quot;green&quot;)
-		speed(100)
-		for each_line in range(6):
-			forward(100)
-			right(60)
-		left(20)
-
-	done()
-</code></pre>
-
-<p><img src="/images/turtle/03.png" alt="" /></p>
-
-<h4 id="draw-more-polygons">Draw more polygons</h4>
-
-<pre><code class="language-python">	for each_square in range(36):
-		color(&quot;red&quot;, &quot;green&quot;)
-		speed(100)
-		for each_line in range(6):
-			forward(100)
-			right(10)
-		left(20)
-
-	done()
-</code></pre>
-
-<p><img src="/images/turtle/04.png" alt="" /></p>
-
-<h4 id="draw-a-symbol">Draw a symbol</h4>
-
-<pre><code class="language-python">	from turtle import *
-
-	reset()
-	Screen()
-	up()
-	goto(-320,-195)
-	width(70)
-
-	for i in range(7):
-		color(&quot;green&quot;)
-		down()
-		forward(640)
-		up()
-		backward(640)
-		left(90)
-		forward(66)
-		right(90)
-
-	width(25)
-	color(&quot;white&quot;)
-	goto(0,-170)
-	down()
-
-	circle(170)
-	left(90)
-	forward(340)
-	up()
-	left(180)
-	forward(170)
-	right(45)
-	down()
-	forward(170)
-	up()
-	backward(170)
-	left(90)
-	down()
-	forward(170)
-	up()
-	goto(0,300)
-
-	done()
-</code></pre>
-
-<p><img src="/images/turtle/05.png" alt="" /></p>
 
 
 <footer class=" footline" >
@@ -709,26 +543,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -760,6 +574,23 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -784,10 +615,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/basics/setup_work_environment/" title="Python学习环境搭建"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/basics/loops_conditionals_tuple/" title="Loops, If...else, Tuple"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/basics/numbers_strings_list/" title="Numbers, strings, list I" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/basics/introduction/" title="Python简介" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

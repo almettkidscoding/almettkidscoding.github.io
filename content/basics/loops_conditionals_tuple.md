@@ -125,7 +125,7 @@ Given five lists with two items in each. First item is the coordinate of the cir
 
 ```python
 	blue = [-120,0,"blue"]
-	balck = [0,0,"black"]
+	black = [0,0,"black"]
 	red = [120,0,"red"]
 	yellow = [-60,-60,"yellow"]
 	green = [60,-60,"green"]

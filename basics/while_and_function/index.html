@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Python入门课程 :: Python programming</title>
+    <title>While and Function :: Python programming</title>
 
     
     <link href="/css/nucleus.css?1572056584" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/">
+  <body class="" data-url="/basics/while_and_function/">
     <nav id="sidebar" class="">
 
 
@@ -61,7 +61,7 @@
     
     <li data-nav-id="/basics/" title="Python入门课程" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/basics/">
@@ -198,7 +198,7 @@
  
   
     
-      <li data-nav-id="/basics/while_and_function/" title="While and Function" class="dd-item ">
+      <li data-nav-id="/basics/while_and_function/" title="While and Function" class="dd-item active">
         <a href="/basics/while_and_function/">
         <b>7. </b>While and Function
         
@@ -248,6 +248,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -258,7 +260,13 @@
             
           
           
-            <a href='/'>Python programming</a> > Python入门课程
+            
+            
+          
+          
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > While and Function
+          
+         
           
          
           
@@ -267,6 +275,36 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#class-objectives">Class objectives</a></li>
+<li><a href="#syntax-table">Syntax table</a></li>
+<li><a href="#how-while-loop-works">How while loop works?</a></li>
+<li><a href="#how-to-define-a-function">How to define a function?</a></li>
+<li><a href="#define-a-function-with-default-argument-values">Define a function with default argument values</a>
+<ul>
+<li><a href="#example-1">Example #1</a></li>
+<li><a href="#example-2">Example #2</a></li>
+</ul></li>
+<li><a href="#call-a-function-in-another-function">Call a function in another function</a></li>
+<li><a href="#yin-yang-example-of-function-calls">Yin Yang example of function calls</a>
+<ul>
+<li><a href="#homework">Homework</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -274,9 +312,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              While and Function
+            </h1>
           
 
         
@@ -284,32 +325,206 @@
 
 
 
-	
 
-<h1 id="basics">Basics</h1>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Python basics are crutial to the following lessons. In this secsion, we&rsquo;re going to learn:</p>
+<h3 id="class-objectives">Class objectives</h3>
 
 <ul>
-<li>Python Interpreter</li>
-<li>Basic Python data structures</li>
-<li>Control flow tools</li>
-<li>Modules</li>
-<li>input &amp; Output</li>
-<li>Errors &amp; Exceptions</li>
-<li>Classes</li>
+<li><a href="#syntax-table"><strong>Key syntax introduction</strong></a></li>
+<li><a href="#how-while-loop-works"><strong>How does while loop work?</strong></a></li>
+<li><a href="#how-to-define-a-function"><strong>How to define a function?</strong></a></li>
+<li><a href="#define-a-function-with-default-argument-values"><strong>Define a function with default argument values</strong></a></li>
+<li><a href="#call-a-function-in-another-function"><strong>Call a function in another function</strong></a></li>
+<li><a href="#yin-yang-example-of-function-calls"><strong>Yin Yang example of function calls</strong></a></li>
+<li><a href="#homework"><strong>Homework</strong></a></li>
 </ul>
 
+<h3 id="syntax-table">Syntax table</h3>
 
+<table>
+<thead>
+<tr>
+<th align="left"><center>Keyword</center></th>
+<th align="center"><center>description</center></th>
+</tr>
+</thead>
 
+<tbody>
+<tr>
+<td align="left"><center>def</center></td>
+<td align="center">The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters. The statements that form the body of the function start at the next line, and must be indented.</td>
+</tr>
+
+<tr>
+<td align="left"><center>while</center></td>
+<td align="center">A while loop statement in Python programming language repeatedly executes a target statement as long as a given condition is true.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="how-while-loop-works">How while loop works?</h3>
+
+<p>While loop works with a bool condition. Here are two eesentials of a while loop:</p>
+
+<ul>
+<li>Works when the condition is <code>True</code></li>
+<li>MUST have a stop condition or it goes in a dead loop.</li>
+</ul>
+
+<p>For example:</p>
+
+<pre><code class="language-python">num = 0
+while num &lt;= 10:
+	print(num)
+	num += 1
+</code></pre>
+
+<p>or</p>
+
+<pre><code class="language-python">num = 0
+while True:
+	if num &gt; 10:
+		break
+	print(num)
+	num += 1
+</code></pre>
+
+<h3 id="how-to-define-a-function">How to define a function?</h3>
+
+<p>The keyword <code>def</code> introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters. The statements that form the body of the function start at the next line, and must be indented. Following is how to define a basic function:</p>
+
+<pre><code class="language-python">def count_down(num):
+	while num &gt; 0:
+		print(num)
+		num -= 1
+</code></pre>
+
+<p>Following is how to call a fuction and pass an argument:</p>
+
+<pre><code class="language-python">count_down(10)
+</code></pre>
+
+<h3 id="define-a-function-with-default-argument-values">Define a function with default argument values</h3>
+
+<p>The most useful form is to specify a default value for one or more arguments. This creates a function that can be called with fewer arguments than it is defined to allow. For example:</p>
+
+<h4 id="example-1">Example #1</h4>
+
+<pre><code class="language-python">def add_new_value(value, lst=[]):
+	lst.append(value)
+	return lst
+</code></pre>
+
+<p>Following is how to call this function:</p>
+
+<pre><code class="language-python">print(add_new_value(&quot;hello&quot;)) # returns ['hello']
+</code></pre>
+
+<h4 id="example-2">Example #2</h4>
+
+<pre><code class="language-python">def reverse_a_string(str01, str02=&quot;&quot;):
+	for index in range(len(str01) - 1,-1, -1):
+		str02 += str01[index]
+	return str02
+</code></pre>
+
+<p>Following is how to call this function:</p>
+
+<pre><code class="language-python">print(reverse_a_string(&quot;hello&quot;))
+</code></pre>
+
+<h3 id="call-a-function-in-another-function">Call a function in another function</h3>
+
+<p>Following example demonstrates how a function is called from another one:</p>
+
+<pre><code class="language-python">from turtle import *
+
+def draw_circle(sides, length):
+    for i in range(sides):
+        right(360/sides)
+        forward(length)
+
+def draw_object(sides, length):
+    for i in range(sides):
+        pencolor(&quot;red&quot;)
+        right(360/sides)
+        draw_circle(sides, length)
+
+def main():
+    speed(100)
+    hideturtle()
+    bgcolor(&quot;black&quot;)
+    pensize(6)
+    draw_object(14, 80)
+    done()
+
+main()
+</code></pre>
+
+<p><img src="/images/turtle/orbid.png" alt="" /></p>
+
+<h3 id="yin-yang-example-of-function-calls">Yin Yang example of function calls</h3>
+
+<p>In Chinese philosophy, yin and yang (/jɪn/ and; Chinese: 陰陽 yīnyáng, lit. &ldquo;dark-bright&rdquo;, &ldquo;negative-positive&rdquo;) is a concept of dualism in ancient Chinese philosophy, describing how seemingly opposite or contrary forces may actually be complementary, interconnected, and interdependent in the natural world, and how they may give rise to each other as they interrelate to one another. In Chinese cosmology, the universe creates itself out of a primary chaos of material energy, organized into the cycles of Yin and Yang and formed into objects and lives. Yin is the receptive and Yang the active principle, seen in all forms of change and difference such as the annual cycle (winter and summer), the landscape (north-facing shade and south-facing brightness), sexual coupling (female and male), the formation of both men and women as characters, and sociopolitical history (disorder and order).</p>
+
+<pre><code class="language-python">from turtle import *
+
+def yin(radius, color1, color2):
+    width(3)
+    color(&quot;black&quot;, color1)
+    begin_fill()
+    circle(radius/2., 180)
+    circle(radius, 180)
+    left(180)
+    circle(-radius/2., 180)
+    end_fill()
+    left(90)
+    up()
+    forward(radius*0.35)
+    right(90)
+    down()
+    color(color1, color2)
+    begin_fill()
+    circle(radius*0.15)
+    end_fill()
+    left(90)
+    up()
+    backward(radius*0.35)
+    down()
+    left(90)
+
+def main():
+    reset()
+    yin(200, &quot;black&quot;, &quot;white&quot;)
+    yin(200, &quot;white&quot;, &quot;black&quot;)
+
+main()
+</code></pre>
+
+<p><img src="/images/turtle/yin_yang.png" alt="" /></p>
+
+<blockquote>
+<h4 id="homework">Homework</h4>
+</blockquote>
+
+<p>Given two functions <code>stair()</code> and <code>make_stairs()</code>. Please draw a stair with 8 stairs.</p>
+
+<p><strong>Input</strong></p>
+
+<pre><code class="language-python">stair(length, height=50):
+
+make_stairs(each_stair_length, stairs=8):
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<p><img src="/images/turtle/stair.png" alt="" /></p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -454,6 +669,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -477,7 +693,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/" title="Python programming"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/basics/slicing_and_formatting/" title="Formatting, string and list slicing"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/basics/introduction/" title="Python简介" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -511,3 +727,4 @@
 
   </body>
 </html>
+

@@ -1,5 +1,5 @@
 ---
-title: "Function, string and list slicing"
+title: "Formatting, string and list slicing"
 date: 2019-10-17T19:31:39+08:00
 weight: 6
 pre: "<b>6. </b>"

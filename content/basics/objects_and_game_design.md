@@ -154,7 +154,7 @@ while 1 <= int(guess) <= 99:
 
 <iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-> #### Homework: Draw a car
+> #### Homework: Draw a phone
 
 Given a class `Phone` with a function `draw_phone`. Please write the code to draw an iPhone.
 

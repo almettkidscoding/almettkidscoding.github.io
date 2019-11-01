@@ -186,3 +186,5 @@ make_stairs(each_stair_length, stairs=8):
 **Output**
 
 ![](/images/turtle/stair.png)
+
+<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>

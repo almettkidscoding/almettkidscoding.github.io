@@ -1,7 +1,7 @@
 ---
 title: Python入门课程
-weight: 1
-pre: "<b>1. </b>"
+weight: 3
+pre: "<b>3. </b>"
 chapter: true
 ---
 

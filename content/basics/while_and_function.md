@@ -1,8 +1,8 @@
 ---
 title: "While and Function"
 date: 2019-10-25T13:52:51+08:00
-weight: 7
-pre: "<b>7. </b>"
+weight: 5
+pre: "<b>5. </b>"
 chapter: false
 ---
 

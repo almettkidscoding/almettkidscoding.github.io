@@ -3,17 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/basics/</loc>
-    <lastmod>2019-09-11T00:21:04+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/basics/introduction/</loc>
-  </url>
-  
-  <url>
-    <loc>/basics/setup_work_environment/</loc>
-    <lastmod>2019-09-11T00:21:04+08:00</lastmod>
+    <loc>/introduction/</loc>
+    <lastmod>2019-11-02T22:44:31+08:00</lastmod>
   </url>
   
   <url>
@@ -27,8 +18,17 @@
   </url>
   
   <url>
+    <loc>/setup/</loc>
+  </url>
+  
+  <url>
     <loc>/basics/loops_conditionals_tuple/</loc>
     <lastmod>2019-09-29T20:43:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/basics/</loc>
+    <lastmod>2019-09-18T13:10:47+08:00</lastmod>
   </url>
   
   <url>
@@ -53,7 +53,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-09-11T00:21:04+08:00</lastmod>
+    <lastmod>2019-09-18T13:10:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   

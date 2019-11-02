@@ -1,9 +1,8 @@
 ---
-title: "Python学习环境搭建"
-date: 2019-09-11T00:21:04+08:00
+title: Python学习环境搭建
 weight: 2
 pre: "<b>2. </b>"
-chapter: false
+chapter: true
 ---
 
 ## 课程计划

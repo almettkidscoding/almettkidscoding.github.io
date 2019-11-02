@@ -1,8 +1,8 @@
 ---
 title: "Objects I"
 date: 2019-11-01T14:25:57+08:00
-weight: 8
-pre: "<b>8. </b>"
+weight: 6
+pre: "<b>6. </b>"
 chapter: false
 ---
 
@@ -56,10 +56,12 @@ Once upon a time, four turtles come together to race. All of them are good at ru
 from turtle import *
 from random import randint
 
+# Basic setup
 speed(0)
 penup()
 goto(-140, 140)
 
+# Draw the road
 for step in range(15):
   write(step, align='center')
   right(90)
@@ -73,50 +75,26 @@ for step in range(15):
   left(90)
   forward(20)
 
-red = Turtle()
-red.color('red')
-red.shape('turtle')
+# Define a turtle function
+def ready_turtle(turtle, color, position):
+  turtle.color(color)
+  turtle.shape('turtle')
 
-red.penup()
-red.goto(-160, 100)
-red.pendown()
+  turtle.penup()
+  turtle.goto(position[0], position[1])
+  turtle.pendown()
 
-for turn in range(10):
-  red.right(36)
+  for turn in range(10):
+    turtle.right(36)
 
-blue = Turtle()
-blue.color('blue')
-blue.shape('turtle')
+# Create turtles of four different colors
+red, blue, green, yellow = Turtle(),Turtle(),Turtle(),Turtle()
+ready_turtle(red, 'red', [-160, 100])
+ready_turtle(blue, 'blue', [-160, 70])
+ready_turtle(green, 'green', [-160, 40])
+ready_turtle(yellow, 'yellow', [-160, 10])
 
-blue.penup()
-blue.goto(-160, 70)
-blue.pendown()
-
-for turn in range(72):
-  blue.left(5)
-
-green = Turtle()
-green.shape('turtle')
-green.color('yellow')
-
-green.penup()
-green.goto(-160, 40)
-green.pendown()
-
-for turn in range(60):
-  green.right(6)
-
-yellow = Turtle()
-yellow.shape('turtle')
-yellow.color('turquoise')
-
-yellow.penup()
-yellow.goto(-160, 10)
-yellow.pendown()
-
-for turn in range(30):
-  yellow.left(12)
-
+# Yeay! Let's begin the race!
 for turn in range(100):
   red.forward(randint(1,5))
   blue.forward(randint(1,5))

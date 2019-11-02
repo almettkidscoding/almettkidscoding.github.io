@@ -1,8 +1,8 @@
 ---
 title: "Loops, If...else, Tuple"
 date: 2019-09-29T20:43:07+08:00
-weight: 5
-pre: "<b>5. </b>"
+weight: 3
+pre: "<b>3. </b>"
 chapter: false
 ---
 
@@ -145,3 +145,5 @@ Given five lists with two items in each. First item is the coordinate of the cir
 **Output**
 
 ![](/images/turtle/olympics.png)
+
+<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>

@@ -1,8 +1,8 @@
 ---
 title: "Turtle programming"
 date: 2019-09-18T13:10:47+08:00
-weight: 3
-pre: "<b>3. </b>"
+weight: 1
+pre: "<b>1. </b>"
 chapter: false
 ---
 
@@ -39,15 +39,15 @@ chapter: false
 2. Square program in Python
 
 ```python
-	shape("turtle")
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
+shape("turtle")
+forward(100)
+right(90)
+forward(100)
+right(90)
+forward(100)
+right(90)
+forward(100)
+right(90)
 ```
 
 - `forward()`: 
@@ -84,15 +84,15 @@ Import Turtle module to the `turtle_program.py` file.
 Draw a square of which 100 pixels each side.
 
 ```python
-	shape("turtle")
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
+shape("turtle")
+forward(100)
+right(90)
+forward(100)
+right(90)
+forward(100)
+right(90)
+forward(100)
+right(90)
 ```
 
 > Look at [**syntax table**](#syntax-table) for more introduction about `forward()` and `right()`
@@ -101,7 +101,7 @@ Draw a square of which 100 pixels each side.
 Finalize the program with `done()` statement at the last line
 
 ```python
-	done()
+done()
 ```
 
 > Look at [**syntax table**](#syntax-table) for more introduction about `done()` statement
@@ -109,19 +109,19 @@ Finalize the program with `done()` statement at the last line
 #### Step 5: Complete code for square
 
 ```python
-	from turtle import *
+from turtle import *
 
-	# Square program without loop
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
-	forward(100)
-	right(90)
+# Square program without loop
+forward(100)
+right(90)
+forward(100)
+right(90)
+forward(100)
+right(90)
+forward(100)
+right(90)
 
-	done()
+done()
 ```
 
 #### Step 6: Run the square program
@@ -134,14 +134,14 @@ Run the program by pressing `Ctrl + B` if it presents the result as below:
 #### Draw a triangle
 
 ```python
-	from turtle import *
+from turtle import *
 
-	# Triangle program with a loop
-	for each_time in range(3):
-		forward(100)
-		right(120)
+# Triangle program with a loop
+for each_time in range(3):
+	forward(100)
+	right(120)
 
-	done()
+done()
 ```
 
 ![](/images/turtle/01.png)
@@ -149,14 +149,14 @@ Run the program by pressing `Ctrl + B` if it presents the result as below:
 #### Draw a Polygon
 
 ```python
-	from turtle import *
+from turtle import *
 
-	# Polygram program with a loop
-	for each_time in range(6):
-		forward(100)
-		right(60)
+# Polygram program with a loop
+for each_time in range(6):
+	forward(100)
+	right(60)
 
-	done()
+done()
 ```
 
 ![](/images/turtle/02.png)
@@ -164,15 +164,15 @@ Run the program by pressing `Ctrl + B` if it presents the result as below:
 #### Draw polygons
 
 ```python
-	for each_square in range(18):
-		color("red", "green")
-		speed(100)
-		for each_line in range(6):
-			forward(100)
-			right(60)
-		left(20)
+for each_square in range(18):
+	color("red", "green")
+	speed(100)
+	for each_line in range(6):
+		forward(100)
+		right(60)
+	left(20)
 
-	done()
+done()
 ```
 
 ![](/images/turtle/03.png)
@@ -180,15 +180,15 @@ Run the program by pressing `Ctrl + B` if it presents the result as below:
 #### Draw more polygons
 
 ```python
-	for each_square in range(36):
-		color("red", "green")
-		speed(100)
-		for each_line in range(6):
-			forward(100)
-			right(10)
-		left(20)
+for each_square in range(36):
+	color("red", "green")
+	speed(100)
+	for each_line in range(6):
+		forward(100)
+		right(10)
+	left(20)
 
-	done()
+done()
 ```
 
 ![](/images/turtle/04.png)
@@ -196,47 +196,72 @@ Run the program by pressing `Ctrl + B` if it presents the result as below:
 #### Draw a symbol
 
 ```python
-	from turtle import *
+from turtle import *
 
-	reset()
-	Screen()
-	up()
-	goto(-320,-195)
-	width(70)
+reset()
+Screen()
+up()
+goto(-320,-195)
+width(70)
 
-	for i in range(7):
-		color("green")
-		down()
-		forward(640)
-		up()
-		backward(640)
-		left(90)
-		forward(66)
-		right(90)
-
-	width(25)
-	color("white")
-	goto(0,-170)
+for i in range(7):
+	color("green")
 	down()
-
-	circle(170)
+	forward(640)
+	up()
+	backward(640)
 	left(90)
-	forward(340)
-	up()
-	left(180)
-	forward(170)
-	right(45)
-	down()
-	forward(170)
-	up()
-	backward(170)
-	left(90)
-	down()
-	forward(170)
-	up()
-	goto(0,300)
+	forward(66)
+	right(90)
 
-	done()
+width(25)
+color("white")
+goto(0,-170)
+down()
+
+circle(170)
+left(90)
+forward(340)
+up()
+left(180)
+forward(170)
+right(45)
+down()
+forward(170)
+up()
+backward(170)
+left(90)
+down()
+forward(170)
+up()
+goto(0,300)
+
+done()
 ```
 
 ![](/images/turtle/05.png)
+
+> #### Homework: Draw different shapes at different position
+
+Given following part of code with three coordinates `(-400, 100)`,`(0, 100)` and `(400, 100)`.Please complete this code to draw shapes below:
+
+**Example code:**
+
+```python
+from turtle import *
+
+width(10)
+speed(100)
+penup()
+goto(-400, 100)
+pendown()
+forward(100)
+
+done()
+```
+
+**Output:**
+
+![](/images/shapes.png)
+
+<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>

@@ -1,8 +1,8 @@
 ---
 title: "Formatting, string and list slicing"
 date: 2019-10-17T19:31:39+08:00
-weight: 6
-pre: "<b>6. </b>"
+weight: 4
+pre: "<b>4. </b>"
 chapter: false
 ---
 
@@ -32,39 +32,39 @@ chapter: false
 #### Slicing
 
 ```python
-	string = 'Hello, Python'
-	print(string[6:]) # Prints after index 6 which is Python
+string = 'Hello, Python'
+print(string[6:]) # Prints after index 6 which is Python
 
-	print(string[1:4]) # Prints from index 1 to index 4 
+print(string[1:4]) # Prints from index 1 to index 4 
 
-	print(string[:-3]) # Removes the last three characters
+print(string[:-3]) # Removes the last three characters
 
-	print(string[::-1]) # Let's see what happens
+print(string[::-1]) # Let's see what happens
 ```
 
 #### Formatting
 
 ```python
-	name = 'Alex'
-	age = 9
-	string = "My name is {}, I'm {} years old".format(name, age)
-	print(string) # Let's see what is the result
+name = 'Alex'
+age = 9
+string = "My name is {}, I'm {} years old".format(name, age)
+print(string) # Let's see what is the result
 ```
 
 #### Type converting
 
 ```python
-	print('I am ' + 9 + 'years old') # Let's see what happens
+print('I am ' + 9 + 'years old') # Let's see what happens
 ```
 
 Valus of different types are not being able to added to one another. `str()` and `int()` are the functions convert `int` value to `string` and back.
 
 ```python
-	print('I am ' + str(9) + 'years old')
+print('I am ' + str(9) + 'years old')
 
-	print('10' + str(6)) # 106
+print('10' + str(6)) # 106
 
-	print(int('10' + 6)) # 16
+print(int('10' + 6)) # 16
 ```
 
 > Look up [**Key syntax introduction**](#syntax-table) for more functions in String 
@@ -74,17 +74,17 @@ Valus of different types are not being able to added to one another. `str()` and
 `append()` is the function to add items to a list. For example:
 
 ```python
-	a_list = ['Alex','Lucy', 'Andy']
-	a_list.append('Ryan')
-	print(a_list)
+a_list = ['Alex','Lucy', 'Andy']
+a_list.append('Ryan')
+print(a_list)
 ```
 
 ### List slicing
 
 ```python
-	a_list = ['Alex','Lucy', 'Andy', 'Ryan']
+a_list = ['Alex','Lucy', 'Andy', 'Ryan']
 
-	print(a_list[1:3]) # Prints the second the third item
+print(a_list[1:3]) # Prints the second the third item
 ```
 
 > ### Homework: Separate items
@@ -94,15 +94,15 @@ Given a string and four empty lists:
 #### Input
 
 ```python
-	str = "Today'S HOme WoRk iS abOuT SeparAtIng 12345 from chAraCterS"
+str = "Today'S HOme WoRk iS abOuT SeparAtIng 12345 from chAraCterS"
 
-	lower_case_letters = []
+lower_case_letters = []
 
-	upper_case_letters = []
+upper_case_letters = []
 
-	digits = []
+digits = []
 
-	characters = []
+characters = []
 ```
 
 Write a program to separate them into four empty lists and print.
@@ -110,8 +110,10 @@ Write a program to separate them into four empty lists and print.
 #### Output
 
 ```python
-	['o','d','a','y'...]
-	['T','S','H','O'...]
-	[1,2,3,4,5]
-	['T','o','d','a','y','S'...]
+['o','d','a','y'...]
+['T','S','H','O'...]
+[1,2,3,4,5]
+['T','o','d','a','y','S'...]
 ```
+
+<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>

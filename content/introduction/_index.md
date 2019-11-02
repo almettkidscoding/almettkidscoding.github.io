@@ -1,8 +1,9 @@
 ---
-title: Python简介
+title: "Python课程简介"
+date: 2019-11-02T22:44:31+08:00
 weight: 1
 pre: "<b>1. </b>"
-chapter: false
+chapter: true
 ---
 
 ## Python课程简介

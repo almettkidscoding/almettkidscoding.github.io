@@ -1,5 +1,5 @@
 ---
-title: "Loops, If...else, Tuple"
+title: "Loops, If...else, List"
 date: 2019-09-29T20:43:07+08:00
 weight: 3
 pre: "<b>3. </b>"
@@ -8,9 +8,9 @@ chapter: false
 
 ### Class objectives
 - [**Key syntax introduction in this class**](#syntax-table)
+- [**Brief introduction to List**](#brief-introduction-to-list)
 - [**What is Loop statement?**](#what-is-loop-statement)
 - [**What is if...else statement?**](#what-is-ifelse-statement)
-- [**What is Tuple?**](#what-is-tuple)
 - [**Exercises with little turtle**](#exercises-with-little-turtle)
 - [**Homework**](#homework)
 
@@ -21,6 +21,21 @@ chapter: false
 |  <center>width(integer)</center>   | Defines the width of the pen. Patameter - integer is a value type of int |
 |  <center>if statement</center>   | is a conditional statement. |
 |  <center>for statement</center>   | is a loop statement in which operations repeat itself for a limited amount of time |
+
+### List
+
+#### What is List?
+List is a box full of `Strings` or `Numbers`. For example:
+
+```python
+# List of Number
+list_of_number = [2, 3, 5, 1, 6]
+print(list_of_number) # [2, 3, 5, 1, 6]
+
+# List of String
+list_of_string = ["Python", "kids", "fun"]
+print(list_of_string) # ["Python", "kids", "fun"]
+```
 
 ### What is loop statement?
 

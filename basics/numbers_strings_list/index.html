@@ -9,21 +9,21 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Numbers, strings, list I :: Python programming</title>
+    <title>Numbers, Strings, Operators :: Python programming</title>
 
     
-    <link href="/css/nucleus.css?1572708026" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572708026" rel="stylesheet">
-    <link href="/css/hybrid.css?1572708026" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572708026" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572708026" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572708026" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572708026" rel="stylesheet">
-    <link href="/css/theme.css?1572708026" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572708026" rel="stylesheet">
+    <link href="/css/nucleus.css?1572788118" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572788118" rel="stylesheet">
+    <link href="/css/hybrid.css?1572788118" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572788118" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572788118" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572788118" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572788118" rel="stylesheet">
+    <link href="/css/theme.css?1572788118" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572788118" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572708026"></script>
+    <script src="/js/jquery-3.3.1.min.js?1572788118"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -147,9 +147,9 @@
  
   
     
-      <li data-nav-id="/basics/numbers_strings_list/" title="Numbers, strings, list I" class="dd-item active">
+      <li data-nav-id="/basics/numbers_strings_list/" title="Numbers, Strings, Operators" class="dd-item active">
         <a href="/basics/numbers_strings_list/">
-        <b>2. </b>Numbers, strings, list I
+        <b>2. </b>Numbers, Strings, Operators
         
         </a>
     </li>
@@ -166,9 +166,9 @@
  
   
     
-      <li data-nav-id="/basics/loops_conditionals_tuple/" title="Loops, If...else, Tuple" class="dd-item ">
+      <li data-nav-id="/basics/loops_conditionals_tuple/" title="Loops, If...else, List" class="dd-item ">
         <a href="/basics/loops_conditionals_tuple/">
-        <b>3. </b>Loops, If...else, Tuple
+        <b>3. </b>Loops, If...else, List
         
         </a>
     </li>
@@ -289,7 +289,7 @@
             
           
           
-            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Numbers, strings, list I
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Numbers, Strings, Operators
           
          
           
@@ -310,17 +310,20 @@
 <ul>
 <li><a href="#class-objectives">Class objectives</a></li>
 <li><a href="#syntax-table">Syntax table</a></li>
-<li><a href="#brief-introduction-to-number">Brief introduction to Number</a>
+<li><a href="#number">Number</a>
 <ul>
 <li><a href="#what-is-number">What is Number?</a></li>
+<li><a href="#how-to-define-a-number-variable">How to define a number variable?</a></li>
+<li><a href="#how-to-define-multiple-number-variables">How to define multiple number variables?</a></li>
+<li><a href="#operators">Operators</a></li>
 </ul></li>
-<li><a href="#brief-introduction-to-string">Brief introduction to String</a>
+<li><a href="#string">String</a>
 <ul>
 <li><a href="#what-is-string">What is String?</a></li>
-</ul></li>
-<li><a href="#brief-introduction-to-list">Brief introduction to List</a>
-<ul>
-<li><a href="#what-is-list">What is List?</a></li>
+<li><a href="#how-to-define-a-string-variable">How to define a String variable?</a></li>
+<li><a href="#how-to-define-multiple-string-variables">How to define multiple String variables?</a></li>
+<li><a href="#how-to-link-strings-together">How to link strings together?</a></li>
+<li><a href="#how-to-convert-a-number-to-string-and-back">How to convert a number to string and back?</a></li>
 </ul></li>
 <li><a href="#practice-them-in-turtle">Practice them in turtle</a>
 <ul>
@@ -348,7 +351,7 @@
           
             <h1>
               
-              Numbers, strings, list I
+              Numbers, Strings, Operators
             </h1>
           
 
@@ -362,9 +365,9 @@
 
 <ul>
 <li><a href="#syntax-table"><strong>Key syntax introduction in this class</strong></a></li>
-<li><a href="#brief-introduction-to-number"><strong>Brief introduction to Numbers</strong></a></li>
-<li><a href="#brief-introduction-to-string"><strong>Brief introduction to Strings</strong></a></li>
-<li><a href="#brief-introduction-to-list"><strong>Brief introduction to List</strong></a></li>
+<li><a href="#number"><strong>Number</strong></a></li>
+<li><a href="#string"><strong>String</strong></a></li>
+<li><a href="#list"><strong>List</strong></a></li>
 <li><a href="#practice-them-in-turtle"><strong>How to do it in turtle?</strong></a></li>
 <li><a href="#homework"><strong>Homework</strong></a></li>
 </ul>
@@ -397,11 +400,27 @@
 </tbody>
 </table>
 
-<h3 id="brief-introduction-to-number">Brief introduction to Number</h3>
+<h3 id="number">Number</h3>
 
 <h4 id="what-is-number">What is Number?</h4>
 
 <p>Numbers in Python are the same as the numbers you have learnt in math class. We have four mathmatical operators.</p>
+
+<h4 id="how-to-define-a-number-variable">How to define a number variable?</h4>
+
+<pre><code class="language-python"># num is the name, 17 is the value, = means assign value 17 to variable num
+num = 17
+print(num)
+</code></pre>
+
+<h4 id="how-to-define-multiple-number-variables">How to define multiple number variables?</h4>
+
+<pre><code class="language-python"># num01, num02 and num03 are the names. 23, 46 and 78 are the values, = means assign values 23, 46 and 78 to variables num01, num02 and num03.
+num01, num02, num03 = 23, 46, 78
+print(num01, num02, num03)
+</code></pre>
+
+<h4 id="operators">Operators</h4>
 
 <ul>
 <li>addition +</li>
@@ -414,42 +433,46 @@
 <li>equal sign ==</li>
 </ul>
 
-<pre><code class="language-python">print(5 + 7) # 12
-print(5 - 3) # 2
-print(6 * 3) # 18
-print(9 / 3) # 3
-print(10 // 3) # 3
-print(7 % 2) # 1
-print(5 == 5) # True
-print(6 == 7) # False
-
-num = 12
-print(num) # 12
+<pre><code class="language-python">num01, num02, num03 = 23, 46, 78
+add = num01 + num02
+sub = num02 - num01
+mul = num01 * mul03
+divi = num02 / num01
+print('Addition: ' + int(add))
+print('subtraction: ' + int(sub))
+print('Multiplication: ' + int(mul))
+print('Division: ' + int(divi))
 </code></pre>
 
-<h3 id="brief-introduction-to-string">Brief introduction to String</h3>
+<h3 id="string">String</h3>
 
 <h4 id="what-is-string">What is String?</h4>
 
 <p>String is the text we print in console or in turtle screen.</p>
 
-<pre><code class="language-python">print(&quot;Happy coding!&quot;) # Happy coding!
+<h4 id="how-to-define-a-string-variable">How to define a String variable?</h4>
+
+<pre><code class="language-python"># string is the name, 'Hello, Python' is the value, = means assign value 'Hello, Python' to variable string
+string = 'Hello, Python'
+print(string)
 </code></pre>
 
-<h3 id="brief-introduction-to-list">Brief introduction to List</h3>
+<h4 id="how-to-define-multiple-string-variables">How to define multiple String variables?</h4>
 
-<h4 id="what-is-list">What is List?</h4>
-
-<p>List is a box full of <code>Strings</code> or <code>Numbers</code>. For example:</p>
-
-<pre><code class="language-python"># List of Number
-list_of_number = [2, 3, 5, 1, 6]
-print(list_of_number) # [2, 3, 5, 1, 6]
-
-# List of Number
-list_of_number = [&quot;Python&quot;, &quot;kids&quot;, &quot;fun&quot;]
-print(list_of_number) # [&quot;Python&quot;, &quot;kids&quot;, &quot;fun&quot;]
+<pre><code class="language-python"># string01, string02 and string03 are the names. 'My name', &quot; is&quot;, ' Alim' and '7' are the values, = means assign values 'My name', &quot; is&quot;, ' Alim' and '7' to variables string01, string02 and num03.
+string01, string02, string03, string04 = 'My name', &quot; is&quot;, ' Alim', '7'
+print(string01, string02, string03, string04)
 </code></pre>
+
+<h4 id="how-to-link-strings-together">How to link strings together?</h4>
+
+<pre><code class="language-python">string01, string02, string03, string04 = 'My name', &quot; is&quot;, ' Alim', '7'
+print(string01 + string02 + string03)
+</code></pre>
+
+<h4 id="how-to-convert-a-number-to-string-and-back">How to convert a number to string and back?</h4>
+
+<p>For example: <code>'Addition: '</code> and <code>add</code> are different data types. In Python, unable to add two different data types unless one of which is converted to the type of another. <code>int()</code> is a Python function converts <code>String</code> to <code>Number</code>. <code>str()</code> is a Python function converts <code>Number</code> to <code>String</code>.</p>
 
 <h3 id="practice-them-in-turtle">Practice them in turtle</h3>
 
@@ -492,17 +515,23 @@ done()
 
 <pre><code class="language-python">square = 4
 triangle = 3
-colors = [&quot;green&quot;, &quot;yellow&quot;, &quot;red&quot;]
+red, green, yellow = 'red', 'green', 'yellow'
+
+# Following is how to define a function
+# def is a suffix indicates define a function. draw is the name of function. sides is the parameter. We'll talk about more details in following classes.
 def draw(sides):
 	width(30)
 	if sides == square:
-		color(colors[0])
+		color(green)
 	elif sides == triangle:
-		color(colors[1])
+		color(yellow)
 	for each_side in range(sides):
-		forward(200)
+		forward(100)
 		right(360/sides)
 	done()
+
+# Following is how to call a function
+draw(4)
 </code></pre>
 
 <p>if <code>draw(4)</code></p>
@@ -737,7 +766,7 @@ def draw(sides):
 			<a class="nav nav-prev" href="/basics/turtle_programming/" title="Turtle programming"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/basics/loops_conditionals_tuple/" title="Loops, If...else, Tuple" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/basics/loops_conditionals_tuple/" title="Loops, If...else, List" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -747,20 +776,20 @@ def draw(sides):
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572708026"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572708026"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572708026"></script>
-    <script src="/js/jquery.sticky.js?1572708026"></script>
-    <script src="/js/featherlight.min.js?1572708026"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1572708026"></script>
-    <script src="/js/highlight.pack.js?1572708026"></script>
+    <script src="/js/clipboard.min.js?1572788118"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572788118"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572788118"></script>
+    <script src="/js/jquery.sticky.js?1572788118"></script>
+    <script src="/js/featherlight.min.js?1572788118"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1572788118"></script>
+    <script src="/js/highlight.pack.js?1572788118"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572708026"></script>
-    <script src="/js/learn.js?1572708026"></script>
-    <script src="/js/hugo-learn.js?1572708026"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572788118"></script>
+    <script src="/js/learn.js?1572788118"></script>
+    <script src="/js/hugo-learn.js?1572788118"></script>
 
-    <link href="/mermaid/mermaid.css?1572708026" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572708026"></script>
+    <link href="/mermaid/mermaid.css?1572788118" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572788118"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

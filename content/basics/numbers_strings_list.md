@@ -1,5 +1,5 @@
 ---
-title: "Numbers, strings, list I"
+title: "Numbers, Strings, Operators"
 date: 2019-09-24T15:24:05+08:00
 weight: 2
 pre: "<b>2. </b>"
@@ -8,9 +8,9 @@ chapter: false
 
 ### Class objectives
 - [**Key syntax introduction in this class**](#syntax-table)
-- [**Brief introduction to Numbers**](#brief-introduction-to-number)
-- [**Brief introduction to Strings**](#brief-introduction-to-string)
-- [**Brief introduction to List**](#brief-introduction-to-list)
+- [**Number**](#number)
+- [**String**](#string)
+- [**List**](#list)
 - [**How to do it in turtle?**](#practice-them-in-turtle)
 - [**Homework**](#homework)
 
@@ -22,10 +22,28 @@ chapter: false
 |  <center>if statement</center>   | is a conditional statement. |
 |  <center>for statement</center>   | is a loop statement in which operations repeat itself for a limited amount of time |
 
-### Brief introduction to Number
+### Number
 
 #### What is Number?
 Numbers in Python are the same as the numbers you have learnt in math class. We have four mathmatical operators.
+
+#### How to define a number variable?
+
+```python
+# num is the name, 17 is the value, = means assign value 17 to variable num
+num = 17
+print(num)
+```
+
+#### How to define multiple number variables?
+
+```python
+# num01, num02 and num03 are the names. 23, 46 and 78 are the values, = means assign values 23, 46 and 78 to variables num01, num02 and num03.
+num01, num02, num03 = 23, 46, 78
+print(num01, num02, num03)
+```
+
+#### Operators
 
 - addition +
 - subtraction -
@@ -37,42 +55,47 @@ Numbers in Python are the same as the numbers you have learnt in math class. We 
 - equal sign ==
 
 ```python
-print(5 + 7) # 12
-print(5 - 3) # 2
-print(6 * 3) # 18
-print(9 / 3) # 3
-print(10 // 3) # 3
-print(7 % 2) # 1
-print(5 == 5) # True
-print(6 == 7) # False
-
-num = 12
-print(num) # 12
+num01, num02, num03 = 23, 46, 78
+add = num01 + num02
+sub = num02 - num01
+mul = num01 * mul03
+divi = num02 / num01
+print('Addition: ' + int(add))
+print('subtraction: ' + int(sub))
+print('Multiplication: ' + int(mul))
+print('Division: ' + int(divi))
 ```
 
-### Brief introduction to String
+### String
 
 #### What is String?
 String is the text we print in console or in turtle screen.
 
+#### How to define a String variable?
 ```python
-print("Happy coding!") # Happy coding!
+# string is the name, 'Hello, Python' is the value, = means assign value 'Hello, Python' to variable string
+string = 'Hello, Python'
+print(string)
 ```
 
-### Brief introduction to List
-
-#### What is List?
-List is a box full of `Strings` or `Numbers`. For example:
+#### How to define multiple String variables?
 
 ```python
-# List of Number
-list_of_number = [2, 3, 5, 1, 6]
-print(list_of_number) # [2, 3, 5, 1, 6]
-
-# List of Number
-list_of_number = ["Python", "kids", "fun"]
-print(list_of_number) # ["Python", "kids", "fun"]
+# string01, string02 and string03 are the names. 'My name', " is", ' Alim' and '7' are the values, = means assign values 'My name', " is", ' Alim' and '7' to variables string01, string02 and num03.
+string01, string02, string03, string04 = 'My name', " is", ' Alim', '7'
+print(string01, string02, string03, string04)
 ```
+
+#### How to link strings together?
+
+```python
+string01, string02, string03, string04 = 'My name', " is", ' Alim', '7'
+print(string01 + string02 + string03)
+```
+
+#### How to convert a number to string and back?
+
+For example: `'Addition: '` and `add` are different data types. In Python, unable to add two different data types unless one of which is converted to the type of another. `int()` is a Python function converts `String` to `Number`. `str()` is a Python function converts `Number` to `String`.
 
 ### Practice them in turtle
 
@@ -115,17 +138,23 @@ Assume we have random colors in a list, paint each shape in a different color. F
 ```python
 square = 4
 triangle = 3
-colors = ["green", "yellow", "red"]
+red, green, yellow = 'red', 'green', 'yellow'
+
+# Following is how to define a function
+# def is a suffix indicates define a function. draw is the name of function. sides is the parameter. We'll talk about more details in following classes.
 def draw(sides):
 	width(30)
 	if sides == square:
-		color(colors[0])
+		color(green)
 	elif sides == triangle:
-		color(colors[1])
+		color(yellow)
 	for each_side in range(sides):
-		forward(200)
+		forward(100)
 		right(360/sides)
 	done()
+
+# Following is how to call a function
+draw(4)
 ```
 
 if `draw(4)`

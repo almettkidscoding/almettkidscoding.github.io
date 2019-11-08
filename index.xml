@@ -58,11 +58,20 @@
     
     <item>
       <title>Objects I</title>
-      <link>/basics/objects_and_game_design/</link>
+      <link>/basics/objects_and_game_design_i/</link>
       <pubDate>Fri, 01 Nov 2019 14:25:57 +0800</pubDate>
       
-      <guid>/basics/objects_and_game_design/</guid>
+      <guid>/basics/objects_and_game_design_i/</guid>
       <description>Class objectives  Key syntax introduction What is an object? Objects in game design Guessing game Homework  Syntax table    Keyword description     class A class is a code template for creating objects. Objects have member variables and have behaviour associated with them. In python a class is created by the keyword class. An object is created using the constructor of the class.    What is an object?</description>
+    </item>
+    
+    <item>
+      <title>Object II and Dictionary</title>
+      <link>/basics/objects_ii_and_dictionary/</link>
+      <pubDate>Fri, 08 Nov 2019 12:45:35 +0800</pubDate>
+      
+      <guid>/basics/objects_ii_and_dictionary/</guid>
+      <description>Class objectives  Key syntax introduction Dictionary Looping techniques Students information system design Homework  Syntax table    Dictionary description     class It is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.</description>
     </item>
     
   </channel>

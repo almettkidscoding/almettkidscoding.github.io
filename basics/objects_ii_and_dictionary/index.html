@@ -9,21 +9,21 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Objects I :: Python programming</title>
+    <title>Object II and Dictionary :: Python programming</title>
 
     
-    <link href="/css/nucleus.css?1572788118" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572788118" rel="stylesheet">
-    <link href="/css/hybrid.css?1572788118" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572788118" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572788118" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572788118" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572788118" rel="stylesheet">
-    <link href="/css/theme.css?1572788118" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572788118" rel="stylesheet">
+    <link href="/css/nucleus.css?1573194352" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1573194352" rel="stylesheet">
+    <link href="/css/hybrid.css?1573194352" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1573194352" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1573194352" rel="stylesheet">
+    <link href="/css/auto-complete.css?1573194352" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1573194352" rel="stylesheet">
+    <link href="/css/theme.css?1573194352" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1573194352" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572788118"></script>
+    <script src="/js/jquery-3.3.1.min.js?1573194352"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -33,17 +33,18 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/objects_and_game_design/">
+  <body class="" data-url="/basics/objects_ii_and_dictionary/">
     <nav id="sidebar" class="">
 
 
 
   <div id="header-wrapper">
     <div id="header">
-      <a id="logo" href="/">
-  <h4 style="color: white;">Python人工智能课程</h4>
-</a>
-
+      
+	<a id="logo" href="/">
+	  <h4 style="color: white;margin: 10px;">Python人工智能课程</h4>
+	</a>
+	
     </div>
     
   </div>
@@ -223,9 +224,28 @@
  
   
     
-      <li data-nav-id="/basics/objects_and_game_design/" title="Objects I" class="dd-item active">
-        <a href="/basics/objects_and_game_design/">
+      <li data-nav-id="/basics/objects_and_game_design_i/" title="Objects I" class="dd-item ">
+        <a href="/basics/objects_and_game_design_i/">
         <b>6. </b>Objects I
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/objects_ii_and_dictionary/" title="Object II and Dictionary" class="dd-item active">
+        <a href="/basics/objects_ii_and_dictionary/">
+        <b>7. </b>Object II and Dictionary
         
         </a>
     </li>
@@ -289,7 +309,7 @@
             
           
           
-            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Objects I
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Object II and Dictionary
           
          
           
@@ -310,17 +330,25 @@
 <ul>
 <li><a href="#class-objectives">Class objectives</a></li>
 <li><a href="#syntax-table">Syntax table</a></li>
-<li><a href="#what-is-an-object">What is an object?</a>
+<li><a href="#dictionary">Dictionary</a>
 <ul>
-<li><a href="#how-to-define-an-object-in-python">How to define an object in Python?</a></li>
+<li><a href="#how-to-define-a-dictionary">How to define a dictionary?</a></li>
+<li><a href="#how-to-add-a-value-to-dictionary">How to add a value to Dictionary?</a></li>
+<li><a href="#how-to-change-the-value-of-a-key">How to change the value of a key?</a></li>
+<li><a href="#how-to-delete-a-key-value">How to delete a key/value?</a></li>
 </ul></li>
-<li><a href="#objects-in-game-design">Objects in game design</a>
+<li><a href="#looping-techniques">Looping techniques</a>
 <ul>
-<li><a href="#turtle-race">Turtle race</a></li>
+<li><a href="#print-keys-and-values">Print keys and values</a></li>
+<li><a href="#print-values-only">Print values only</a></li>
 </ul></li>
-<li><a href="#guessing-game">Guessing game</a>
+<li><a href="#students-information-system-design">Students information system design</a>
 <ul>
-<li><a href="#homework-draw-a-phone">Homework: Draw a phone</a></li>
+<li><a href="#homework-recall-previous-python-knowledge-in-a-dictionary">Homework: Recall previous Python knowledge in a dictionary</a>
+<ul>
+<li><a href="#basic-skeleton-of-the-code">Basic skeleton of the code:</a></li>
+<li><a href="#expected-result-for-example">Expected result for example:</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -341,7 +369,7 @@
           
             <h1>
               
-              Objects I
+              Object II and Dictionary
             </h1>
           
 
@@ -355,9 +383,9 @@
 
 <ul>
 <li><a href="#syntax-table"><strong>Key syntax introduction</strong></a></li>
-<li><a href="#what_is_an_object"><strong>What is an object?</strong></a></li>
-<li><a href="#objects_in_game_design"><strong>Objects in game design</strong></a></li>
-<li><a href="#Guessing_game"><strong>Guessing game</strong></a></li>
+<li><a href="#dictionary"><strong>Dictionary</strong></a></li>
+<li><a href="#objects_in_game_design"><strong>Looping techniques</strong></a></li>
+<li><a href="#students_information_system_design"><strong>Students information system design</strong></a></li>
 <li><a href="#homework"><strong>Homework</strong></a></li>
 </ul>
 
@@ -366,7 +394,7 @@
 <table>
 <thead>
 <tr>
-<th align="left"><center>Keyword</center></th>
+<th align="left"><center>Dictionary</center></th>
 <th align="center"><center>description</center></th>
 </tr>
 </thead>
@@ -374,140 +402,86 @@
 <tbody>
 <tr>
 <td align="left"><center>class</center></td>
-<td align="center">A class is a code template for creating objects. Objects have member variables and have behaviour associated with them. In python a class is created by the keyword class. An object is created using the constructor of the class.</td>
+<td align="center">It is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="what-is-an-object">What is an object?</h3>
+<h3 id="dictionary">Dictionary</h3>
 
-<p>In computer science, an object can be a variable, a data structure, a function, or a method, and as such, is a value in memory referenced by an identifier. In the class-based object-oriented programming paradigm, object refers to a particular instance of a class, where the object can be a combination of variables, functions, and data structures.</p>
+<h4 id="how-to-define-a-dictionary">How to define a dictionary?</h4>
 
-<p><img src="/images/objects.jpeg" alt="" /></p>
-
-<h4 id="how-to-define-an-object-in-python">How to define an object in Python?</h4>
-
-<pre><code class="language-python">from turtle import *
-
-class Car:
-	def __init__(self, color, brand, model):
-		self.color = color
-		self.brand = brand
-		self.model = model
-
-	def draw(self):
-		pencolor(self.color)
-		forward(100)
-		done()
-
-ford = Car('Red', 'Ford', 'Mustang')
-print(ford.color, ford.brand, ford.model)
-ford.draw()
+<pre><code class="language-python">dic = {'color':'颜色', 'name':'名字，名称', 'father':'父亲，爸爸', 'computer':'电脑，计算机'}
+print(dic)
 </code></pre>
 
-<h3 id="objects-in-game-design">Objects in game design</h3>
+<h4 id="how-to-add-a-value-to-dictionary">How to add a value to Dictionary?</h4>
 
-<h4 id="turtle-race">Turtle race</h4>
+<pre><code class="language-python">dic['program'] = '程序'
+</code></pre>
 
-<p>Once upon a time, four turtles come together to race. All of them are good at running, therefore, winner of each race is different. Let&rsquo;s see how does Python make it happen.</p>
+<h4 id="how-to-change-the-value-of-a-key">How to change the value of a key?</h4>
 
-<pre><code class="language-python">from turtle import *
-from random import randint
+<pre><code class="language-python">dic['name'] = '名称'
+</code></pre>
 
-# Basic setup
-speed(0)
-penup()
-goto(-140, 140)
+<h4 id="how-to-delete-a-key-value">How to delete a key/value?</h4>
 
-# Draw the road
-for step in range(15):
-  write(step, align='center')
-  right(90)
-  for num in range(8):
-    penup()
-    forward(10)
-    pendown()
-    forward(10)
-  penup()
-  backward(160)
-  left(90)
-  forward(20)
+<pre><code class="language-python">del dic['computer']
+</code></pre>
 
-# Define a turtle function
-def ready_turtle(turtle, color, position):
-  turtle.color(color)
-  turtle.shape('turtle')
+<h3 id="looping-techniques">Looping techniques</h3>
 
-  turtle.penup()
-  turtle.goto(position[0], position[1])
-  turtle.pendown()
+<h4 id="print-keys-and-values">Print keys and values</h4>
 
-  for turn in range(10):
-    turtle.right(36)
+<pre><code class="language-python">dic = {'color':'颜色', 'name':'名字，名称', 'father':'父亲，爸爸', 'computer':'电脑，计算机'}
+for key, value in dic.items():
+	print(key, value)
+</code></pre>
 
-# Create turtles of four different colors
-red, blue, green, yellow = Turtle(),Turtle(),Turtle(),Turtle()
-ready_turtle(red, 'red', [-160, 100])
-ready_turtle(blue, 'blue', [-160, 70])
-ready_turtle(green, 'green', [-160, 40])
-ready_turtle(yellow, 'yellow', [-160, 10])
+<h4 id="print-values-only">Print values only</h4>
 
-# Yeay! Let's begin the race!
-for turn in range(100):
-  red.forward(randint(1,5))
-  blue.forward(randint(1,5))
-  green.forward(randint(1,5))
-  yellow.forward(randint(1,5))
-
-done()
+<pre><code class="language-python">dic = {'color':'颜色', 'name':'名字，名称', 'father':'父亲，爸爸', 'computer':'电脑，计算机'}
+for each_word in dic:
+	print(dic[each_word])
 </code></pre>
 
 <iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-<h3 id="guessing-game">Guessing game</h3>
+<h3 id="students-information-system-design">Students information system design</h3>
 
-<p>Guess a number from 1 to 99.</p>
-
-<pre><code class="language-python">import random
-
-random_number = random.randint(1,99)
-name = input('Hi, This is robot. What is your name? :')
-print('Nice to meet you ' + name)
-guess = input('Please guess a number from 1 to 99')
-
-while 1 &lt;= int(guess) &lt;= 99:
-	if int(guess) &lt; random_number:
-		print('Guess is too low')
-		guess = input('Please try again')
-	elif int(guess) &gt; random_number:
-		print('Guess is too hight')
-		guess = input('Please try again')
-	else:
-		print('Yeay! You guessed it!')
-		break
+<pre><code class="language-python"># Code is coming soon
 </code></pre>
-
-<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 <blockquote>
-<h4 id="homework-draw-a-phone">Homework: Draw a phone</h4>
+<h4 id="homework-recall-previous-python-knowledge-in-a-dictionary">Homework: Recall previous Python knowledge in a dictionary</h4>
 </blockquote>
 
-<p>Given a class <code>Phone</code> with a function <code>draw_phone</code>. Please write the code to draw an iPhone.</p>
+<p>Given a class with two functions <code>__init__()</code>, <code>add</code> and <code>show</code>.</p>
 
-<p><strong>Code skeleton is below:</strong></p>
+<ul>
+<li><code>__init__()</code>: Initializes the class</li>
+<li><code>add()</code>: Adds a new key/value to the dictionary</li>
+<li><code>show()</code>:  Shows all items in the dictionary</li>
+</ul>
 
-<pre><code class="language-python">from turtle import *
+<h5 id="basic-skeleton-of-the-code">Basic skeleton of the code:</h5>
 
-class Phone:
-	def __init__(self, name, brand):
+<pre><code class="language-python">class Students:
+	def __init__(self, dic):
 
-	def draw_phone(self):
+	def add(self, key, value):
+
+	def show(self):
 </code></pre>
 
-<p><strong>Output:</strong></p>
+<h5 id="expected-result-for-example">Expected result for example:</h5>
 
-<p><img src="/images/turtle/iPhone.png" alt="" /></p>
+<blockquote>
+<p>Name: First class we have learnt: How to draw shapes in Turtle. How to use basic for loop.</p>
+</blockquote>
+
+<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 
 <footer class=" footline" >
@@ -678,6 +652,22 @@ class Phone:
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -702,7 +692,7 @@ class Phone:
 	 
 	 
 		
-			<a class="nav nav-prev" href="/basics/while_and_function/" title="While and Function"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/basics/objects_and_game_design_i/" title="Objects I"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/basics/turtle_programming/" title="Turtle programming" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -715,20 +705,20 @@ class Phone:
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572788118"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572788118"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572788118"></script>
-    <script src="/js/jquery.sticky.js?1572788118"></script>
-    <script src="/js/featherlight.min.js?1572788118"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1572788118"></script>
-    <script src="/js/highlight.pack.js?1572788118"></script>
+    <script src="/js/clipboard.min.js?1573194352"></script>
+    <script src="/js/perfect-scrollbar.min.js?1573194352"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1573194352"></script>
+    <script src="/js/jquery.sticky.js?1573194352"></script>
+    <script src="/js/featherlight.min.js?1573194352"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1573194352"></script>
+    <script src="/js/highlight.pack.js?1573194352"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572788118"></script>
-    <script src="/js/learn.js?1572788118"></script>
-    <script src="/js/hugo-learn.js?1572788118"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1573194352"></script>
+    <script src="/js/learn.js?1573194352"></script>
+    <script src="/js/hugo-learn.js?1573194352"></script>
 
-    <link href="/mermaid/mermaid.css?1572788118" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572788118"></script>
+    <link href="/mermaid/mermaid.css?1573194352" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1573194352"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

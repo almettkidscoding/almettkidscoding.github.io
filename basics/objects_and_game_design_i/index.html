@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Turtle programming :: Python programming</title>
+    <title>Objects I :: Python programming</title>
 
     
     <link href="/css/nucleus.css?1573194352" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/turtle_programming/">
+  <body class="" data-url="/basics/objects_and_game_design_i/">
     <nav id="sidebar" class="">
 
 
@@ -129,7 +129,7 @@
  
   
     
-      <li data-nav-id="/basics/turtle_programming/" title="Turtle programming" class="dd-item active">
+      <li data-nav-id="/basics/turtle_programming/" title="Turtle programming" class="dd-item ">
         <a href="/basics/turtle_programming/">
         <b>1. </b>Turtle programming
         
@@ -224,7 +224,7 @@
  
   
     
-      <li data-nav-id="/basics/objects_and_game_design_i/" title="Objects I" class="dd-item ">
+      <li data-nav-id="/basics/objects_and_game_design_i/" title="Objects I" class="dd-item active">
         <a href="/basics/objects_and_game_design_i/">
         <b>6. </b>Objects I
         
@@ -309,7 +309,7 @@
             
           
           
-            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Turtle programming
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Objects I
           
          
           
@@ -330,28 +330,17 @@
 <ul>
 <li><a href="#class-objectives">Class objectives</a></li>
 <li><a href="#syntax-table">Syntax table</a></li>
-<li><a href="#draw-the-first-turtle-graphic">Draw the first turtle graphic</a>
+<li><a href="#what-is-an-object">What is an object?</a>
 <ul>
-<li><a href="#square-programs-in-comparison">Square programs in comparison</a></li>
-<li><a href="#square-program-in-comparison-with-loop">Square program in comparison (with loop)</a></li>
+<li><a href="#how-to-define-an-object-in-python">How to define an object in Python?</a></li>
 </ul></li>
-<li><a href="#write-a-square-program-in-python">Write a square program in Python</a>
+<li><a href="#objects-in-game-design">Objects in game design</a>
 <ul>
-<li><a href="#step-1-create-python-file">Step 1: Create Python file</a></li>
-<li><a href="#step-2-import-turtle-module">Step 2: Import turtle module</a></li>
-<li><a href="#step-3-draw-a-square">Step 3: Draw a square</a></li>
-<li><a href="#step-4-finalize-the-program">Step 4: Finalize the program</a></li>
-<li><a href="#step-5-complete-code-for-square">Step 5: Complete code for square</a></li>
-<li><a href="#step-6-run-the-square-program">Step 6: Run the square program</a></li>
+<li><a href="#turtle-race">Turtle race</a></li>
 </ul></li>
-<li><a href="#draw-shapes-in-practice">Draw shapes in practice</a>
+<li><a href="#guessing-game">Guessing game</a>
 <ul>
-<li><a href="#draw-a-triangle">Draw a triangle</a></li>
-<li><a href="#draw-a-polygon">Draw a Polygon</a></li>
-<li><a href="#draw-polygons">Draw polygons</a></li>
-<li><a href="#draw-more-polygons">Draw more polygons</a></li>
-<li><a href="#draw-a-symbol">Draw a symbol</a></li>
-<li><a href="#homework-draw-different-shapes-at-different-position">Homework: Draw different shapes at different position</a></li>
+<li><a href="#homework-draw-a-phone">Homework: Draw a phone</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -372,7 +361,7 @@
           
             <h1>
               
-              Turtle programming
+              Objects I
             </h1>
           
 
@@ -385,9 +374,11 @@
 <h3 id="class-objectives">Class objectives</h3>
 
 <ul>
-<li><a href="#syntax-table"><strong>Learn key syntax in turtle</strong></a></li>
-<li><a href="#draw-the-first-turtle-graphic"><strong>Draw the first turtle graphic</strong></a></li>
-<li><a href="#draw-shapes-in-practice"><strong>Draw shapes in practice</strong></a></li>
+<li><a href="#syntax-table"><strong>Key syntax introduction</strong></a></li>
+<li><a href="#what_is_an_object"><strong>What is an object?</strong></a></li>
+<li><a href="#objects_in_game_design"><strong>Objects in game design</strong></a></li>
+<li><a href="#Guessing_game"><strong>Guessing game</strong></a></li>
+<li><a href="#homework"><strong>Homework</strong></a></li>
 </ul>
 
 <h3 id="syntax-table">Syntax table</h3>
@@ -402,317 +393,141 @@
 
 <tbody>
 <tr>
-<td align="left"><center>import</center></td>
-<td align="center">import statement is the most common way of invocking the required modules</td>
-</tr>
-
-<tr>
-<td align="left"><center>star mark(*)</center></td>
-<td align="center">stands for everything</td>
-</tr>
-
-<tr>
-<td align="left"><center>forward(distance)</center></td>
-<td align="center">Parameter: distance- is a number (integer or float). Move the turtle forward by the specified distance, in the direction the turtle is headed.</td>
-</tr>
-
-<tr>
-<td align="left"><center>backward(distance)</center></td>
-<td align="center">Parameter: distance- is a number (integer or float). Move the turtle backward by the specified distance, in the direction the turtle is headed.</td>
-</tr>
-
-<tr>
-<td align="left"><center>right(angle)</center></td>
-<td align="center">Parameter: angle- a number (integer or float). Turn turtle right by angle units.(Units are by default degrees)</td>
-</tr>
-
-<tr>
-<td align="left"><center>left(angle)</center></td>
-<td align="center">Parameter: angle- a number (integer or float). Turn turtle left by angle units.(Units are by default degrees)</td>
-</tr>
-
-<tr>
-<td align="left"><center>goto(x, y=None)</center></td>
-<td align="center">Parameters: x and y are numbers. y can be None</td>
-</tr>
-
-<tr>
-<td align="left"><center>pendown()</center></td>
-<td align="center">Pull the pen down – drawing when moving.</td>
-</tr>
-
-<tr>
-<td align="left"><center>penup()</center></td>
-<td align="center">Pull the pen up – no drawing when moving.</td>
-</tr>
-
-<tr>
-<td align="left"><center>color(color1, color2)</center></td>
-<td align="center">color1 is fill color. color2 is pen color.</td>
-</tr>
-
-<tr>
-<td align="left"><center>shape(name=None)</center></td>
-<td align="center">Parameter: name - a string which is a valid shapename. Set turtle shape to shape with given name or, if name is not given, return name of current shape.</td>
-</tr>
-
-<tr>
-<td align="left"><center>done()</center></td>
-<td align="center">Must be the last statement that finalize the program</td>
+<td align="left"><center>class</center></td>
+<td align="center">A class is a code template for creating objects. Objects have member variables and have behaviour associated with them. In python a class is created by the keyword class. An object is created using the constructor of the class.</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="draw-the-first-turtle-graphic">Draw the first turtle graphic</h3>
+<h3 id="what-is-an-object">What is an object?</h3>
 
-<h4 id="square-programs-in-comparison">Square programs in comparison</h4>
+<p>In computer science, an object can be a variable, a data structure, a function, or a method, and as such, is a value in memory referenced by an identifier. In the class-based object-oriented programming paradigm, object refers to a particular instance of a class, where the object can be a combination of variables, functions, and data structures.</p>
 
-<ol>
-<li>Square program in Scratch</li>
-</ol>
+<p><img src="/images/objects.jpeg" alt="" /></p>
 
-<p><img src="/images/turtle/square_in_scratch.png" alt="" /></p>
-
-<ol>
-<li>Square program in Python</li>
-</ol>
-
-<pre><code class="language-python">shape(&quot;turtle&quot;)
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
-</code></pre>
-
-<ul>
-<li><code>forward()</code>:</li>
-<li><code>right()</code>:</li>
-</ul>
-
-<h4 id="square-program-in-comparison-with-loop">Square program in comparison (with loop)</h4>
-
-<ol>
-<li>Square program in Scratch</li>
-</ol>
-
-<p><img src="/images/turtle/square_loop.png" alt="" /></p>
-
-<ol>
-<li>Square program in Python</li>
-</ol>
-
-<pre><code class="language-python">for each_time in range(4):
-	shape(&quot;turtle&quot;)
-	forward(100)
-	right(90)
-</code></pre>
-
-<h3 id="write-a-square-program-in-python">Write a square program in Python</h3>
-
-<h4 id="step-1-create-python-file">Step 1: Create Python file</h4>
-
-<p>Open <code>Sublime Text</code> editor, create a file by clickng <code>File -&gt; New File</code> at the left top, name it as <code>turtle_program.py</code>.</p>
-
-<h4 id="step-2-import-turtle-module">Step 2: Import turtle module</h4>
-
-<p>Import Turtle module to the <code>turtle_program.py</code> file.</p>
-
-<pre><code>from turtle import *
-</code></pre>
-
-<blockquote>
-<p>Look at <a href="#syntax-table"><strong>syntax table</strong></a> for more introduction about <code>import</code></p>
-</blockquote>
-
-<h4 id="step-3-draw-a-square">Step 3: Draw a square</h4>
-
-<p>Draw a square of which 100 pixels each side.</p>
-
-<pre><code class="language-python">shape(&quot;turtle&quot;)
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
-</code></pre>
-
-<blockquote>
-<p>Look at <a href="#syntax-table"><strong>syntax table</strong></a> for more introduction about <code>forward()</code> and <code>right()</code></p>
-</blockquote>
-
-<h4 id="step-4-finalize-the-program">Step 4: Finalize the program</h4>
-
-<p>Finalize the program with <code>done()</code> statement at the last line</p>
-
-<pre><code class="language-python">done()
-</code></pre>
-
-<blockquote>
-<p>Look at <a href="#syntax-table"><strong>syntax table</strong></a> for more introduction about <code>done()</code> statement</p>
-</blockquote>
-
-<h4 id="step-5-complete-code-for-square">Step 5: Complete code for square</h4>
+<h4 id="how-to-define-an-object-in-python">How to define an object in Python?</h4>
 
 <pre><code class="language-python">from turtle import *
 
-# Square program without loop
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
+class Car:
+	def __init__(self, color, brand, model):
+		self.color = color
+		self.brand = brand
+		self.model = model
 
-done()
-</code></pre>
-
-<h4 id="step-6-run-the-square-program">Step 6: Run the square program</h4>
-
-<p>Run the program by pressing <code>Ctrl + B</code> if it presents the result as below:</p>
-
-<p><img src="/images/turtle/result.png" alt="" /></p>
-
-<h3 id="draw-shapes-in-practice">Draw shapes in practice</h3>
-
-<h4 id="draw-a-triangle">Draw a triangle</h4>
-
-<pre><code class="language-python">from turtle import *
-
-# Triangle program with a loop
-for each_time in range(3):
-	forward(100)
-	right(120)
-
-done()
-</code></pre>
-
-<p><img src="/images/turtle/01.png" alt="" /></p>
-
-<h4 id="draw-a-polygon">Draw a Polygon</h4>
-
-<pre><code class="language-python">from turtle import *
-
-# Polygram program with a loop
-for each_time in range(6):
-	forward(100)
-	right(60)
-
-done()
-</code></pre>
-
-<p><img src="/images/turtle/02.png" alt="" /></p>
-
-<h4 id="draw-polygons">Draw polygons</h4>
-
-<pre><code class="language-python">for each_square in range(18):
-	color(&quot;red&quot;, &quot;green&quot;)
-	speed(100)
-	for each_line in range(6):
+	def draw(self):
+		pencolor(self.color)
 		forward(100)
-		right(60)
-	left(20)
+		done()
 
-done()
+ford = Car('Red', 'Ford', 'Mustang')
+print(ford.color, ford.brand, ford.model)
+ford.draw()
 </code></pre>
 
-<p><img src="/images/turtle/03.png" alt="" /></p>
+<h3 id="objects-in-game-design">Objects in game design</h3>
 
-<h4 id="draw-more-polygons">Draw more polygons</h4>
+<h4 id="turtle-race">Turtle race</h4>
 
-<pre><code class="language-python">for each_square in range(36):
-	color(&quot;red&quot;, &quot;green&quot;)
-	speed(100)
-	for each_line in range(6):
-		forward(100)
-		right(10)
-	left(20)
-
-done()
-</code></pre>
-
-<p><img src="/images/turtle/04.png" alt="" /></p>
-
-<h4 id="draw-a-symbol">Draw a symbol</h4>
+<p>Once upon a time, four turtles come together to race. All of them are good at running, therefore, winner of each race is different. Let&rsquo;s see how does Python make it happen.</p>
 
 <pre><code class="language-python">from turtle import *
+from random import randint
 
-reset()
-Screen()
-up()
-goto(-320,-195)
-width(70)
-
-for i in range(7):
-	color(&quot;green&quot;)
-	down()
-	forward(640)
-	up()
-	backward(640)
-	left(90)
-	forward(66)
-	right(90)
-
-width(25)
-color(&quot;white&quot;)
-goto(0,-170)
-down()
-
-circle(170)
-left(90)
-forward(340)
-up()
-left(180)
-forward(170)
-right(45)
-down()
-forward(170)
-up()
-backward(170)
-left(90)
-down()
-forward(170)
-up()
-goto(0,300)
-
-done()
-</code></pre>
-
-<p><img src="/images/turtle/05.png" alt="" /></p>
-
-<blockquote>
-<h4 id="homework-draw-different-shapes-at-different-position">Homework: Draw different shapes at different position</h4>
-</blockquote>
-
-<p>Given following part of code with three coordinates <code>(-400, 100)</code>,<code>(0, 100)</code> and <code>(400, 100)</code>.Please complete this code to draw shapes below:</p>
-
-<p><strong>Example code:</strong></p>
-
-<pre><code class="language-python">from turtle import *
-
-width(10)
-speed(100)
+# Basic setup
+speed(0)
 penup()
-goto(-400, 100)
-pendown()
-forward(100)
+goto(-140, 140)
+
+# Draw the road
+for step in range(15):
+  write(step, align='center')
+  right(90)
+  for num in range(8):
+    penup()
+    forward(10)
+    pendown()
+    forward(10)
+  penup()
+  backward(160)
+  left(90)
+  forward(20)
+
+# Define a turtle function
+def ready_turtle(turtle, color, position):
+  turtle.color(color)
+  turtle.shape('turtle')
+
+  turtle.penup()
+  turtle.goto(position[0], position[1])
+  turtle.pendown()
+
+  for turn in range(10):
+    turtle.right(36)
+
+# Create turtles of four different colors
+red, blue, green, yellow = Turtle(),Turtle(),Turtle(),Turtle()
+ready_turtle(red, 'red', [-160, 100])
+ready_turtle(blue, 'blue', [-160, 70])
+ready_turtle(green, 'green', [-160, 40])
+ready_turtle(yellow, 'yellow', [-160, 10])
+
+# Yeay! Let's begin the race!
+for turn in range(100):
+  red.forward(randint(1,5))
+  blue.forward(randint(1,5))
+  green.forward(randint(1,5))
+  yellow.forward(randint(1,5))
 
 done()
+</code></pre>
+
+<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<h3 id="guessing-game">Guessing game</h3>
+
+<p>Guess a number from 1 to 99.</p>
+
+<pre><code class="language-python">import random
+
+random_number = random.randint(1,99)
+name = input('Hi, This is robot. What is your name? :')
+print('Nice to meet you ' + name)
+guess = input('Please guess a number from 1 to 99')
+
+while 1 &lt;= int(guess) &lt;= 99:
+	if int(guess) &lt; random_number:
+		print('Guess is too low')
+		guess = input('Please try again')
+	elif int(guess) &gt; random_number:
+		print('Guess is too hight')
+		guess = input('Please try again')
+	else:
+		print('Yeay! You guessed it!')
+		break
+</code></pre>
+
+<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<blockquote>
+<h4 id="homework-draw-a-phone">Homework: Draw a phone</h4>
+</blockquote>
+
+<p>Given a class <code>Phone</code> with a function <code>draw_phone</code>. Please write the code to draw an iPhone.</p>
+
+<p><strong>Code skeleton is below:</strong></p>
+
+<pre><code class="language-python">from turtle import *
+
+class Phone:
+	def __init__(self, name, brand):
+
+	def draw_phone(self):
 </code></pre>
 
 <p><strong>Output:</strong></p>
 
-<p><img src="/images/shapes.png" alt="" /></p>
-
-<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<p><img src="/images/turtle/iPhone.png" alt="" /></p>
 
 
 <footer class=" footline" >
@@ -800,23 +615,6 @@ done()
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -899,6 +697,26 @@ done()
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -923,10 +741,10 @@ done()
 	 
 	 
 		
-			<a class="nav nav-prev" href="/basics/" title="Python入门课程"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/basics/while_and_function/" title="While and Function"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/basics/numbers_strings_list/" title="Numbers, Strings, Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/basics/objects_ii_and_dictionary/" title="Object II and Dictionary" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

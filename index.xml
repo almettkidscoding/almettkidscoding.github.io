@@ -74,5 +74,20 @@
       <description>Class objectives  Key syntax introduction Dictionary Looping techniques Students information system design Homework  Syntax table    Dictionary description     class It is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.</description>
     </item>
     
+    <item>
+      <title>String 1</title>
+      <link>/exercises/string_exercise_1/</link>
+      <pubDate>Tue, 12 Nov 2019 13:49:38 +0800</pubDate>
+      
+      <guid>/exercises/string_exercise_1/</guid>
+      <description>Exercise 1 Write a program to calculate the length of a string.
+For example:
+string = &#39;Practice makes perfect&#39;  Length of this string is 20
+ Not allowed to use len() (不允许使用len()函数)
+  Exercise 2 Given a string consists of lower and upper case letters, write a program to convert lower case to upper case and upper case to lower case, return the result.
+For example:
+# Input string = &#39;I hAVe UPPeR caSE AnD lowER CasE LETteRs&#39; # Output result = &#39;i HavE uppEr CAse aNd LOWer cASe letTErS&#39;   Hint: lower() and uppwer() are Python functions to convert upper to lower and vice versa.</description>
+    </item>
+    
   </channel>
 </rss>

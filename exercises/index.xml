@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercises练习 on Python programming</title>
+    <link>/exercises/</link>
+    <description>Recent content in Exercises练习 on Python programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 12 Nov 2019 13:57:21 +0800</lastBuildDate>
+    
+	<atom:link href="/exercises/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>String 1</title>
+      <link>/exercises/string_exercise_1/</link>
+      <pubDate>Tue, 12 Nov 2019 13:49:38 +0800</pubDate>
+      
+      <guid>/exercises/string_exercise_1/</guid>
+      <description>Exercise 1 Write a program to calculate the length of a string.
+For example:
+string = &#39;Practice makes perfect&#39;  Length of this string is 20
+ Not allowed to use len() (不允许使用len()函数)
+  Exercise 2 Given a string consists of lower and upper case letters, write a program to convert lower case to upper case and upper case to lower case, return the result.
+For example:
+# Input string = &#39;I hAVe UPPeR caSE AnD lowER CasE LETteRs&#39; # Output result = &#39;i HavE uppEr CAse aNd LOWer cASe letTErS&#39;   Hint: lower() and uppwer() are Python functions to convert upper to lower and vice versa.</description>
+    </item>
+    
+  </channel>
+</rss>

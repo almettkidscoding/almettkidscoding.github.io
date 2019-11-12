@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Formatting, string and list slicing :: Python programming</title>
+    <title>Exercises练习 :: Python programming</title>
 
     
     <link href="/css/nucleus.css?1573538504" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/slicing_and_formatting/">
+  <body class="" data-url="/exercises/">
     <nav id="sidebar" class="">
 
 
@@ -105,7 +105,7 @@
   
     
     <li data-nav-id="/basics/" title="Python入门课程" class="dd-item 
-        parent
+        
         
         
         ">
@@ -186,7 +186,7 @@
  
   
     
-      <li data-nav-id="/basics/slicing_and_formatting/" title="Formatting, string and list slicing" class="dd-item active">
+      <li data-nav-id="/basics/slicing_and_formatting/" title="Formatting, string and list slicing" class="dd-item ">
         <a href="/basics/slicing_and_formatting/">
         <b>4. </b>Formatting, string and list slicing
         
@@ -270,8 +270,8 @@
   
     
     <li data-nav-id="/exercises/" title="Exercises练习" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/exercises/">
@@ -344,8 +344,6 @@
                         </a>
                     </span>
                   
-                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
-                  
                   <span class="links">
                  
                  
@@ -356,13 +354,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Formatting, string and list slicing
-          
-         
+            <a href='/'>Python programming</a> > Exercises练习
           
          
           
@@ -371,37 +363,6 @@
                   </span>
                 </div>
                 
-                    <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#class-objectives">Class objectives</a></li>
-<li><a href="#syntax-table">Syntax table</a></li>
-<li><a href="#string-slicing-and-formatting">String slicing and formatting</a>
-<ul>
-<li><a href="#slicing">Slicing</a></li>
-<li><a href="#formatting">Formatting</a></li>
-<li><a href="#type-converting">Type converting</a></li>
-</ul></li>
-<li><a href="#how-to-add-items-to-a-list">How to add items to a list?</a></li>
-<li><a href="#list-slicing">List slicing</a></li>
-<li><a href="#homework-separate-items">Homework: Separate items</a>
-<ul>
-<li><a href="#input">Input</a></li>
-<li><a href="#output">Output</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-    </div>
-</div>
-
-                
               </div>
             </div>
             
@@ -409,12 +370,9 @@
         
         </div>
         
+          <div id="chapter">
+        
         <div id="body-inner">
-          
-            <h1>
-              
-              Formatting, string and list slicing
-            </h1>
           
 
         
@@ -422,164 +380,34 @@
 
 
 
+	
 
-<h3 id="class-objectives">Class objectives</h3>
+<h1 id="python-basic-exercises">Python basic exercises</h1>
+
+<p>In this module, you are required to accomplish cruicial exercises related to Python basics such as:</p>
 
 <ul>
-<li><a href="#syntax-table"><strong>Key syntax introduction</strong></a></li>
-<li><a href="#string-slicing-formatting"><strong>String slicing and formatting</strong></a></li>
-<li><a href="#how-to-add-items-to-a-list"><strong>How to add items to a List?</strong></a></li>
-<li><a href="#list-slicing"><strong>List slicing</strong></a></li>
-<li><a href="#More-on-list"><strong>More on list</strong></a></li>
-<li><a href="#homework"><strong>Homework</strong></a></li>
+<li>String</li>
+<li>Numbers</li>
+<li>List</li>
+<li>For loop</li>
+<li>While loop</li>
+<li>if&hellip;else conditionals</li>
+<li>dictionary</li>
+<li>function</li>
+<li>Class &amp; Object</li>
 </ul>
 
-<h3 id="syntax-table">Syntax table</h3>
 
-<table>
-<thead>
-<tr>
-<th align="left"><center>Keyword</center></th>
-<th align="center"><center>description</center></th>
-</tr>
-</thead>
 
-<tbody>
-<tr>
-<td align="left"><center>str.format()</center></td>
-<td align="center">Perform a string formatting operation. The string on which this method is called can contain literal text or replacement fields delimited by braces {}. Each replacement field contains either the numeric index of a positional argument, or the name of a keyword argument. Returns a copy of the string where each replacement field is replaced with the string value of the corresponding argument.</td>
-</tr>
-
-<tr>
-<td align="left"><center>str.isalpha()</center></td>
-<td align="center">Return true if all characters in the string are alphabetic and there is at least one character, false otherwise. Alphabetic characters are those characters defined in the Unicode character database as “Letter”, i.e., those with general category property being one of “Lm”, “Lt”, “Lu”, “Ll”, or “Lo”. Note that this is different from the “Alphabetic” property defined in the Unicode Standard.</td>
-</tr>
-
-<tr>
-<td align="left"><center>str.isdigit()</center></td>
-<td align="center">Return true if all characters in the string are digits and there is at least one character, false otherwise. Digits include decimal characters and digits that need special handling, such as the compatibility superscript digits. This covers digits which cannot be used to form numbers in base 10, like the Kharosthi numbers. Formally, a digit is a character that has the property value Numeric_Type=Digit or Numeric_Type=Decimal.</td>
-</tr>
-
-<tr>
-<td align="left"><center>str.islower()</center></td>
-<td align="center">Return true if all cased characters 4 in the string are lowercase and there is at least one cased character, false otherwise.</td>
-</tr>
-
-<tr>
-<td align="left"><center>str.isspace()</center></td>
-<td align="center">Return true if there are only whitespace characters in the string and there is at least one character, false otherwise.</td>
-</tr>
-
-<tr>
-<td align="left"><center>str.isupper()</center></td>
-<td align="center">Return true if all cased characters 4 in the string are uppercase and there is at least one cased character, false otherwise.</td>
-</tr>
-
-<tr>
-<td align="left"><center>lst.append()</center></td>
-<td align="center">Add an item to the end of the list. Equivalent to a[len(a):] = [x].</td>
-</tr>
-
-<tr>
-<td align="left"><center>str.split()</center></td>
-<td align="center">Return a list of the words in the string, using sep as the delimiter string. If maxsplit is given, at most maxsplit splits are done (thus, the list will have at most maxsplit+1 elements). If maxsplit is not specified or -1, then there is no limit on the number of splits (all possible splits are made).</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="string-slicing-and-formatting">String slicing and formatting</h3>
-
-<h4 id="slicing">Slicing</h4>
-
-<pre><code class="language-python">string = 'Hello, Python'
-print(string[6:]) # Prints after index 6 which is Python
-
-print(string[1:4]) # Prints from index 1 to index 4 
-
-print(string[:-3]) # Removes the last three characters
-
-print(string[::-1]) # Let's see what happens
-</code></pre>
-
-<h4 id="formatting">Formatting</h4>
-
-<pre><code class="language-python">name = 'Alex'
-age = 9
-string = &quot;My name is {}, I'm {} years old&quot;.format(name, age)
-print(string) # Let's see what is the result
-</code></pre>
-
-<h4 id="type-converting">Type converting</h4>
-
-<pre><code class="language-python">print('I am ' + 9 + 'years old') # Let's see what happens
-</code></pre>
-
-<p>Valus of different types are not being able to added to one another. <code>str()</code> and <code>int()</code> are the functions convert <code>int</code> value to <code>string</code> and back.</p>
-
-<pre><code class="language-python">print('I am ' + str(9) + 'years old')
-
-print('10' + str(6)) # 106
-
-print(int('10' + 6)) # 16
-</code></pre>
-
-<blockquote>
-<p>Look up <a href="#syntax-table"><strong>Key syntax introduction</strong></a> for more functions in String</p>
-</blockquote>
-
-<h3 id="how-to-add-items-to-a-list">How to add items to a list?</h3>
-
-<p><code>append()</code> is the function to add items to a list. For example:</p>
-
-<pre><code class="language-python">a_list = ['Alex','Lucy', 'Andy']
-a_list.append('Ryan')
-print(a_list)
-</code></pre>
-
-<h3 id="list-slicing">List slicing</h3>
-
-<pre><code class="language-python">a_list = ['Alex','Lucy', 'Andy', 'Ryan']
-
-print(a_list[1:3]) # Prints the second the third item
-</code></pre>
-
-<blockquote>
-<h3 id="homework-separate-items">Homework: Separate items</h3>
-</blockquote>
-
-<p>Given a string and four empty lists:</p>
-
-<h4 id="input">Input</h4>
-
-<pre><code class="language-python">str = &quot;Today'S HOme WoRk iS abOuT SeparAtIng 12345 from chAraCterS&quot;
-
-lower_case_letters = []
-
-upper_case_letters = []
-
-digits = []
-
-characters = []
-</code></pre>
-
-<p>Write a program to separate them into four empty lists and print.</p>
-
-<h4 id="output">Output</h4>
-
-<pre><code class="language-python">['o','d','a','y'...]
-['T','S','H','O'...]
-[1,2,3,4,5]
-['T','o','d','a','y','S'...]
-</code></pre>
-
-<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-
+        
+            </div> 
         
         </div> 
         
@@ -646,7 +474,6 @@ characters = []
             
                 
                     
-                    
                 
                 
 
@@ -659,9 +486,6 @@ characters = []
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -711,7 +535,6 @@ characters = []
             
                 
                     
-                    
                 
                 
 
@@ -727,9 +550,6 @@ characters = []
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -782,6 +602,7 @@ characters = []
             
                 
                     
+                    
                 
                 
 
@@ -794,6 +615,9 @@ characters = []
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -818,10 +642,10 @@ characters = []
 	 
 	 
 		
-			<a class="nav nav-prev" href="/basics/loops_conditionals_tuple/" title="Loops, If...else, List"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/basics/objects_ii_and_dictionary/" title="Object II and Dictionary"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/basics/while_and_function/" title="While and Function" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/exercises/string_exercise_1/" title="String 1" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -852,4 +676,3 @@ characters = []
 
   </body>
 </html>
-

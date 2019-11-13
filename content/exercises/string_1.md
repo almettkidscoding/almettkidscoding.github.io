@@ -1,7 +1,9 @@
 ---
-title: "String 1"
+title: "字符串 一"
 date: 2019-11-12T13:49:38+08:00
-chapter: False
+weight: 1
+pre: "<b>1. </b>"
+chapter: false
 ---
 
 #### Exercise 1

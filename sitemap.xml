@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/exercises/string_1/</loc>
+    <lastmod>2019-11-12T13:49:38+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/introduction/</loc>
     <lastmod>2019-11-02T22:44:31+08:00</lastmod>
   </url>
@@ -10,6 +15,11 @@
   <url>
     <loc>/basics/turtle_programming/</loc>
     <lastmod>2019-09-18T13:10:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/exercises/string_2/</loc>
+    <lastmod>2019-11-13T13:54:13+08:00</lastmod>
   </url>
   
   <url>
@@ -57,18 +67,13 @@
   </url>
   
   <url>
-    <loc>/exercises/string_exercise_1/</loc>
-    <lastmod>2019-11-12T13:49:38+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-09-18T13:10:47+08:00</lastmod>
+    <lastmod>2019-11-12T13:49:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   

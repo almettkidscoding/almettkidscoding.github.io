@@ -6,10 +6,25 @@
     <description>Recent content on Python programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 18 Sep 2019 13:10:47 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2019 13:49:38 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>字符串 一</title>
+      <link>/exercises/string_1/</link>
+      <pubDate>Tue, 12 Nov 2019 13:49:38 +0800</pubDate>
+      
+      <guid>/exercises/string_1/</guid>
+      <description>Exercise 1 Write a program to calculate the length of a string.
+For example:
+string = &#39;Practice makes perfect&#39;  Length of this string is 20
+ Not allowed to use len() (不允许使用len()函数)
+  Exercise 2 Given a string consists of lower and upper case letters, write a program to convert lower case to upper case and upper case to lower case, return the result.
+For example:
+# Input string = &#39;I hAVe UPPeR caSE AnD lowER CasE LETteRs&#39; # Output result = &#39;i HavE uppEr CAse aNd LOWer cASe letTErS&#39;   Hint: lower() and uppwer() are Python functions to convert upper to lower and vice versa.</description>
+    </item>
     
     <item>
       <title>Turtle programming</title>
@@ -18,6 +33,20 @@
       
       <guid>/basics/turtle_programming/</guid>
       <description>Class objectives  Learn key syntax in turtle Draw the first turtle graphic Draw shapes in practice  Syntax table    Keyword description     import import statement is the most common way of invocking the required modules   star mark(*) stands for everything   forward(distance) Parameter: distance- is a number (integer or float). Move the turtle forward by the specified distance, in the direction the turtle is headed.</description>
+    </item>
+    
+    <item>
+      <title>字符串 二</title>
+      <link>/exercises/string_2/</link>
+      <pubDate>Wed, 13 Nov 2019 13:54:13 +0800</pubDate>
+      
+      <guid>/exercises/string_2/</guid>
+      <description> 完成下列字符串练习题 已知字符串, 写相应的Python程序并完成以下题目。
+str01 = &#39;This is a sample string&#39;  第一题 检查str01是否包含字符串&amp;rsquo;an&amp;rsquo;, 如果包含请打印&amp;rsquo;am is exist&amp;rsquo;
+ 【解题思路】  第一步： 通过if...else语句判断字符串str01是否包含&amp;rsquo;am&amp;rsquo; 第二步： 如果存在请用print()语句来打印结果   第二题 请编写Python程序把字符串str01转换成数组。 输出结果以下所示：
+[&#39;This&#39;, &#39;is&#39;, &#39;a&#39;, &#39;sample&#39;, &#39;string&#39;]   【解题思路】  第一步： 创建一个空数组lst 第二步： 创建一个空字符串word, 用来存储字符串中的一个英文次 第三步： 通过for循环遍历字符串str01， 注意range的语法 第四步： 将遍历出来的字母一个个添加到字符串word中 第五步： 如果遍历过程中遇到空格，将word添加到数组lst中并清空字符串word   第三题 请倒转字符串str01, 输出结果以下所示：
+&#39;gnirts elpmas a si sihT&#39;   鼓励同学们用算法来完成本题。实在想不出算法解决方案可以用Python内置函数来完成倒转字符串。
+【解题思路】  第一步： 创建一个空字符串result来存放倒转后的结果 第二步： 用for循环来遍历字符串，要注意range里面的写法 第三步： 从最后一个字母开始取出str01中的每个字符串并添加到新的字符串result中   </description>
     </item>
     
     <item>
@@ -72,21 +101,6 @@
       
       <guid>/basics/objects_ii_and_dictionary/</guid>
       <description>Class objectives  Key syntax introduction Dictionary Looping techniques Students information system design Homework  Syntax table    Dictionary description     class It is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.</description>
-    </item>
-    
-    <item>
-      <title>String 1</title>
-      <link>/exercises/string_exercise_1/</link>
-      <pubDate>Tue, 12 Nov 2019 13:49:38 +0800</pubDate>
-      
-      <guid>/exercises/string_exercise_1/</guid>
-      <description>Exercise 1 Write a program to calculate the length of a string.
-For example:
-string = &#39;Practice makes perfect&#39;  Length of this string is 20
- Not allowed to use len() (不允许使用len()函数)
-  Exercise 2 Given a string consists of lower and upper case letters, write a program to convert lower case to upper case and upper case to lower case, return the result.
-For example:
-# Input string = &#39;I hAVe UPPeR caSE AnD lowER CasE LETteRs&#39; # Output result = &#39;i HavE uppEr CAse aNd LOWer cASe letTErS&#39;   Hint: lower() and uppwer() are Python functions to convert upper to lower and vice versa.</description>
     </item>
     
   </channel>

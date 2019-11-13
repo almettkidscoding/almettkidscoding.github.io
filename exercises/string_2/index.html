@@ -9,21 +9,21 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>String 1 :: Python programming</title>
+    <title>字符串 二 :: Python programming</title>
 
     
-    <link href="/css/nucleus.css?1573538504" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1573538504" rel="stylesheet">
-    <link href="/css/hybrid.css?1573538504" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1573538504" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1573538504" rel="stylesheet">
-    <link href="/css/auto-complete.css?1573538504" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1573538504" rel="stylesheet">
-    <link href="/css/theme.css?1573538504" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1573538504" rel="stylesheet">
+    <link href="/css/nucleus.css?1573627100" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1573627100" rel="stylesheet">
+    <link href="/css/hybrid.css?1573627100" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1573627100" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1573627100" rel="stylesheet">
+    <link href="/css/auto-complete.css?1573627100" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1573627100" rel="stylesheet">
+    <link href="/css/theme.css?1573627100" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1573627100" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1573538504"></script>
+    <script src="/js/jquery-3.3.1.min.js?1573627100"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/exercises/string_exercise_1/">
+  <body class="" data-url="/exercises/string_2/">
     <nav id="sidebar" class="">
 
 
@@ -294,9 +294,28 @@
  
   
     
-      <li data-nav-id="/exercises/string_exercise_1/" title="String 1" class="dd-item active">
-        <a href="/exercises/string_exercise_1/">
-        String 1
+      <li data-nav-id="/exercises/string_1/" title="字符串 一" class="dd-item ">
+        <a href="/exercises/string_1/">
+        <b>1. </b>字符串 一
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/exercises/string_2/" title="字符串 二" class="dd-item active">
+        <a href="/exercises/string_2/">
+        <b>2. </b>字符串 二
         
         </a>
     </li>
@@ -360,7 +379,7 @@
             
           
           
-            <a href='/'>Python programming</a> > <a href='/exercises/'>Exercises练习</a> > String 1
+            <a href='/'>Python programming</a> > <a href='/exercises/'>Exercises练习</a> > 字符串 二
           
          
           
@@ -381,9 +400,19 @@
 <ul>
 <li>
 <ul>
-<li><a href="#exercise-1">Exercise 1</a></li>
-<li><a href="#exercise-2">Exercise 2</a></li>
-<li><a href="#exercise-3">Exercise 3</a></li>
+<li><a href="#完成下列字符串练习题">完成下列字符串练习题</a></li>
+<li><a href="#第一题">第一题</a>
+<ul>
+<li><a href="#解题思路">【解题思路】</a></li>
+</ul></li>
+<li><a href="#第二题">第二题</a>
+<ul>
+<li><a href="#解题思路-1">【解题思路】</a></li>
+</ul></li>
+<li><a href="#第三题">第三题</a>
+<ul>
+<li><a href="#解题思路-2">【解题思路】</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -404,7 +433,7 @@
           
             <h1>
               
-              String 1
+              字符串 二
             </h1>
           
 
@@ -414,64 +443,63 @@
 
 
 
-<h4 id="exercise-1">Exercise 1</h4>
+<h4 id="完成下列字符串练习题">完成下列字符串练习题</h4>
 
-<p>Write a program to calculate the length of a string.</p>
+<p>已知字符串, 写相应的Python程序并完成以下题目。</p>
 
-<p>For example:</p>
-
-<pre><code class="language-python">string = 'Practice makes perfect'
+<pre><code class="language-python">str01 = 'This is a sample string'
 </code></pre>
 
-<p>Length of this string is 20</p>
+<h4 id="第一题">第一题</h4>
+
+<p>检查<code>str01</code>是否包含字符串&rsquo;an&rsquo;, 如果包含请打印&rsquo;am is exist&rsquo;</p>
 
 <blockquote>
-<p>Not allowed to use <code>len()</code> (不允许使用len()函数)</p>
+<h5 id="解题思路">【解题思路】</h5>
+
+<ul>
+<li>第一步： 通过<code>if...else</code>语句判断字符串<code>str01</code>是否包含&rsquo;am&rsquo;</li>
+<li>第二步： 如果存在请用<code>print()</code>语句来打印结果</li>
+</ul>
 </blockquote>
 
-<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<h4 id="第二题">第二题</h4>
 
-<h4 id="exercise-2">Exercise 2</h4>
+<p>请编写Python程序把字符串<code>str01</code>转换成数组。 输出结果以下所示：</p>
 
-<p>Given a string consists of lower and upper case letters, write a program to convert lower case to upper case and upper case to lower case, return the result.</p>
-
-<p>For example:</p>
-
-<pre><code class="language-python"># Input
-string = 'I hAVe UPPeR caSE AnD lowER CasE LETteRs'
-# Output
-result = 'i HavE uppEr CAse aNd LOWer cASe letTErS'
+<pre><code class="language-python">['This', 'is', 'a', 'sample', 'string']
 </code></pre>
 
 <blockquote>
-<p>Hint: <code>lower()</code> and <code>uppwer()</code> are Python functions to convert upper to lower and vice versa.</p>
+<h5 id="解题思路-1">【解题思路】</h5>
+
+<ul>
+<li>第一步： 创建一个空数组<code>lst</code></li>
+<li>第二步： 创建一个空字符串<code>word</code>, 用来存储字符串中的一个英文次</li>
+<li>第三步： 通过for循环遍历字符串<code>str01</code>， 注意range的语法</li>
+<li>第四步： 将遍历出来的字母一个个添加到字符串<code>word</code>中</li>
+<li>第五步： 如果遍历过程中遇到空格，将<code>word</code>添加到数组<code>lst</code>中并清空字符串<code>word</code></li>
+</ul>
 </blockquote>
 
-<p>For example:</p>
+<h4 id="第三题">第三题</h4>
 
-<pre><code class="language-python">string = 'a'
-string.lower()
-print(string) # result is A
+<p>请倒转字符串<code>str01</code>, 输出结果以下所示：</p>
+
+<pre><code class="language-python">'gnirts elpmas a si sihT'
 </code></pre>
 
-<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<blockquote>
+<p>鼓励同学们用算法来完成本题。实在想不出算法解决方案可以用Python内置函数来完成倒转字符串。</p>
 
-<h4 id="exercise-3">Exercise 3</h4>
+<h5 id="解题思路-2">【解题思路】</h5>
 
-<p>Given a string with random letters. Print vowels(元音字母) in a list.</p>
-
-<p>For example:</p>
-
-<pre><code class="language-python"># Input
-string = &quot;I'm looking for vowels&quot;
-# Write a function find_vowels()
-def find_vowels(s):
-
-# Output is ['i','o','e']
-print(find_vowels(string))
-</code></pre>
-
-<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<ul>
+<li>第一步： 创建一个空字符串<code>result</code>来存放倒转后的结果</li>
+<li>第二步： 用<code>for</code>循环来遍历字符串，要注意<code>range</code>里面的写法</li>
+<li>第三步： 从最后一个字母开始取出<code>str01</code>中的每个字符串并添加到新的字符串<code>result</code>中</li>
+</ul>
+</blockquote>
 
 
 <footer class=" footline" >
@@ -687,6 +715,25 @@ print(find_vowels(string))
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -711,10 +758,10 @@ print(find_vowels(string))
 	 
 	 
 		
-			<a class="nav nav-prev" href="/exercises/" title="Exercises练习"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/exercises/string_1/" title="字符串 一"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/introduction/" title="Python课程简介" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/exercises/string_1/" title="字符串 一" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -724,20 +771,20 @@ print(find_vowels(string))
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1573538504"></script>
-    <script src="/js/perfect-scrollbar.min.js?1573538504"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1573538504"></script>
-    <script src="/js/jquery.sticky.js?1573538504"></script>
-    <script src="/js/featherlight.min.js?1573538504"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1573538504"></script>
-    <script src="/js/highlight.pack.js?1573538504"></script>
+    <script src="/js/clipboard.min.js?1573627100"></script>
+    <script src="/js/perfect-scrollbar.min.js?1573627100"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1573627100"></script>
+    <script src="/js/jquery.sticky.js?1573627100"></script>
+    <script src="/js/featherlight.min.js?1573627100"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1573627100"></script>
+    <script src="/js/highlight.pack.js?1573627100"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1573538504"></script>
-    <script src="/js/learn.js?1573538504"></script>
-    <script src="/js/hugo-learn.js?1573538504"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1573627100"></script>
+    <script src="/js/learn.js?1573627100"></script>
+    <script src="/js/hugo-learn.js?1573627100"></script>
 
-    <link href="/mermaid/mermaid.css?1573538504" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1573538504"></script>
+    <link href="/mermaid/mermaid.css?1573627100" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1573627100"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

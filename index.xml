@@ -100,7 +100,16 @@ str01 = &#39;This is a sample string&#39;  第一题 检查str01是否包含字�
       <pubDate>Fri, 08 Nov 2019 12:45:35 +0800</pubDate>
       
       <guid>/basics/objects_ii_and_dictionary/</guid>
-      <description>Class objectives  Key syntax introduction Dictionary Looping techniques Students information system design Homework  Syntax table    Dictionary description     class It is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.</description>
+      <description>Class objectives  Key syntax introduction Dictionary Looping techniques Students information system design Homework  Syntax table    Syntax Description     Dictionary It is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.</description>
+    </item>
+    
+    <item>
+      <title>Modules</title>
+      <link>/basics/modules/</link>
+      <pubDate>Fri, 15 Nov 2019 14:07:53 +0800</pubDate>
+      
+      <guid>/basics/modules/</guid>
+      <description>Class objectives  Key syntax introduction Module Standard Modules Looking for more fun? Homework  Syntax table    Syntax Description     Module A module is a file containing Python definitions and statements.   Standard Modules Python comes with a library of standard modules, described in a separate document, the Python Library Reference (“Library Reference” hereafter). Some modules are built into the interpreter; these provide access to operations that are not part of the core of the language but are nevertheless built in, either for efficiency or to provide access to operating system primitives such as system calls.</description>
     </item>
     
   </channel>

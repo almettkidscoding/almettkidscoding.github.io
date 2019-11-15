@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Numbers, Strings, Operators :: Python programming</title>
+    <title>Modules :: Python programming</title>
 
     
     <link href="/css/nucleus.css?1573804948" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/numbers_strings_list/">
+  <body class="" data-url="/basics/modules/">
     <nav id="sidebar" class="">
 
 
@@ -148,7 +148,7 @@
  
   
     
-      <li data-nav-id="/basics/numbers_strings_list/" title="Numbers, Strings, Operators" class="dd-item active">
+      <li data-nav-id="/basics/numbers_strings_list/" title="Numbers, Strings, Operators" class="dd-item ">
         <a href="/basics/numbers_strings_list/">
         <b>2. </b>Numbers, Strings, Operators
         
@@ -262,7 +262,7 @@
  
   
     
-      <li data-nav-id="/basics/modules/" title="Modules" class="dd-item ">
+      <li data-nav-id="/basics/modules/" title="Modules" class="dd-item active">
         <a href="/basics/modules/">
         <b>8. </b>Modules
         
@@ -398,7 +398,7 @@
             
           
           
-            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Numbers, Strings, Operators
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python入门课程</a> > Modules
           
          
           
@@ -419,27 +419,23 @@
 <ul>
 <li><a href="#class-objectives">Class objectives</a></li>
 <li><a href="#syntax-table">Syntax table</a></li>
-<li><a href="#number">Number</a>
+<li><a href="#module">Module</a>
 <ul>
-<li><a href="#what-is-number">What is Number?</a></li>
-<li><a href="#how-to-define-a-number-variable">How to define a number variable?</a></li>
-<li><a href="#how-to-define-multiple-number-variables">How to define multiple number variables?</a></li>
-<li><a href="#operators">Operators</a></li>
+<li><a href="#how-to-create-a-module">How to create a module?</a></li>
+<li><a href="#how-to-import-a-module">How to import a module?</a></li>
+<li><a href="#how-to-call-module-functions">How to call module functions?</a></li>
+<li><a href="#how-to-call-a-module-from-command-line">How to call a module from command line?</a></li>
 </ul></li>
-<li><a href="#string">String</a>
+<li><a href="#standard-modules">Standard Modules</a>
 <ul>
-<li><a href="#what-is-string">What is String?</a></li>
-<li><a href="#how-to-define-a-string-variable">How to define a String variable?</a></li>
-<li><a href="#how-to-define-multiple-string-variables">How to define multiple String variables?</a></li>
-<li><a href="#how-to-link-strings-together">How to link strings together?</a></li>
-<li><a href="#how-to-convert-a-number-to-string-and-back">How to convert a number to string and back?</a></li>
+<li><a href="#the-dir-function">The <code>dir()</code> Function</a></li>
 </ul></li>
-<li><a href="#practice-them-in-turtle">Practice them in turtle</a>
+<li><a href="#looking-for-more-fun">Looking for more fun?</a>
 <ul>
-<li><a href="#how-to-print-a-string-in-turtle">How to print a String in turtle?</a></li>
-<li><a href="#how-to-practice-number-in-turtle">How to practice Number in turtle?</a></li>
-<li><a href="#how-to-practice-list-in-turtle">How to practice List in turtle?</a></li>
-<li><a href="#homework-draw-shapes-in-different-color">Homework: Draw shapes in different color</a></li>
+<li><a href="#what-is-pip">What is Pip?</a></li>
+<li><a href="#how-to-install-a-package">How to install a package?</a></li>
+<li><a href="#let-s-try-our-first-game">Let&rsquo;s try our first game</a></li>
+<li><a href="#homework">Homework:</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -460,7 +456,7 @@
           
             <h1>
               
-              Numbers, Strings, Operators
+              Modules
             </h1>
           
 
@@ -473,11 +469,10 @@
 <h3 id="class-objectives">Class objectives</h3>
 
 <ul>
-<li><a href="#syntax-table"><strong>Key syntax introduction in this class</strong></a></li>
-<li><a href="#number"><strong>Number</strong></a></li>
-<li><a href="#string"><strong>String</strong></a></li>
-<li><a href="#list"><strong>List</strong></a></li>
-<li><a href="#practice-them-in-turtle"><strong>How to do it in turtle?</strong></a></li>
+<li><a href="#syntax-table"><strong>Key syntax introduction</strong></a></li>
+<li><a href="#module"><strong>Module</strong></a></li>
+<li><a href="#standard-modules"><strong>Standard Modules</strong></a></li>
+<li><a href="#looking-for-more-fun"><strong>Looking for more fun?</strong></a></li>
 <li><a href="#homework"><strong>Homework</strong></a></li>
 </ul>
 
@@ -486,195 +481,191 @@
 <table>
 <thead>
 <tr>
-<th align="left"><center>Keyword</center></th>
-<th align="center"><center>description</center></th>
+<th align="left"><center>Syntax</center></th>
+<th align="center"><center>Description</center></th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="left"><center>width(integer)</center></td>
-<td align="center">Defines the width of the pen. Patameter - integer is a value type of int</td>
+<td align="left"><center>Module</center></td>
+<td align="center">A module is a file containing Python definitions and statements.</td>
 </tr>
 
 <tr>
-<td align="left"><center>if statement</center></td>
-<td align="center">is a conditional statement.</td>
+<td align="left"><center>Standard Modules</center></td>
+<td align="center">Python comes with a library of standard modules, described in a separate document, the Python Library Reference (“Library Reference” hereafter). Some modules are built into the interpreter; these provide access to operations that are not part of the core of the language but are nevertheless built in, either for efficiency or to provide access to operating system primitives such as system calls. The set of such modules is a configuration option which also depends on the underlying platform.</td>
 </tr>
 
 <tr>
-<td align="left"><center>for statement</center></td>
-<td align="center">is a loop statement in which operations repeat itself for a limited amount of time</td>
+<td align="left"><center>dir()</center></td>
+<td align="center">The built-in function dir() is used to find out which names a module defines.</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="number">Number</h3>
+<h3 id="module">Module</h3>
 
-<h4 id="what-is-number">What is Number?</h4>
+<p>A module is a file containing Python definitions and statements. The file name is the module name with the suffix .py appended. Within a module, the module’s name (as a string) is available as the value of the global variable <code>__name__</code>. For instance, use your favorite text editor to create a file called <code>toolbox.py</code> in the current directory with the following contents:</p>
 
-<p>Numbers in Python are the same as the numbers you have learnt in math class. We have four mathmatical operators.</p>
-
-<h4 id="how-to-define-a-number-variable">How to define a number variable?</h4>
-
-<pre><code class="language-python"># num is the name, 17 is the value, = means assign value 17 to variable num
-num = 17
-print(num)
-</code></pre>
-
-<h4 id="how-to-define-multiple-number-variables">How to define multiple number variables?</h4>
-
-<pre><code class="language-python"># num01, num02 and num03 are the names. 23, 46 and 78 are the values, = means assign values 23, 46 and 78 to variables num01, num02 and num03.
-num01, num02, num03 = 23, 46, 78
-print(num01, num02, num03)
-</code></pre>
-
-<h4 id="operators">Operators</h4>
-
-<ul>
-<li>addition +</li>
-<li>subtraction -</li>
-<li>multiplication *</li>
-<li>division /</li>
-<li>floor division //</li>
-<li>remainder %</li>
-<li>assign sign =</li>
-<li>equal sign ==</li>
-</ul>
-
-<pre><code class="language-python">num01, num02, num03 = 23, 46, 78
-add = num01 + num02
-sub = num02 - num01
-mul = num01 * mul03
-divi = num02 / num01
-print('Addition: ' + int(add))
-print('subtraction: ' + int(sub))
-print('Multiplication: ' + int(mul))
-print('Division: ' + int(divi))
-</code></pre>
-
-<h3 id="string">String</h3>
-
-<h4 id="what-is-string">What is String?</h4>
-
-<p>String is the text we print in console or in turtle screen.</p>
-
-<h4 id="how-to-define-a-string-variable">How to define a String variable?</h4>
-
-<pre><code class="language-python"># string is the name, 'Hello, Python' is the value, = means assign value 'Hello, Python' to variable string
-string = 'Hello, Python'
-print(string)
-</code></pre>
-
-<h4 id="how-to-define-multiple-string-variables">How to define multiple String variables?</h4>
-
-<pre><code class="language-python"># string01, string02 and string03 are the names. 'My name', &quot; is&quot;, ' Alim' and '7' are the values, = means assign values 'My name', &quot; is&quot;, ' Alim' and '7' to variables string01, string02 and num03.
-string01, string02, string03, string04 = 'My name', &quot; is&quot;, ' Alim', '7'
-print(string01, string02, string03, string04)
-</code></pre>
-
-<h4 id="how-to-link-strings-together">How to link strings together?</h4>
-
-<pre><code class="language-python">string01, string02, string03, string04 = 'My name', &quot; is&quot;, ' Alim', '7'
-print(string01 + string02 + string03)
-</code></pre>
-
-<h4 id="how-to-convert-a-number-to-string-and-back">How to convert a number to string and back?</h4>
-
-<p>For example: <code>'Addition: '</code> and <code>add</code> are different data types. In Python, unable to add two different data types unless one of which is converted to the type of another. <code>int()</code> is a Python function converts <code>String</code> to <code>Number</code>. <code>str()</code> is a Python function converts <code>Number</code> to <code>String</code>.</p>
-
-<h3 id="practice-them-in-turtle">Practice them in turtle</h3>
-
-<h4 id="how-to-print-a-string-in-turtle">How to print a String in turtle?</h4>
-
-<p>We need <code>write()</code> function to print a String in turtle. For example:</p>
+<h4 id="how-to-create-a-module">How to create a module?</h4>
 
 <pre><code class="language-python">from turtle import *
 
-write(&quot;Python is fun!&quot;, align='center', font=('Arial', 38, 'bold'))
-</code></pre>
-
-<h4 id="how-to-practice-number-in-turtle">How to practice Number in turtle?</h4>
-
-<p>It&rsquo;s easy to do a calculation and present the result on turtle screen. For example:</p>
-
-<pre><code class="language-python">write(&quot;{0} + {1} = {2}&quot;.format(5, 7, 5 + 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
-penup()
-goto(0, 200)
-write(&quot;{0} - {1} = {2}&quot;.format(5, 7, 5 - 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
-penup()
-goto(0, 100)
-write(&quot;{0} * {1} = {2}&quot;.format(5, 7, 5 * 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
-penup()
-goto(0, -100)
-write(&quot;{0} / {1} = {2}&quot;.format(5, 7, 5 / 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
-penup()
-goto(0, -200)
-write(&quot;{0} // {1} = {2}&quot;.format(5, 7, 5 // 7), align=&quot;center&quot;, font=(&quot;Arial&quot;, 48, &quot;bold&quot;))
-penup()
-goto(0, -300)
-done()
-</code></pre>
-
-<p><img src="/images/turtle/operators.png" alt="" /></p>
-
-<h4 id="how-to-practice-list-in-turtle">How to practice List in turtle?</h4>
-
-<p>Assume we have random colors in a list, paint each shape in a different color. For example:</p>
-
-<pre><code class="language-python">square = 4
-triangle = 3
-red, green, yellow = 'red', 'green', 'yellow'
-
-# Following is how to define a function
-# def is a suffix indicates define a function. draw is the name of function. sides is the parameter. We'll talk about more details in following classes.
-def draw(sides):
-	width(30)
-	if sides == square:
-		color(green)
-	elif sides == triangle:
-		color(yellow)
-	for each_side in range(sides):
-		forward(100)
-		right(360/sides)
+def drawsquare(sidelength):
+	for each_line in range(4):
+		forward(sidelength)
+		right(360/4)
 	done()
 
-# Following is how to call a function
-draw(4)
+def drawtriangle(sidelength):
+	right(120)
+	forward(sidelength)
+	right(120)
+	forward(sidelength)
+	right(120)
+	forward(sidelength)
+	done()
 </code></pre>
 
-<p>if <code>draw(4)</code></p>
+<h4 id="how-to-import-a-module">How to import a module?</h4>
 
-<p><img src="/images/turtle/green_square.png" alt="" /></p>
+<p>Now enter the Python interpreter and import this module with the following command:</p>
 
-<p>if <code>draw(3)</code></p>
+<pre><code class="language-python">import toolbox
+</code></pre>
 
-<p><img src="/images/turtle/yellow_triangle.png" alt="" /></p>
+<p>or</p>
+
+<pre><code class="language-python">from toolbox import *
+</code></pre>
+
+<p>or</p>
+
+<pre><code class="language-python">from toolbox import drawsquare, drawtriangle
+</code></pre>
+
+<h4 id="how-to-call-module-functions">How to call module functions?</h4>
+
+<p>Create another <code>.py</code> file for example is <code>modules.py</code>. Call <code>toolbox</code> functions from <code>modules.py</code>:</p>
+
+<pre><code class="language-python">from toolbox import *
+
+drawsquare(100)
+</code></pre>
+
+<p>or</p>
+
+<pre><code class="language-python">import toolbox
+
+toolbox.drawsquare(100)
+</code></pre>
+
+<p>or</p>
+
+<pre><code class="language-python">import toolbox
+
+drawsquare = toolbox.drawsquare
+drawsquare(100)
+</code></pre>
+
+<h4 id="how-to-call-a-module-from-command-line">How to call a module from command line?</h4>
+
+<p>When you run a Python module with</p>
+
+<pre><code class="language-python">python3 modules.py &lt;arguments&gt;
+</code></pre>
+
+<p>the code in the module will be executed, just as if you imported it, but with the <strong>name</strong> set to &ldquo;<strong>main</strong>&rdquo;. That means that by adding this code at the end of your module:</p>
+
+<pre><code class="language-python">if __name__ == &quot;__main__&quot;:
+	import sys
+	drawsquare(int(sys.argv[1]))
+</code></pre>
+
+<p>Execute the module from <code>Terminal</code> for example:</p>
+
+<pre><code class="language-python">python3 modules.py 100
+</code></pre>
+
+<p>Execution result will be a square with side length of 100.</p>
+
+<h3 id="standard-modules">Standard Modules</h3>
+
+<h4 id="the-dir-function">The <code>dir()</code> Function</h4>
+
+<p>The built-in function dir() is used to find out which names a module defines. It returns a sorted list of strings:</p>
+
+<pre><code class="language-python">import toolbox, sys
+
+print(dir(toolbox))
+</code></pre>
+
+<p>dir() lists the names you have defined currently:</p>
+
+<pre><code>['Pen', 'RawPen', 'RawTurtle', 'Screen', 'ScrolledCanvas', 'Shape', 'Terminator', 'Turtle', 'TurtleScreen', 'Vec2D', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'add', 'addshape', 'back', 'backward', 'begin_fill', 'begin_poly', 'bgcolor', 'bgpic', 'bk', 'bye', 'circle', 'clear', 'clearscreen', 'clearstamp', 'clearstamps', 'clone', 'color', 'colormode', 'degrees', 'delay', 'distance', 'divi', 'done', 'dot', 'down', 'drawsquare', 'drawtriangle', 'end_fill', 'end_poly', 'exitonclick', 'fd', 'fillcolor', 'filling', 'floordivi', 'forward', 'get_poly', 'get_shapepoly', 'getcanvas', 'getpen', 'getscreen', 'getshapes', 'getturtle', 'goto', 'heading', 'hideturtle', 'home', 'ht', 'isdown', 'isvisible', 'left', 'listen', 'lt', 'mainloop', 'mode', 'mul', 'numinput', 'onclick', 'ondrag', 'onkey', 'onkeypress', 'onkeyrelease', 'onrelease', 'onscreenclick', 'ontimer', 'pd', 'pen', 'pencolor', 'pendown', 'pensize', 'penup', 'pos', 'position', 'pu', 'radians', 'register_shape', 'reset', 'resetscreen', 'resizemode', 'right', 'rt', 'screensize', 'seth', 'setheading', 'setpos', 'setposition', 'settiltangle', 'setundobuffer', 'setup', 'setworldcoordinates', 'setx', 'sety', 'shape', 'shapesize', 'shapetransform', 'shearfactor', 'showturtle', 'speed', 'st', 'stamp', 'sub', 'textinput', 'tilt', 'tiltangle', 'title', 'towards', 'tracer', 'turtles', 'turtlesize', 'undo', 'undobufferentries', 'up', 'update', 'width', 'window_height', 'window_width', 'write', 'write_docstringdict', 'xcor', 'ycor']
+</code></pre>
+
+<h3 id="looking-for-more-fun">Looking for more fun?</h3>
+
+<p>We have a software called <code>pip</code>, from where we can install unlimited sources of Python modules and packages.</p>
+
+<h4 id="what-is-pip">What is Pip?</h4>
+
+<p>pip is the package installer for Python. You can use pip to install packages from the Python Package Index and other indexes. Pip usually comes with Python3 by default. Look at the simple usage of pip below:</p>
+
+<pre><code class="language-python">pip3 install SomePackage
+</code></pre>
+
+<h4 id="how-to-install-a-package">How to install a package?</h4>
+
+<p>Take <a href="http://www.grantjenks.com/docs/freegames/">Freegames</a> package as an example. Open <code>Terminal</code>(in Mac) / <code>CMD</code>(in Windows) software copy/paste following command:</p>
+
+<pre><code class="language-python">python3 -m pip install freegames
+</code></pre>
+
+<p>Installation session ends with following information if it&rsquo;s succussful.</p>
+
+<pre><code>Collecting freegames
+  Downloading https://files.pythonhosted.org/packages/73/ea/4139fe8661722f751a776c3cd46a807256cb74722799909edc8b0a42e4b0/freegames-2.3.1-py2.py3-none-any.whl (108kB)
+    100% |████████████████████████████████| 112kB 413kB/s 
+Installing collected packages: freegames
+Successfully installed freegames-2.3.1
+
+</code></pre>
+
+<h4 id="let-s-try-our-first-game">Let&rsquo;s try our first game</h4>
+
+<pre><code class="language-python">python3 -m freegames.pacman
+</code></pre>
+
+<p><img src="/images/games/pacman.png" alt="" /></p>
 
 <blockquote>
-<h4 id="homework-draw-shapes-in-different-color">Homework: Draw shapes in different color</h4>
+<h4 id="homework">Homework:</h4>
 </blockquote>
 
-<p><strong>Input</strong></p>
+<p>Create a calculator module <code>calculator.py</code>, import it from another Python file called <code>main.py</code>.</p>
 
-<p>Given a <code>function</code> with a parameter of <code>sides</code>. If <code>sides</code> is even, draw the shape in red color. If <code>sides</code> is odd, draw the shape in green color.</p>
+<p>Required features of the calculator:</p>
 
-<p><strong>For example</strong></p>
+<ul>
+<li>Addition</li>
+<li>Subtraction</li>
+<li>Multiplication</li>
+<li>Division</li>
+<li>Floor division</li>
+</ul>
 
-<pre><code class="language-python">def draw_even_odd(sides):
+<p><code>main.py</code> code probably looks like below:</p>
+
+<pre><code class="language-python">from calculator import add, sub, mul, divi, floordivi
+
+print(add(8, 13))
+...
+...
+...
 </code></pre>
-
-<p><strong>Output</strong></p>
-
-<p>if <code>draw_even_odd(8)</code></p>
-
-<p><img src="/images/turtle/red_polygon.png" alt="" /></p>
-
-<p>if <code>draw_even_odd(5)</code></p>
-
-<p><img src="/images/turtle/green_polygon.png" alt="" /></p>
-
-<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 
 <footer class=" footline" >
@@ -781,26 +772,6 @@ draw(4)
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -892,6 +863,23 @@ draw(4)
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -899,6 +887,9 @@ draw(4)
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -952,10 +943,10 @@ draw(4)
 	 
 	 
 		
-			<a class="nav nav-prev" href="/basics/turtle_programming/" title="Turtle programming"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/basics/objects_ii_and_dictionary/" title="Object II and Dictionary"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/basics/loops_conditionals_tuple/" title="Loops, If...else, List" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/exercises/" title="Exercises练习" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

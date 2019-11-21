@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python入门课程 on Python programming</title>
+    <title>Python for Beginners on Python programming</title>
     <link>/basics/</link>
-    <description>Recent content in Python入门课程 on Python programming</description>
+    <description>Recent content in Python for Beginners on Python programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 18 Sep 2019 13:10:47 +0800</lastBuildDate>
@@ -81,6 +81,15 @@
       
       <guid>/basics/modules/</guid>
       <description>Class objectives  Key syntax introduction Module Standard Modules Looking for more fun? Homework  Syntax table    Syntax Description     Module A module is a file containing Python definitions and statements.   Standard Modules Python comes with a library of standard modules, described in a separate document, the Python Library Reference (“Library Reference” hereafter). Some modules are built into the interpreter; these provide access to operations that are not part of the core of the language but are nevertheless built in, either for efficiency or to provide access to operating system primitives such as system calls.</description>
+    </item>
+    
+    <item>
+      <title>Input &amp; Output</title>
+      <link>/basics/io/</link>
+      <pubDate>Tue, 19 Nov 2019 18:44:02 +0800</pubDate>
+      
+      <guid>/basics/io/</guid>
+      <description>Class objectives  Key syntax introduction Create a directory or directories Create a file Read and write file Classroom xercise Homework  Syntax table    Keyword description     mkdir A function to create a single directory, returns a directory object.   makedirs A function to create a multiple directories, returns a multiple nested directories.   open() open() returns a file object, and is most commonly used with two arguments: open(filename, mode).</description>
     </item>
     
   </channel>

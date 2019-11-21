@@ -1,5 +1,5 @@
 ---
-title: Python学习环境搭建
+title: Environment Setup
 weight: 2
 pre: "<b>2. </b>"
 chapter: true

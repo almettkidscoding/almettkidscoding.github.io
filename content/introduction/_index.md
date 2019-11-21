@@ -1,5 +1,5 @@
 ---
-title: "Python课程简介"
+title: "Course Introduction"
 date: 2019-11-02T22:44:31+08:00
 weight: 1
 pre: "<b>1. </b>"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Exercises练习 on Python programming</title>
+    <title>Exercises on Python programming</title>
     <link>/exercises/</link>
-    <description>Recent content in Exercises练习 on Python programming</description>
+    <description>Recent content in Exercises on Python programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 12 Nov 2019 13:57:21 +0800</lastBuildDate>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>字符串 一</title>
+      <title>String 1</title>
       <link>/exercises/string_1/</link>
       <pubDate>Tue, 12 Nov 2019 13:49:38 +0800</pubDate>
       
@@ -27,17 +27,14 @@ For example:
     </item>
     
     <item>
-      <title>字符串 二</title>
+      <title>String 2</title>
       <link>/exercises/string_2/</link>
       <pubDate>Wed, 13 Nov 2019 13:54:13 +0800</pubDate>
       
       <guid>/exercises/string_2/</guid>
-      <description> 完成下列字符串练习题 已知字符串, 写相应的Python程序并完成以下题目。
-str01 = &#39;This is a sample string&#39;  第一题 检查str01是否包含字符串&amp;rsquo;an&amp;rsquo;, 如果包含请打印&amp;rsquo;am is exist&amp;rsquo;
- 【解题思路】  第一步： 通过if...else语句判断字符串str01是否包含&amp;rsquo;am&amp;rsquo; 第二步： 如果存在请用print()语句来打印结果   第二题 请编写Python程序把字符串str01转换成数组。 输出结果以下所示：
-[&#39;This&#39;, &#39;is&#39;, &#39;a&#39;, &#39;sample&#39;, &#39;string&#39;]   【解题思路】  第一步： 创建一个空数组lst 第二步： 创建一个空字符串word, 用来存储字符串中的一个英文次 第三步： 通过for循环遍历字符串str01， 注意range的语法 第四步： 将遍历出来的字母一个个添加到字符串word中 第五步： 如果遍历过程中遇到空格，将word添加到数组lst中并清空字符串word   第三题 请倒转字符串str01, 输出结果以下所示：
-&#39;gnirts elpmas a si sihT&#39;   鼓励同学们用算法来完成本题。实在想不出算法解决方案可以用Python内置函数来完成倒转字符串。
-【解题思路】  第一步： 创建一个空字符串result来存放倒转后的结果 第二步： 用for循环来遍历字符串，要注意range里面的写法 第三步： 从最后一个字母开始取出str01中的每个字符串并添加到新的字符串result中   </description>
+      <description>String Exercises Given a string below:
+str01 = &#39;This is a sample string&#39;  Exercise 1 Check if string am exists in string str01, print am is exist if it&amp;rsquo;s exist.
+ 【Hint】  Step 1: Do if...else check if string am exists in the string str01 Step 2: Print am is exist if it does.   Exercise 2 Write a program to convert the following list to string.</description>
     </item>
     
   </channel>

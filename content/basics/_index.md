@@ -1,11 +1,11 @@
 ---
-title: Python入门课程
+title: Python for Beginners
 weight: 3
 pre: "<b>3. </b>"
 chapter: true
 ---
 
-# Basics
+# Python for Beginners
 
 &nbsp;&nbsp;&nbsp;&nbsp;Python basics are crutial to the following lessons. In this secsion, we're going to learn:
 

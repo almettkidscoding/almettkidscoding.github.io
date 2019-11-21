@@ -1,8 +1,8 @@
 ---
-title: Exercises练习
+title: Exercises
 date: 2019-11-12T13:57:21+08:00
-weight: 4
-pre: "<b>4. </b>"
+weight: 5
+pre: "<b>5. </b>"
 chapter: true
 ---
 

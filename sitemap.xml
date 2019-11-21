@@ -42,13 +42,18 @@
   </url>
   
   <url>
-    <loc>/exercises/</loc>
-    <lastmod>2019-11-12T13:57:21+08:00</lastmod>
+    <loc>/olympiad/</loc>
+    <lastmod>2019-11-16T19:10:43+08:00</lastmod>
   </url>
   
   <url>
     <loc>/basics/slicing_and_formatting/</loc>
     <lastmod>2019-10-17T19:31:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/exercises/</loc>
+    <lastmod>2019-11-12T13:57:21+08:00</lastmod>
   </url>
   
   <url>
@@ -69,6 +74,15 @@
   <url>
     <loc>/basics/modules/</loc>
     <lastmod>2019-11-15T14:07:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/basics/io/</loc>
+    <lastmod>2019-11-19T18:44:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/introduction/python%E8%AF%BE%E7%A8%8B%E7%AE%80%E4%BB%8B/</loc>
   </url>
   
   <url>

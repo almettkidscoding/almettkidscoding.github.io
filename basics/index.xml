@@ -92,5 +92,14 @@
       <description>Class objectives  Key syntax introduction Create a directory or directories Create a file Read and write file Classroom xercise Homework  Syntax table    Keyword description     mkdir A function to create a single directory, returns a directory object.   makedirs A function to create a multiple directories, returns a multiple nested directories.   open() open() returns a file object, and is most commonly used with two arguments: open(filename, mode).</description>
     </item>
     
+    <item>
+      <title>Wrap up Exercise I</title>
+      <link>/basics/wrap_up_exercise/</link>
+      <pubDate>Thu, 28 Nov 2019 13:53:32 +0800</pubDate>
+      
+      <guid>/basics/wrap_up_exercise/</guid>
+      <description>Class objectives  Key syntax introduction Basic Exercises String exercises Homework  Syntax table    Keyword description     replace(target_value, new_value) Python string method replace() returns a copy of the string in which the occurrences of old have been replaced with new, optionally restricting the number of replacements to max.   split() Python string method split() returns a list of all the words in the string, using str as the separator (splits on all whitespace if left unspecified), optionally limiting the number of splits to num.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 ---
-title: "Wrap up Exercise I"
+title: "Wrap up Exercise - string"
 date: 2019-11-28T13:53:32+08:00
 weight: 10
 pre: "<b>10. </b>"

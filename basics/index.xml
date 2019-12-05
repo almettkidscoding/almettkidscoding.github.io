@@ -93,12 +93,22 @@
     </item>
     
     <item>
-      <title>Wrap up Exercise I</title>
+      <title>Wrap up Exercise - string</title>
       <link>/basics/wrap_up_exercise/</link>
       <pubDate>Thu, 28 Nov 2019 13:53:32 +0800</pubDate>
       
       <guid>/basics/wrap_up_exercise/</guid>
       <description>Class objectives  Key syntax introduction Basic Exercises String exercises Homework  Syntax table    Keyword description     replace(target_value, new_value) Python string method replace() returns a copy of the string in which the occurrences of old have been replaced with new, optionally restricting the number of replacements to max.   split() Python string method split() returns a list of all the words in the string, using str as the separator (splits on all whitespace if left unspecified), optionally limiting the number of splits to num.</description>
+    </item>
+    
+    <item>
+      <title>Wrap up Exercise - List</title>
+      <link>/basics/wrapup_exercise_ii/</link>
+      <pubDate>Thu, 05 Dec 2019 15:15:33 +0800</pubDate>
+      
+      <guid>/basics/wrapup_exercise_ii/</guid>
+      <description>Class objectives  List Exercises More on Lists Most common List functions Homework  List Exercises Exercise 1: Print common items in two lists Given two empty lists lst1 and lst2. random.randint(1, 50) generates random numbers from 1 to 50. Randomly add 10 numbers to each empty list, write a function to print common items.
+import random lst1 = [] lst2 = [] def randomly_add_items(lst1, lst2): def find_common_items(lst1, lst2):  Exercise 2: Remove duplicated items from a list Given a lst of integers.</description>
     </item>
     
   </channel>

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Input &amp; Output :: Python programming</title>
+    <title>Wrap up Exercise - List :: Python programming</title>
 
     
     <link href="/css/nucleus.css?1575535918" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/io/">
+  <body class="" data-url="/basics/wrapup_exercise_ii/">
     <nav id="sidebar" class="">
 
 
@@ -310,7 +310,7 @@
  
   
     
-      <li data-nav-id="/basics/io/" title="Input &amp; Output" class="dd-item active">
+      <li data-nav-id="/basics/io/" title="Input &amp; Output" class="dd-item ">
         <a href="/basics/io/">
         <b>9. </b>Input &amp; Output
         
@@ -348,7 +348,7 @@
  
   
     
-      <li data-nav-id="/basics/wrapup_exercise_ii/" title="Wrap up Exercise - List" class="dd-item ">
+      <li data-nav-id="/basics/wrapup_exercise_ii/" title="Wrap up Exercise - List" class="dd-item active">
         <a href="/basics/wrapup_exercise_ii/">
         <b>11. </b>Wrap up Exercise - List
         
@@ -509,7 +509,7 @@
             
           
           
-            <a href='/'>Python programming</a> > <a href='/basics/'>Python for Beginners</a> > Input & Output
+            <a href='/'>Python programming</a> > <a href='/basics/'>Python for Beginners</a> > Wrap up Exercise - List
           
          
           
@@ -529,27 +529,28 @@
 <li>
 <ul>
 <li><a href="#class-objectives">Class objectives</a></li>
-<li><a href="#syntax-table">Syntax table</a></li>
-<li><a href="#create-a-directory-or-directories">Create a directory or directories</a>
+<li><a href="#list-exercises">List Exercises</a>
 <ul>
-<li><a href="#how-to-create-a-directory">How to create a directory?</a></li>
+<li><a href="#exercise-1-print-common-items-in-two-lists">Exercise 1: Print common items in two lists</a></li>
+<li><a href="#exercise-2-remove-duplicated-items-from-a-list">Exercise 2: Remove duplicated items from a list</a></li>
+<li><a href="#exercise-3-return-the-sum-of-list-items">Exercise 3: Return the sum of list items</a></li>
 </ul></li>
-<li><a href="#create-a-file">Create a file</a>
+<li><a href="#more-on-lists">More on Lists</a>
 <ul>
-<li><a href="#modes">Modes</a></li>
-<li><a href="#how-to-create-a-file">How to create a file?</a>
+<li><a href="#most-common-list-functions">Most common List functions</a></li>
+<li><a href="#append-item-add-a-item-to-the-end-of-the-list"><code>append(item)</code>: Add a item to the end of the list</a></li>
+<li><a href="#insert-pos-item-insert-a-item-to-a-position"><code>insert(pos, item)</code>: Insert a item to a position</a></li>
+<li><a href="#remove-item-or-pop-remove-a-item-from-the-list"><code>remove(item)</code> or <code>pop()</code>: Remove a item from the list</a></li>
+<li><a href="#reverse-reverse-a-list"><code>reverse()</code>: Reverse a list</a></li>
+<li><a href="#sort-sort-a-list"><code>sort()</code>: Sort a list</a></li>
+<li><a href="#count-item-counts-numbers-of-this-item-in-the-list"><code>count(item)</code>: Counts numbers of this item in the list</a></li>
+<li><a href="#index-item-returns-the-index-of-the-item"><code>index(item)</code>: Returns the index of the item</a></li>
+<li><a href="#max-lst-returns-the-max-value-of-list-items"><code>max(lst)</code>: Returns the max value of list items</a></li>
+<li><a href="#max-lst-returns-the-min-value-of-list-items"><code>max(lst)</code>: Returns the min value of list items</a></li>
+<li><a href="#homework">Homework</a>
 <ul>
-<li><a href="#how-to-create-a-file-under-a-directory">How to create a file under a directory?</a></li>
+<li><a href="#hints">Hints</a></li>
 </ul></li>
-</ul></li>
-<li><a href="#read-and-write-file">Read and write file</a>
-<ul>
-<li><a href="#write">Write</a></li>
-<li><a href="#read">Read</a></li>
-</ul></li>
-<li><a href="#classroom-exercise">Classroom exercise</a>
-<ul>
-<li><a href="#homework-create-a-file-hierarchy">Homework: Create a file hierarchy</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -570,7 +571,7 @@
           
             <h1>
               
-              Input &amp; Output
+              Wrap up Exercise - List
             </h1>
           
 
@@ -583,184 +584,219 @@
 <h3 id="class-objectives">Class objectives</h3>
 
 <ul>
-<li><a href="#syntax-table"><strong>Key syntax introduction</strong></a></li>
-<li><a href="#create-a-directory-or-directories"><strong>Create a directory or directories</strong></a></li>
-<li><a href="#create-a-file"><strong>Create a file</strong></a></li>
-<li><a href="#read-and-write-file"><strong>Read and write file</strong></a></li>
-<li><a href="#classroom-exercise"><strong>Classroom xercise</strong></a></li>
+<li><a href="#list-exercises"><strong>List Exercises</strong></a></li>
+<li><a href="#more-on-lists"><strong>More on Lists</strong></a></li>
+<li><a href="#most-common-list-functions"><strong>Most common List functions</strong></a></li>
 <li><a href="#homework"><strong>Homework</strong></a></li>
 </ul>
 
-<h3 id="syntax-table">Syntax table</h3>
+<h3 id="list-exercises">List Exercises</h3>
+
+<h4 id="exercise-1-print-common-items-in-two-lists">Exercise 1: Print common items in two lists</h4>
+
+<p>Given two empty lists <code>lst1</code> and <code>lst2</code>. <code>random.randint(1, 50)</code> generates random numbers from 1 to 50. Randomly add 10 numbers to each empty list, write a function to print common items.</p>
+
+<pre><code class="language-python">import random
+
+lst1 = []
+lst2 = []
+
+def randomly_add_items(lst1, lst2):
+
+def find_common_items(lst1, lst2):
+
+</code></pre>
+
+<h4 id="exercise-2-remove-duplicated-items-from-a-list">Exercise 2: Remove duplicated items from a list</h4>
+
+<p>Given a lst of integers. Write a function to remove duplicated items and return in a new list.</p>
+
+<pre><code class="language-python">lst = [12, 23, 34, 23, 34, 25, 65, 32, 25]
+
+# Implement this function to return [12,23,34,25,65,32]
+def remove_dups(lst):
+
+</code></pre>
+
+<h4 id="exercise-3-return-the-sum-of-list-items">Exercise 3: Return the sum of list items</h4>
+
+<p>Given two lists with the same length of integer items. Write a function to return sum of list items in a new list.</p>
+
+<pre><code class="language-python">lst1 = [1,2,3,4,5]
+lst2 = [2,3,4,5,6]
+
+# Implement the function to return [3,5,7,9,11]
+def add_list_items(lst1, lst2):
+
+</code></pre>
+
+<h3 id="more-on-lists">More on Lists</h3>
+
+<h4 id="most-common-list-functions">Most common List functions</h4>
+
+<p>Following are some common Python functions to process data. Here it comes to level up in Python lists, do more fun and exciting exercises.</p>
 
 <table>
 <thead>
 <tr>
-<th align="left"><center>Keyword</center></th>
+<th align="left"><center>Function name</center></th>
 <th align="center"><center>description</center></th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="left"><center>mkdir</center></td>
-<td align="center">A function to create a single directory, returns a directory object.</td>
+<td align="left"><center>append(item)</center></td>
+<td align="center">add object at end</td>
 </tr>
 
 <tr>
-<td align="left"><center>makedirs</center></td>
-<td align="center">A function to create a multiple directories, returns a multiple nested directories.</td>
+<td align="left"><center>insert(pos, item)</center></td>
+<td align="center">add object anywhere</td>
 </tr>
 
 <tr>
-<td align="left"><center>open()</center></td>
-<td align="center"><code>open()</code> returns a file object, and is most commonly used with two arguments: <code>open(filename, mode)</code>. The first argument is a string containing the filename. The second argument is another string containing a few characters describing the way in which the file will be used. mode can be &lsquo;r&rsquo; when the file will only be read, &lsquo;w&rsquo; for only writing (an existing file with the same name will be erased), and &lsquo;a&rsquo; opens the file for appending; any data written to the file is automatically added to the end. &lsquo;r+&rsquo; opens the file for both reading and writing. The mode argument is optional; &lsquo;r&rsquo; will be assumed if it’s omitted.</td>
+<td align="left"><center>remove(item), pop()</center></td>
+<td align="center">delete object</td>
+</tr>
+
+<tr>
+<td align="left"><center>reverse()</center></td>
+<td align="center">reverse in-place , changes original list</td>
+</tr>
+
+<tr>
+<td align="left"><center>sort()</center></td>
+<td align="center">sort in-place, changes original list</td>
+</tr>
+
+<tr>
+<td align="left"><center>reversed()</center></td>
+<td align="center">copy of reversed</td>
+</tr>
+
+<tr>
+<td align="left"><center>sorted()</center></td>
+<td align="center">copy of sorted</td>
+</tr>
+
+<tr>
+<td align="left"><center>extend()</center></td>
+<td align="center">merger another list</td>
+</tr>
+
+<tr>
+<td align="left"><center>count(item)</center></td>
+<td align="center">number of occurrences</td>
+</tr>
+
+<tr>
+<td align="left"><center>index(item)</center></td>
+<td align="center">first index of a value</td>
+</tr>
+
+<tr>
+<td align="left"><center>max(lst)</center></td>
+<td align="center">max value of list items</td>
+</tr>
+
+<tr>
+<td align="left"><center>min(lst)</center></td>
+<td align="center">min value of list items</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="create-a-directory-or-directories">Create a directory or directories</h3>
+<p>Persumably, list is a box of chocolates in which chocolates in and out. Possible occasions are, chocolates are eaten, new ones are in or they are given to others. Basically, Python offers function to each of those occasions.</p>
 
-<h4 id="how-to-create-a-directory">How to create a directory?</h4>
+<h4 id="append-item-add-a-item-to-the-end-of-the-list"><code>append(item)</code>: Add a item to the end of the list</h4>
 
-<p><code>os</code> is a standard library that offers capabilities of creading directories. Following is how to achieve it:</p>
+<pre><code class="language-python">lst = [1,2,3,4,5]
+lst.append(6)
 
-<p><code>mkdir()</code> method creates a directory, try to create a directory <code>python_basics</code>:</p>
-
-<pre><code class="language-python">import os
-# Create a directory named python_basics
-os.mkdir('python_basics')
+print(lst) # returns [1,2,3,4,5,6]
 </code></pre>
 
-<p>Likewise,</p>
+<h4 id="insert-pos-item-insert-a-item-to-a-position"><code>insert(pos, item)</code>: Insert a item to a position</h4>
 
-<p><code>makedirs()</code> creates directories, &lsquo;/&rsquo; follows after each directory name:</p>
+<pre><code class="language-python">lst = [1,2,3,4,5]
+lst.insert(2, 6) # insert 6 to index 2
 
-<pre><code class="language-python"># Create directories
-# Following code create day01 and day02 under directory python_basics
-os.makedirs('python_basics/day01')
-os.makedirs('python_basics/day02')
+# returns [1,2,6,3,4,5]
+# 6 becomes the item at index 2
+print(lst)
 </code></pre>
 
-<h3 id="create-a-file">Create a file</h3>
+<h4 id="remove-item-or-pop-remove-a-item-from-the-list"><code>remove(item)</code> or <code>pop()</code>: Remove a item from the list</h4>
 
-<p><code>open(filename, mode)</code> creates a file object. Look at <a href="#syntax-table"><strong>Key syntax introduction</strong></a> for more details.</p>
+<pre><code class="language-python">lst = [1,2,3,4,5]
+lst.remove(3) # remove item 3 from the list
+print(lst) # returns [1,2,4,5]
 
-<h4 id="modes">Modes</h4>
-
-<ul>
-<li><strong>r</strong> : the file will only be read</li>
-<li><strong>w</strong> : only writing an existing file with the same name will be erased</li>
-<li><strong>a</strong> : opens the file for appending</li>
-<li><strong>r+</strong> : opens the file for both reading and writing</li>
-<li><strong>b</strong> : opens the file in binary mode</li>
-</ul>
-
-<h4 id="how-to-create-a-file">How to create a file?</h4>
-
-<p>Create a file with <code>open()</code> function.</p>
-
-<pre><code class="language-python"># Let's create a text file
-text_file = open('file.txt', 'w')
+an_item = lst.pop() # return 5
+another_item = lst.pop() # return 4
+print(lst) # return [1,2]
 </code></pre>
 
-<blockquote>
-<h5 id="how-to-create-a-file-under-a-directory">How to create a file under a directory?</h5>
-</blockquote>
+<h4 id="reverse-reverse-a-list"><code>reverse()</code>: Reverse a list</h4>
 
-<h3 id="read-and-write-file">Read and write file</h3>
+<pre><code class="language-python">lst = [1,2,3,4,5]
+lst.reverse()
 
-<h4 id="write">Write</h4>
-
-<p>There are two ways to read/write files:</p>
-
-<pre><code class="language-python"># Normal approach to write and must close the file with `close()` method.
-text_file.write('Happy coding')
-text_file.close()
-
-# With a `with` keyword
-with open('file.txt', 'w') as text_file:
-	text_file.write('Python is a great programming language')
+print(lst) # returns [5,4,3,2,1]
 </code></pre>
 
-<p>What is the difference with or without using the <code>with</code> keyword?</p>
+<h4 id="sort-sort-a-list"><code>sort()</code>: Sort a list</h4>
 
-<p>It is good practice to use the with keyword when dealing with file objects. The advantage is that the file is properly closed after its suite finishes, even if an exception is raised at some point. Using with is also much shorter than writing equivalent try-finally blocks:</p>
-
-<p>If you’re not using the with keyword, then you should call f.close() to close the file and immediately free up any system resources used by it. If you don’t explicitly close a file, Python’s garbage collector will eventually destroy the object and close the open file for you, but the file may stay open for a while. Another risk is that different Python implementations will do this clean-up at different times.</p>
-
-<h4 id="read">Read</h4>
-
-<pre><code class="language-python"># Read them all together:
-with open('file.txt', 'r') as file:
-	print(file.read())
-
-# Loop through line by line
-file = open('file.txt', 'r')
-for each_line in file:
-	print(each_line)
-file.close()
-
-# Read with `readline()` method
-with open('file.txt', 'r') as file:
-	print(file.readline())
+<pre><code class="language-python">lst = [3,1,4,2,5]
+lst.sort() # sort the list
+print(lst) # returns [1,2,3,4,5]
 </code></pre>
 
-<h3 id="classroom-exercise">Classroom exercise</h3>
+<h4 id="count-item-counts-numbers-of-this-item-in-the-list"><code>count(item)</code>: Counts numbers of this item in the list</h4>
 
-<p>Write a function to create a <code>turtle_practice.py</code> file with the following code:</p>
+<pre><code class="language-python">lst = [1,2,3,3,4,5,6,6,7,6]
+print(lst.count(6)) # returns 3
+</code></pre>
 
-<pre><code class="language-python">from turtle import *
+<h4 id="index-item-returns-the-index-of-the-item"><code>index(item)</code>: Returns the index of the item</h4>
 
-def draw_something(sides):
-	speed(100)
-	for each_shape in range(12):
-		for each_line in range(sides):
-			forward(100)
-			right(360/sides)
-		right(360/12)
-	done()
-draw_something(6)
+<pre><code class="language-python">lst = [1,2,3,4,5]
+print(lst.index(4)) # returns 3
+</code></pre>
+
+<h4 id="max-lst-returns-the-max-value-of-list-items"><code>max(lst)</code>: Returns the max value of list items</h4>
+
+<pre><code class="language-python">lst = [12,34,432435,54,62,3232]
+print(max(lst)) # returns 432435
+</code></pre>
+
+<h4 id="max-lst-returns-the-min-value-of-list-items"><code>max(lst)</code>: Returns the min value of list items</h4>
+
+<pre><code class="language-python">lst = [12,34,432435,54,62,3232]
+print(min(lst)) # returns 12
 </code></pre>
 
 <blockquote>
-<h4 id="homework-create-a-file-hierarchy">Homework: Create a file hierarchy</h4>
+<h4 id="homework">Homework</h4>
 </blockquote>
 
-<p>Write function(s) to create directories and files to achiece the following file hierarchy in the picture.</p>
+<p>Given a unsorted list of integers. Write a function to return the biggest item.</p>
 
-<p><strong>Input</strong></p>
-
-<pre><code class="language-python">import os
-
-# Implement the function
-def createfile(filename):
-
-# Implement the funtion
-def createdir(dirname):
-
-# Implement the function
-def createdirs(dirsname):
-
-# Implement the function
-def create_hierarchy():
+<pre><code class="language-python">lst = [13,42,23,543,23,54,134]
+def return_max(lst): # returns 543
 
 </code></pre>
 
-<p><strong>Output</strong></p>
-
-<p><img src="/images/autogenerated_file_hierarchy.png" alt="" /></p>
-
-<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<blockquote>
+<h5 id="hints">Hints</h5>
+</blockquote>
 
 <ul>
-  {{ $urlPre := "https://api.github.com" }}
-  {{ $gistJ := getJSON $urlPre "/users/maninwindow/repos" }}
-  {{ range first 5 $gistJ }}
-    {{ if .public }}
-      <li><a href="{{ .url }}" target="_blank">{{ .description }}</a></li>
-    {{ end }}
-  {{ end }}
+<li>Not allowed to use <code>max(lst)</code> function</li>
+<li>Not necessary to sort the list</li>
+<li>You are encouraged to solve the problem with algorithm(which basically means using loops, conditionals and mathmatical operations)</li>
+<li>Assume a random number A is the biggest number and loop through the list to find bigger the one one than A</li>
 </ul>
 
 
@@ -996,26 +1032,6 @@ def create_hierarchy():
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1043,6 +1059,23 @@ def create_hierarchy():
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1050,6 +1083,9 @@ def create_hierarchy():
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1119,10 +1155,10 @@ def create_hierarchy():
 	 
 	 
 		
-			<a class="nav nav-prev" href="/basics/modules/" title="Modules"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/basics/wrap_up_exercise/" title="Wrap up Exercise - string"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/basics/wrap_up_exercise/" title="Wrap up Exercise - string" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/olympiad/" title="Information Olympiad" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

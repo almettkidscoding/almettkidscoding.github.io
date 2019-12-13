@@ -27,6 +27,15 @@ For example:
     </item>
     
     <item>
+      <title>String problem solving</title>
+      <link>/olympiad/more_on_string/</link>
+      <pubDate>Tue, 24 Sep 2019 15:24:05 +0800</pubDate>
+      
+      <guid>/olympiad/more_on_string/</guid>
+      <description>Class Objectives  Practice problem solving in string data types. Learn how to interpret real world problem into computer problem More flexible usage of loops and conditionals Dive deeper to string data structure Process large and multi-dimensional string data in practice  Problems  Loop through strings Character sorting Type check String reverse Add suffix to string  Loop through strings Requirements &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Given a string consists of repeated characters. Write a function to process the string to return number of repeated characters in a dictionary.</description>
+    </item>
+    
+    <item>
       <title>Turtle programming</title>
       <link>/basics/turtle_programming/</link>
       <pubDate>Wed, 18 Sep 2019 13:10:47 +0800</pubDate>
@@ -120,21 +129,33 @@ str01 = &#39;This is a sample string&#39;  Exercise 1 Check if string am exists 
     
     <item>
       <title>Wrap up Exercise - string</title>
-      <link>/basics/wrap_up_exercise/</link>
+      <link>/basics/wrapup_exercise_string/</link>
       <pubDate>Thu, 28 Nov 2019 13:53:32 +0800</pubDate>
       
-      <guid>/basics/wrap_up_exercise/</guid>
+      <guid>/basics/wrapup_exercise_string/</guid>
       <description>Class objectives  Key syntax introduction Basic Exercises String exercises Homework  Syntax table    Keyword description     replace(target_value, new_value) Python string method replace() returns a copy of the string in which the occurrences of old have been replaced with new, optionally restricting the number of replacements to max.   split() Python string method split() returns a list of all the words in the string, using str as the separator (splits on all whitespace if left unspecified), optionally limiting the number of splits to num.</description>
     </item>
     
     <item>
       <title>Wrap up Exercise - List</title>
-      <link>/basics/wrapup_exercise_ii/</link>
+      <link>/basics/wrapup_exercise_list/</link>
       <pubDate>Thu, 05 Dec 2019 15:15:33 +0800</pubDate>
       
-      <guid>/basics/wrapup_exercise_ii/</guid>
+      <guid>/basics/wrapup_exercise_list/</guid>
       <description>Class objectives  List Exercises More on Lists Most common List functions Homework  List Exercises Exercise 1: Print common items in two lists Given two empty lists lst1 and lst2. random.randint(1, 50) generates random numbers from 1 to 50. Randomly add 10 numbers to each empty list, write a function to print common items.
 import random lst1 = [] lst2 = [] def randomly_add_items(lst1, lst2): def find_common_items(lst1, lst2):  Exercise 2: Remove duplicated items from a list Given a lst of integers.</description>
+    </item>
+    
+    <item>
+      <title>Wrapup exercise logic</title>
+      <link>/basics/wrapup_exercise_logic/</link>
+      <pubDate>Fri, 13 Dec 2019 11:53:40 +0800</pubDate>
+      
+      <guid>/basics/wrapup_exercise_logic/</guid>
+      <description>Class objectives  Practice loops and conditionals in different cases Advanced usage of variables List comprihension basics  Character counter Given a string variable of a sentence. Write a function with two parameters, return the number of target character in the string.
+Input:
+string = &#39;Practice makes perfect&#39;  Write a function
+def character_counter(string, char): counter = 0 # process the string to count character return counter  Output:</description>
     </item>
     
     <item>

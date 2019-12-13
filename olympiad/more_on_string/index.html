@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Python for Beginners :: Python programming</title>
+    <title>String problem solving :: Python programming</title>
 
     
     <link href="/css/nucleus.css?1576214932" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/">
+  <body class="" data-url="/olympiad/more_on_string/">
     <nav id="sidebar" class="">
 
 
@@ -134,8 +134,8 @@
   
     
     <li data-nav-id="/basics/" title="Python for Beginners" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/basics/">
@@ -394,7 +394,7 @@
   
     
     <li data-nav-id="/olympiad/" title="Information Olympiad" class="dd-item 
-        
+        parent
         
         
         ">
@@ -418,7 +418,7 @@
  
   
     
-      <li data-nav-id="/olympiad/more_on_string/" title="String problem solving" class="dd-item ">
+      <li data-nav-id="/olympiad/more_on_string/" title="String problem solving" class="dd-item active">
         <a href="/olympiad/more_on_string/">
         <b>1. </b>String problem solving
         
@@ -541,6 +541,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -551,7 +553,13 @@
             
           
           
-            <a href='/'>Python programming</a> > Python for Beginners
+            
+            
+          
+          
+            <a href='/'>Python programming</a> > <a href='/olympiad/'>Information Olympiad</a> > String problem solving
+          
+         
           
          
           
@@ -560,6 +568,50 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#class-objectives">Class Objectives</a></li>
+<li><a href="#problems">Problems</a></li>
+<li><a href="#loop-through-strings">Loop through strings</a>
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#problem-solving-pattern">Problem solving pattern</a></li>
+</ul></li>
+<li><a href="#character-sorting">Character sorting</a>
+<ul>
+<li><a href="#requirements-1">Requirements</a></li>
+<li><a href="#problem-solving-pattern-1">Problem solving pattern</a></li>
+<li><a href="#hint">Hint</a></li>
+</ul></li>
+<li><a href="#type-check">Type check</a>
+<ul>
+<li><a href="#requirements-2">Requirements</a></li>
+<li><a href="#problem-solving-pattern-2">Problem solving pattern</a></li>
+</ul></li>
+<li><a href="#string-reverse">String reverse</a>
+<ul>
+<li><a href="#requirements-3">Requirements</a></li>
+</ul></li>
+<li><a href="#problem-solving-pattern-3">Problem solving pattern</a></li>
+<li><a href="#add-suffix-to-string">Add suffix to string</a>
+<ul>
+<li><a href="#requirements-4">Requirements</a></li>
+<li><a href="#problem-solving-pattern-4">Problem solving pattern</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -567,9 +619,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              String problem solving
+            </h1>
           
 
         
@@ -577,32 +632,191 @@
 
 
 
-	
 
-<h1 id="python-for-beginners">Python for Beginners</h1>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Python basics are crutial to the following lessons. In this secsion, we&rsquo;re going to learn:</p>
+<h3 id="class-objectives">Class Objectives</h3>
 
 <ul>
-<li>Python Interpreter</li>
-<li>Basic Python data structures</li>
-<li>Control flow tools</li>
-<li>Modules</li>
-<li>input &amp; Output</li>
-<li>Errors &amp; Exceptions</li>
-<li>Classes</li>
+<li>Practice problem solving in string data types.</li>
+<li>Learn how to interpret real world problem into computer problem</li>
+<li>More flexible usage of loops and conditionals</li>
+<li>Dive deeper to string data structure</li>
+<li>Process large and multi-dimensional string data in practice</li>
 </ul>
 
+<h3 id="problems">Problems</h3>
 
+<ul>
+<li><a href="#loop-through-strings"><strong>Loop through strings</strong></a></li>
+<li><a href="#character-sorting"><strong>Character sorting</strong></a></li>
+<li><a href="#type-check"><strong>Type check</strong></a></li>
+<li><a href="#string-reverse"><strong>String reverse</strong></a></li>
+<li><a href="#add-suffix-to-string"><strong>Add suffix to string</strong></a></li>
+</ul>
 
+<h3 id="loop-through-strings">Loop through strings</h3>
+
+<h4 id="requirements">Requirements</h4>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Given a string consists of repeated characters. Write a function to process the string to return number of repeated characters in a dictionary.</p>
+
+<ul>
+<li>Not allowed to use <code>string.count(character)</code> function</li>
+<li>Your are encouraged to solve the problem with algorithms</li>
+</ul>
+
+<p><strong>Input:</strong></p>
+
+<pre><code class="language-python">string = &quot;The more that you read, the more things you will know, the more that you learn, the more places you willl go.&quot;
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<pre><code class="language-python">{'T': 1, 'h': 7, 'e': 11, ' ': 21, 'm': 4, 'o': 10, 'r': 6, 't': 8, 'a': 5, 'y': 4, 'u': 4, 'd': 1, ',': 3, 'i': 3, 'n': 3, 'g': 2, 's': 2, 'w': 3, 'l': 7, 'k': 1, 'p': 1, 'c': 1, '.': 1}
+</code></pre>
+
+<h4 id="problem-solving-pattern">Problem solving pattern</h4>
+
+<ul>
+<li>Step 1: Define a function with a parameter</li>
+<li>Step 2: Define a dictionary</li>
+<li>Step 3: Loop through the string</li>
+<li>Step 4: Get keys of dictionary. <code>keys = dict.keys()</code> returns a list of keys</li>
+<li>Step 5: Check if each character in the string exists in the keys.</li>
+<li>Step 6: If it exists in the keys, increment it&rsquo;s value by 1, if not assign a value 1.</li>
+</ul>
+
+<h3 id="character-sorting">Character sorting</h3>
+
+<h4 id="requirements-1">Requirements</h4>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Given a string of random characters. Write a function to sort them in English alphabatical order.</p>
+
+<ul>
+<li>Noe allowed to use Python sort functions</li>
+<li>Solve the problem with algorithms</li>
+</ul>
+
+<h4 id="problem-solving-pattern-1">Problem solving pattern</h4>
+
+<p><strong>Input:</strong></p>
+
+<pre><code class="language-python">string = 'dsajlvwjeoijvdskavljwioenvjskdlahj'
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<pre><code class="language-python">aaadddeehiijjjjjjkklllnoosssvvvvww
+</code></pre>
+
+<blockquote>
+<h4 id="hint">Hint</h4>
+</blockquote>
+
+<ul>
+<li>You may consider Python <code>chr()</code> and <code>ord()</code></li>
+</ul>
+
+<h3 id="type-check">Type check</h3>
+
+<h4 id="requirements-2">Requirements</h4>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Given string of random letters, digits and symbols. Write a function to return them in different lists.</p>
+
+<ul>
+<li>You are encouraged to use regex</li>
+</ul>
+
+<p><strong>Input:</strong></p>
+
+<pre><code class="language-python">import re 
+
+string = 'fjsdlkajlv463247836ewiFJKS&amp;*$^&amp;#$JFIEfjdksljVLWEJKjdkfjkd'
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<pre><code class="language-python">['f', 'j', 's', 'd', 'l', 'k', 'a', 'j', 'l', 'v', 'e', 'w', 'i', 'F', 'J', 'K', 'S', 'J', 'F', 'I', 'E', 'f', 'j', 'd', 'k', 's', 'l', 'j', 'V', 'L', 'W', 'E', 'J', 'K', 'j', 'd', 'k', 'f', 'j', 'k', 'd']
+
+['4', '6', '3', '2', '4', '7', '8', '3', '6']
+
+['&amp;', '*', '$', '^', '&amp;', '#', '$']
+</code></pre>
+
+<h4 id="problem-solving-pattern-2">Problem solving pattern</h4>
+
+<ul>
+<li>Loop through the string by characters</li>
+<li>Check each character if it is the type of letters, digits or symbols.</li>
+<li>Return each list of result</li>
+</ul>
+
+<h3 id="string-reverse">String reverse</h3>
+
+<h4 id="requirements-3">Requirements</h4>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Write a function to reverse a given string.</p>
+
+<ul>
+<li>Your are encouraged to use algorithms</li>
+<li>Not allowed to Python embedded reverse functions</li>
+</ul>
+
+<p><strong>Input:</strong></p>
+
+<pre><code class="language-python">string = &quot;Children must be raught how to think, not what to think&quot;
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<pre><code class="language-python">&quot;kniht ot tahw ton ,kniht ot woh thguar eb tsum nerdlihC&quot;
+</code></pre>
+
+<h3 id="problem-solving-pattern-3">Problem solving pattern</h3>
+
+<ul>
+<li>Step 1: Define a function with a parameter</li>
+<li>Step 2: Define a empty string variable</li>
+<li>Step 3: Loop through the string with for loop</li>
+<li>Step 4: Get the characters from the end until the beginning.</li>
+<li>Step 5: Add each character into the result string</li>
+</ul>
+
+<h3 id="add-suffix-to-string">Add suffix to string</h3>
+
+<h4 id="requirements-4">Requirements</h4>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Given a string consists of different words end with <code>ing</code>. Write a function to append <code>ly</code> to words end with <code>ing</code>, and <code>ing</code> to those are not end with <code>ing</code>, ignore those already are end with <code>ly</code>.</p>
+
+<ul>
+<li>Not allowed to use Python <code>endswith()</code></li>
+<li>You are encouraged to use algorithms</li>
+</ul>
+
+<p><strong>Input:</strong></p>
+
+<pre><code class="language-python">string = &quot;He is fully absessed with eating. Eating and eating, don't stop forever!&quot;
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<pre><code class="language-python">&quot;Heing ising fully absesseding withing eatingly. Eatingly anding eatingly, don'ting stoping forever!ing&quot;
+</code></pre>
+
+<h4 id="problem-solving-pattern-4">Problem solving pattern</h4>
+
+<ul>
+<li>Step 1: Write a function with a parameter</li>
+<li>Step 2: Loop through the string to get each word</li>
+<li>Step 3: Check if each word ends with <code>ing</code> or <code>ly</code> by splitting the word</li>
+<li>Step 4: Add each word appropriate suffix and return the result</li>
+</ul>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -685,7 +899,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -699,8 +912,21 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -873,10 +1099,28 @@
             
         
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -897,37 +1141,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -981,10 +1196,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/setup/" title="Environment Setup"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/olympiad/" title="Information Olympiad"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/basics/turtle_programming/" title="Turtle programming" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/exercises/" title="Exercises" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1015,3 +1230,4 @@
 
   </body>
 </html>
+

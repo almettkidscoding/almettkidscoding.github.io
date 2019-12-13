@@ -11,5 +11,14 @@
 	<atom:link href="/olympiad/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>String problem solving</title>
+      <link>/olympiad/more_on_string/</link>
+      <pubDate>Tue, 24 Sep 2019 15:24:05 +0800</pubDate>
+      
+      <guid>/olympiad/more_on_string/</guid>
+      <description>Class Objectives  Practice problem solving in string data types. Learn how to interpret real world problem into computer problem More flexible usage of loops and conditionals Dive deeper to string data structure Process large and multi-dimensional string data in practice  Problems  Loop through strings Character sorting Type check String reverse Add suffix to string  Loop through strings Requirements &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Given a string consists of repeated characters. Write a function to process the string to return number of repeated characters in a dictionary.</description>
+    </item>
+    
   </channel>
 </rss>

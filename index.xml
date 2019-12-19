@@ -147,7 +147,7 @@ import random lst1 = [] lst2 = [] def randomly_add_items(lst1, lst2): def find_c
     </item>
     
     <item>
-      <title>Wrapup exercise logic</title>
+      <title>Wrapup exercise - logic</title>
       <link>/basics/wrapup_exercise_logic/</link>
       <pubDate>Fri, 13 Dec 2019 11:53:40 +0800</pubDate>
       
@@ -156,6 +156,15 @@ import random lst1 = [] lst2 = [] def randomly_add_items(lst1, lst2): def find_c
 Input:
 string = &#39;Practice makes perfect&#39;  Write a function
 def character_counter(string, char): counter = 0 # process the string to count character return counter  Output:</description>
+    </item>
+    
+    <item>
+      <title>Wrapup exercise - functions</title>
+      <link>/basics/wrapup_exercise_functions/</link>
+      <pubDate>Thu, 19 Dec 2019 14:19:15 +0800</pubDate>
+      
+      <guid>/basics/wrapup_exercise_functions/</guid>
+      <description>Class objectives  More on built-in functions and user defined functions More on arguments How Python treats more than one value return Three types of scopes  What is a function? &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;A function a sequence of statements which perform computation.Functions makes it possible to reuse the code.In Python we have two kinds of functions,built-in functions and user defined function.The creators of Python, wrote a set of functions to address most common problems.</description>
     </item>
     
     <item>

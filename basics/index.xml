@@ -132,5 +132,15 @@ def character_counter(string, char): counter = 0 # process the string to count c
       <description>Class objectives  More on built-in functions and user defined functions More on arguments How Python treats more than one value return Three types of scopes  What is a function? &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;A function a sequence of statements which perform computation.Functions makes it possible to reuse the code.In Python we have two kinds of functions,built-in functions and user defined function.The creators of Python, wrote a set of functions to address most common problems.</description>
     </item>
     
+    <item>
+      <title>Object Oriented Programming</title>
+      <link>/basics/oop/</link>
+      <pubDate>Fri, 27 Dec 2019 13:05:20 +0800</pubDate>
+      
+      <guid>/basics/oop/</guid>
+      <description>What is Object Oriented Programming ? &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;OOP is a programming paradigm(style) for code organization and design.Object Oriented Programming concept developed in the 1960’s.The OOP paradigm breaks a program in to multiple cooperating objects.Then each object holds some data and functionality.
+Characteristics of OOP Paradigm  Data and functionality are organized in object. Perhaps most widely used programming paradigm Better code re-usability and recycled. Easily maintainable software Promotes collaboration and code extension.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -168,6 +168,16 @@ def character_counter(string, char): counter = 0 # process the string to count c
     </item>
     
     <item>
+      <title>Object Oriented Programming</title>
+      <link>/basics/oop/</link>
+      <pubDate>Fri, 27 Dec 2019 13:05:20 +0800</pubDate>
+      
+      <guid>/basics/oop/</guid>
+      <description>What is Object Oriented Programming ? &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;OOP is a programming paradigm(style) for code organization and design.Object Oriented Programming concept developed in the 1960’s.The OOP paradigm breaks a program in to multiple cooperating objects.Then each object holds some data and functionality.
+Characteristics of OOP Paradigm  Data and functionality are organized in object. Perhaps most widely used programming paradigm Better code re-usability and recycled. Easily maintainable software Promotes collaboration and code extension.</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>/introduction/python%E8%AF%BE%E7%A8%8B%E7%AE%80%E4%BB%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

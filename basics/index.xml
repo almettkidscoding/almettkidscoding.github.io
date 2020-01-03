@@ -142,5 +142,18 @@ def character_counter(string, char): counter = 0 # process the string to count c
 Characteristics of OOP Paradigm  Data and functionality are organized in object. Perhaps most widely used programming paradigm Better code re-usability and recycled. Easily maintainable software Promotes collaboration and code extension.</description>
     </item>
     
+    <item>
+      <title>Ping Pong Game</title>
+      <link>/basics/pong_game/</link>
+      <pubDate>Thu, 02 Jan 2020 18:29:22 +0800</pubDate>
+      
+      <guid>/basics/pong_game/</guid>
+      <description>Ping Pong Game class Objectives  Python basics summary Simple game design for beginners Object Oriented Programming in practice  Ping Pong game flowchart Building blocks Module
+Turtle is the only module should be imported since this game is built on the top of turtle module.
+import turtle  Variables
+Two variables must be declared to record scores of Pddle A and Paddle B.
+score_a = 0 score_b = 0  Objects</description>
+    </item>
+    
   </channel>
 </rss>
